@@ -6,10 +6,10 @@ $(function () {
     $('.responsive_header').fitText();
 
     //contact info hover effect
-    var div = $('div.info');
+    var social = $('.social span');
 
-    div.hover(function () {
-        $(this).children('a').fadeToggle();
+    social.hover(function () {
+        $(this).siblings('a').fadeToggle();
     });
 
     //home page i am effect
