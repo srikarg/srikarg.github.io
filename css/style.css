@@ -1,0 +1,162 @@
+/*
+ *
+ * miscellaneous
+ *
+ */
+ * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+}
+body {
+    background-image: url(../images/bg.png);
+    min-width: 500px;
+}
+/*
+ *
+ *    =container
+ *
+ */
+ .container {
+    width: 80%;
+    margin: 0 auto;
+    background: #ccc;
+}
+/*
+ *
+ *    =header
+ *
+ */
+ header {
+    background: #ccc;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*
+ *
+ *    =navigation
+ *
+ */
+ nav {
+    text-align: center;
+    margin-bottom: 10px;
+}
+nav select {
+    display: none;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+}
+nav ul li .selected, nav ul li a:hover {
+    background: #838183;
+    color: black;
+}
+/*
+*
+*  =content
+*
+*/
+ .content {
+    padding: 10px;
+}
+.home {
+    text-align: center;
+}
+.roles {
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    width: auto;
+    overflow: hidden;
+}
+.roles div {
+    height: 50px;
+    -webkit-transition: margin-top 1s ease-in-out;
+    -moz-transition: margin-top 1s ease-in-out;
+    -o-transition: margin-top 1s ease-in-out;
+    transition: margin-top 1s ease-in-out;
+}
+/*
+*
+*  =contactInfo
+*
+*/
+ .content .title {
+    padding: 10px;
+    text-align: center;
+}
+.info {
+    padding: 20px 0px;
+    cursor: pointer;
+}
+.info span, .info a {
+    padding: 10px;
+}
+.info span {
+    background: #ccc;
+}
+.info a {
+    display: none;
+    text-decoration: none;
+    color: white;
+    background: black;
+}
+/*
+ *
+ *    =footer
+ *
+ */
+ footer {
+    border-top: 1px solid #222;
+    padding: 10px;
+}
+/*
+ *
+ *    =mediaQueries
+ *
+ */
+ @media screen and (max-width: 640px) {
+    nav ul {
+        display: none;
+    }
+    nav select {
+        display: inline;
+    }
+}
+/*
+ *
+ *    =clearfix
+ *
+ */
+ .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content:" ";
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+/* start commented backslash hack */
+ * html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/* close commented backslash hack */
