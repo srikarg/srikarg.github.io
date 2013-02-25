@@ -4,14 +4,7 @@ $(function () {
 
     //header automatic resize
     $('.responsive_header').fitText();
-
-    var ua = navigator.userAgent.toLowerCase();
-    var isAndroid = ua.indexOf("android") > -1;
-    if (isAndroid) {
-        $('nav i').hide();
-        $('.social i').hide();
-    }
-
+    
     //contact info hover effect
     var social = $('.social span');
 
