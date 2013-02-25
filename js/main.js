@@ -9,7 +9,7 @@ $(function () {
     var social = $('.social span');
 
     social.hover(function () {
-        $(this).siblings('a').fadeToggle();
+        $(this).children('a').fadeToggle();
     });
 
     //home page i am effect
