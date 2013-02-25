@@ -8,6 +8,7 @@ $(function () {
     var ua = navigator.userAgent.toLowerCase();
     var isAndroid = ua.indexOf("android") > -1;
     if (isAndroid) {
+        $('nav i').hide();
         $('.social i').hide();
     }
 
