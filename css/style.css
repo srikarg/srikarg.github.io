@@ -76,11 +76,9 @@ nav ul li .selected, nav ul li a:hover {
     text-align: center;
 }
 .roles {
+    margin-bottom: 10px;
     font-size: 30px;
-    display: block;
-    width: 50%;
     text-align: center;
-    margin: 0 auto;
     height: 50px;
     width: auto;
     overflow: hidden;
