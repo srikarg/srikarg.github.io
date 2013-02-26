@@ -4,16 +4,16 @@
  *
  */
  * {
-    margin: 0;
-    padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    font-family:'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 body {
-    background-image: url(../images/bg.png);
+    font-family:'Open Sans', sans-serif;
+    background: #23A0D1;
     min-width: 500px;
 }
 /*
@@ -22,9 +22,11 @@ body {
  *
  */
  .container {
+    position: relative;
     width: 80%;
+    min-height: 450px;
     margin: 0 auto;
-    background: #ccc;
+    background: #92d0e8;
 }
 /*
  *
@@ -32,9 +34,7 @@ body {
  *
  */
  header {
-    background: #ccc;
     text-align: center;
-    margin-bottom: 10px;
 }
 /*
  *
@@ -43,7 +43,7 @@ body {
  */
  nav {
     text-align: center;
-    margin-bottom: 10px;
+    padding: 10px;
 }
 nav select {
     display: none;
@@ -60,7 +60,7 @@ nav ul li a {
     padding: 0 10px;
 }
 nav ul li .selected, nav ul li a:hover {
-    background: #838183;
+    background: #23A0D1;
     color: black;
 }
 /*
@@ -69,6 +69,7 @@ nav ul li .selected, nav ul li a:hover {
 *
 */
  .content {
+    min-height: 450px;
     padding: 10px;
 }
 .home {
@@ -76,8 +77,10 @@ nav ul li .selected, nav ul li a:hover {
 }
 .roles {
     font-size: 30px;
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
     height: 50px;
     width: auto;
     overflow: hidden;
@@ -104,25 +107,22 @@ nav ul li .selected, nav ul li a:hover {
     font-size: 15px;
 }
 .social {
-    padding: 20px 0px;
+    padding: 10px;
 }
-.social img {
+.social p {
     display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    max-width: 64px;
-}
-.social span {
-    background: #ccc;
+    margin: 0;
+    padding: 0;
     cursor: pointer;
+    background: #92d0e8;
 }
 .social a {
     display: none;
     text-decoration: none;
-    color: white;
-    background: black;
+    color: black;
+    background: #23A0D1;
 }
-.social span, .social a {
+.social p, .social a {
     padding: 10px;
 }
 /*
@@ -131,7 +131,7 @@ nav ul li .selected, nav ul li a:hover {
  *
  */
  footer {
-    border-top: 1px solid #222;
+    border-top: 1px solid #23A0D1;
     padding: 10px;
 }
 /*
@@ -163,8 +163,7 @@ nav ul li .selected, nav ul li a:hover {
 .clearfix {
     display: inline-block;
 }
-/* start commented backslash hack */
- * html .clearfix {
+start commented backslash hack * html .clearfix {
     height: 1%;
 }
 .clearfix {
