@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>{{ page.title }} | srikar gudipati</title>
+        <meta charset=utf-8 />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'/>
+    </head>
+    
+    <body>
+        <div class="container">
+            <header class="clearfix">
+                 <h1>{{ page.title }}</h1>
+            </header>
+            <nav>
+                <select onchange="if(this.options[this.selectedIndex].value != ''){window.top.location.href=this.options[this.selectedIndex].value}">
+                    <option value="/">home</option>
+                    <option value="/contact">contact me</option>
+                </select>
+                <ul>
+                    <li><a href="/"><i class="icon-home"></i> home</a>
+                    </li>
+                    <li><a href="/contact"><i class="icon-bullhorn"></i> contact me</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+				{{ content }}
+            </div>
+            <footer>
+                 <h4>copyright srikar gudipati &copy;<time></time></h4>
+            </footer>
+        </div>
+        <!-- Javascript Files -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="/js/main.js"></script>
+    </body>
+
+</html>

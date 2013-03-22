@@ -125,6 +125,18 @@ nav ul li .selected, nav ul li a:hover {
 }
 /*
  *
+ *    =posts
+ *
+ */
+.posts > p {
+	margin-bottom: 10px;
+}
+
+.posts > p:last-of-type {
+	margin-bottom: 0px;
+}
+/*
+ *
  *    =footer
  *
  */
