@@ -7,13 +7,15 @@
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/css/pygments.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'/>
     </head>
     
     <body>
         <div class="container">
             <header class="clearfix">
-                 <h1>{{ page.title }}</h1>
+                 <h1 class="title">{{ page.title }}</h1>
+				 <p>Published {{ page.date | date: "%d %B %Y" }}</p>
             </header>
             <nav>
                 <select onchange="if(this.options[this.selectedIndex].value != ''){window.top.location.href=this.options[this.selectedIndex].value}">

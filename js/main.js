@@ -1,9 +1,9 @@
 $(function () {
     //footer date
     $('footer').find('time').text((new Date).getFullYear());
-
-    //header automatic resize
-    $('.responsive_header').fitText();
+	
+	//responsive headers
+	$('.responsive_header').fitText();
     
     //contact info hover effect
     var social = $('.social p');
