@@ -8,7 +8,7 @@ layout: default
 	{% for post in paginator.posts %}
 		<h2>{{ post.title }}</h2>
 		<h4>{{ post.category }}</h4>
-		<h4><a href="http://localhost:4000{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a></h4>
+		<h4><a href="http://srikarg.github.com{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a></h4>
 		<h4>{{ post.date | date_to_long_string }}</h4>
 		<p>
 			<a href="{{ post.url }}">Read Post</a>
