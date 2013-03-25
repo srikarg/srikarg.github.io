@@ -47,7 +47,7 @@ header {
  */
 nav {
     text-align: center;
-	padding: 10px 0;
+    padding: 10px 0;
 }
 
 nav select {
@@ -68,7 +68,7 @@ nav ul li a {
     padding: 0 10px;
 }
 
-nav ul li .selected,nav ul li a:hover {
+nav ul li a:hover {
     background: #222;
     color: #FFF;
 }
@@ -84,23 +84,7 @@ a {
 
 .content {
     min-height: 450px;
-	padding: 0 20px;
-}
-
-.roles {
-    font-size: 30px;
-    text-align: center;
-    height: 45px;
-    width: auto;
-    overflow: hidden;
-}
-
-.roles div {
-    height: 45px;
-    -webkit-transition: margin-top 1s ease-in-out;
-    -moz-transition: margin-top 1s ease-in-out;
-    -o-transition: margin-top 1s ease-in-out;
-    transition: margin-top 1s ease-in-out;
+    padding: 0 20px;
 }
 
 /*
@@ -110,7 +94,7 @@ a {
 */
 .title {
     text-align: center;
-	padding: 10px;
+    padding: 10px;
 }
 
 .hint {
@@ -156,6 +140,42 @@ a {
     margin-bottom: 0;
 }
 
+.comments {
+	padding: 10px 20px;
+}
+
+.comments h2 {
+	margin-bottom: 5px;
+}
+
+/*
+ *
+ *    =pagination
+ *
+ */
+.pagination {
+    display: block;
+    text-align: center;
+	padding: 10px 0;
+}
+
+.pagination.post > .previous {
+    padding-right: 10px;
+}
+
+.pagination.post > .next {
+    padding-left: 10px;
+}
+
+.page_number {
+    margin: 0 20px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
 /*
  *
  *    =footer
@@ -163,7 +183,7 @@ a {
  */
 footer {
     border-top: 1px solid #222;
-	margin-top: 10px;
+    margin-top: 10px;
     padding: 0 20px;
 }
 
@@ -172,7 +192,7 @@ footer {
  *    =mediaQueries
  *
  */
-@media screen and max-width 640px {
+@media screen and (max-width: 640px) {
     nav ul {
         display: none;
     }
@@ -209,4 +229,5 @@ html .clearfix {
 .clearfix {
     display: block;
 }
+
 /* close commented backslash hack */

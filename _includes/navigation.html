@@ -1,0 +1,13 @@
+<nav>
+    <select onchange="if(this.options[this.selectedIndex].value != ''){window.top.location.href=this.options[this.selectedIndex].value}">
+			<option>choose a page</option>
+            <option value="/">home</option>
+            <option value="/contact">contact me</option>
+    </select>
+    <ul>
+        <li><a href="/"><i class="icon-home"></i> home</a>
+        </li>
+        <li><a href="/contact"><i class="icon-bullhorn"></i> contact me</a>
+        </li>
+    </ul>
+</nav>

@@ -1,19 +1,12 @@
 ---
-
-title: Tutorial - A simple table menu using CSS and HTML.
-
+title: A simple table menu using CSS and HTML.
 layout: post
-
 category: tutorials
-
 ---
+
 ## Intro
 
-Hey guys! Navigation is extremely important for any website. It is the
-foundation of the site, as it provides the user with a sense of the various
-crooks and nannies of it. Today, we'll create a basic table menu. If you want to
-view the video version of this tutorial that I made a few months ago, click
-[here](<http://www.youtube.com/watch?feature=player_detailpage&v=xjZMlQUFsJY>).
+Hey guys! Navigation is extremely important for any website. It is the foundation of the site, as it provides the user with a sense of the various crooks and nannies of it. Today, we'll create a basic table menu. If you want to view the video version of this tutorial that I made a few months ago, click [here](<http://www.youtube.com/watch?feature=player_detailpage&v=xjZMlQUFsJY>).
 
 ## Procedure
 
@@ -85,5 +78,4 @@ table {
     text-decoration:none;
 }
 {% endhighlight %}
-and voila! We have a menu! You can see the code and the result at
-[Codepen](http://codepen.io/srig99/pen/JfAqo)! Thanks for reading this tutorial!
+and voila! We have a menu! You can see the code and the result at [Codepen](http://codepen.io/srig99/pen/JfAqo)! Thanks for reading this tutorial!

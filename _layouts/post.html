@@ -1,44 +1,45 @@
-<!DOCTYPE html>
-<html>
-    
-    <head>
-        <title>{{ page.title }} | srikar gudipati</title>
-        <meta charset=utf-8 />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="/css/font-awesome.min.css">
-		<link rel="stylesheet" href="/css/pygments.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'/>
-    </head>
-    
-    <body>
-        <div class="container">
-            <header class="clearfix">
-                 <h1 class="title">{{ page.title }}</h1>
-				 <p>Published {{ page.date | date: "%d %B %Y" }}</p>
-            </header>
-            <nav>
-                <select onchange="if(this.options[this.selectedIndex].value != ''){window.top.location.href=this.options[this.selectedIndex].value}">
-                    <option value="/">home</option>
-                    <option value="/contact">contact me</option>
-                </select>
-                <ul>
-                    <li><a href="/"><i class="icon-home"></i> home</a>
-                    </li>
-                    <li><a href="/contact"><i class="icon-bullhorn"></i> contact me</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="content">
-				{{ content }}
-            </div>
-            <footer>
-                 <h4>copyright srikar gudipati &copy;<time></time></h4>
-            </footer>
-        </div>
-        <!-- Javascript Files -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="/js/main.js"></script>
-    </body>
+{% include header.html %}
+{% include post_header.html %}
+{% include navigation.html %}
+<div class="content">
+	{{ content }}
+</div>
+
+<div class="comments">
+	<h2>Comments!</h2>
+	<div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<div class="pagination post">
+  {% if page.previous %}
+		<a href="{{ page.previous.url }}" class="previous">Previous Post</a>
+  {% else %}
+    <span class="previous disabled">Previous Post</span>
+  {% endif %}
+  {% if page.next %}
+    <a href="{{ page.next.url }}" class="next ">Next Post</a>
+  {% else %}
+    <span class="next disabled">Next Post</span>
+  {% endif %}
+</div>
+
+{% include footer.html %}
+	</div>
+	<!-- Javascript Files -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/js/fittext.js"></script>
+	<script src="/js/main.js"></script>
+    <script type="text/javascript">
+        var disqus_shortname = 'srikarg';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+	</body>
 
 </html>

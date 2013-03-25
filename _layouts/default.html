@@ -1,48 +1,26 @@
-<!DOCTYPE html>
-<html>
-    
-    <head>
-        <title>{% if page.title != "srikar gudipati" %} {{ page.title }} | {% endif %}srikar gudipati</title>
-        <meta charset=utf-8 />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="/css/font-awesome.min.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'/>
-    </head>
-    
-    <body>
-        <div class="container">
-            <header class="clearfix">
-                 <h1 class="responsive_header">{{ page.title }}</h1>
-            </header>
-            <nav>
-                <select onchange="if(this.options[this.selectedIndex].value != ''){window.top.location.href=this.options[this.selectedIndex].value}">
-					{% if page.url == "/index.html" %}
-	                    <option value="/">home</option>
-	                    <option value="/contact">contact me</option>
-					{% else %}
-	                    <option value="/contact">contact me</option>
-						<option value="/">home</option>
-					{% endif %}
-                </select>
-                <ul>
-                    <li><a href="/" {% if page.url == "/index.html" %}class="selected"{% endif %}><i class="icon-home"></i> home</a>
-                    </li>
-                    <li><a href="/contact" {% if page.url != "/index.html" %}class="selected"{% endif %}><i class="icon-bullhorn"></i> contact me</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="content">
-				{{ content }}
-            </div>
-            <footer>
-				<p>&copy;&nbsp;<time></time> srikar gudipati. Built on <a href="http://jekyllrb.com/">Jekyll</a>. Hosted on <a href="https://github.com/srikarg/srikarg.github.com">GitHub</a>.</p>
-            </footer>
-        </div>
-        <!-- Javascript Files -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+{% include header.html %}
+	<h1 class="responsive_header">{{ page.title }}</h1>
+</header>
+{% include navigation.html %}
+<div class="content">
+	{{ content }}
+</div>
+{% include footer.html %}
+	</div>
+	<!-- Javascript Files -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="/js/fittext.js"></script>
-        <script src="/js/main.js"></script>
-    </body>
+		<script src="/js/main.js"></script>
+		<script type="text/javascript">
+			var disqus_shortname = 'srikarg';
+
+			(function () {
+			   var s = document.createElement('script'); s.async = true;
+			   s.type = 'text/javascript';
+			   s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+			   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			}());
+	   </script>
+	</body>
 
 </html>
