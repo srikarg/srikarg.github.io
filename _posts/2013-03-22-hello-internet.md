@@ -1,6 +1,7 @@
 ---
 title: Hello Internet!
 layout: post
+comments: true
 category: other
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: A simple table menu using CSS and HTML.
 layout: post
+comments: true
 category: tutorials
 ---
 
