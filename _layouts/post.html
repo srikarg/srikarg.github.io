@@ -15,14 +15,14 @@
 
 <div class="pagination post">
   {% if page.previous %}
-		<a href="{{ page.previous.url }}" class="previous">Previous Post</a>
+		<a href="{{ page.previous.url }}" class="previous"><i class="icon-caret-left icon-2x"></i></a>
   {% else %}
-    <span class="previous disabled">Previous Post</span>
+    <span class="previous disabled"><i class="icon-caret-left icon-2x"></i></span>
   {% endif %}
   {% if page.next %}
-    <a href="{{ page.next.url }}" class="next ">Next Post</a>
+    <a href="{{ page.next.url }}" class="next"><i class="icon-caret-right icon-2x"></i></a>
   {% else %}
-    <span class="next disabled">Next Post</span>
+    <span class="next disabled"><i class="icon-caret-right icon-2x"></i></span>
   {% endif %}
 </div>
 

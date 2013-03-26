@@ -4,14 +4,14 @@ layout: default
 ---
 
 <div class="posts">
-	<h1 class="title">My blog posts.</h1>
+	<h1 class="title"><i class="icon-pencil"></i> My blog posts.</h1>
 	{% for post in paginator.posts %}
-		<h2>{{ post.title }}</h2>
-		<h4>{{ post.category }}</h4>
-		<h4><a href="http://srikarg.github.com{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a></h4>
-		<h4>{{ post.date | date_to_long_string }}</h4>
+		<h2><i class="icon-info-sign"></i> {{ post.title }}</h2>
+		<h4><i class="icon-folder-open"></i> {{ post.category }}</h4>
+		<h4><i class="icon-comment"></i> <a href="http://srikarg.github.com{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a></h4>
+		<h4><i class="icon-time"></i> {{ post.date | date_to_long_string }}</h4>
 		<p>
-			<a href="{{ post.url }}">Read Post</a>
+			<i class="icon-file-alt"></i> <a href="{{ post.url }}">Read Post</a>
 		</p>
 	{% endfor %}
 </div>
@@ -19,17 +19,17 @@ layout: default
 <div class="pagination">
   {% if paginator.previous_page %}
   	{% if paginator.previous_page == 1 %}
-		<a href="/" class="previous">Page 1</a>
+		<a href="/" class="previous"><i class="icon-caret-left icon-2x"></i></a>
 	{% else %}
-		<a href="/page{{paginator.previous_page}}" class="previous">Previous Page</a>
+		<a href="/page{{paginator.previous_page}}" class="previous"><i class="icon-caret-left icon-2x"></i></a>
 	{% endif %}
   {% else %}
-    <span class="previous disabled">Previous Page</span>
+    <span class="previous disabled"><i class="icon-caret-left icon-2x"></i></span>
   {% endif %}
   <span class="page_number">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
   {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" class="next ">Next Page</a>
+    <a href="/page{{paginator.next_page}}" class="next"><i class="icon-caret-right icon-2x"></i></a>
   {% else %}
-    <span class="next disabled">Next Page</span>
+    <span class="next disabled"><i class="icon-caret-right icon-2x"></i></span>
   {% endif %}
 </div>

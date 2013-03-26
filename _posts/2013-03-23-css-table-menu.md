@@ -61,21 +61,21 @@ table {
 }
 
 #navBar a {
-    display:block;
-    color:black;
-    text-decoration:none;
+    display: block;
+    color: black;
+    text-decoration: none;
 }
 
 #navBar a:hover {
-    color:black;
-    background:#B9B9B9;
-    text-decoration:none;
+    color: black;
+    background: #B9B9B9;
+    text-decoration: none;
 }
 
 #navBar a.selected {
-    color:black;
-    background:#B9B9B9;
-    text-decoration:none;
+    color: black;
+    background: #B9B9B9;
+    text-decoration: none;
 }
 {% endhighlight %}
 and voila! We have a menu! You can see the code and the result at [Codepen](http://codepen.io/srig99/pen/JfAqo)! Thanks for reading this tutorial!

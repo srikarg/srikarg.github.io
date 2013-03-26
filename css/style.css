@@ -133,7 +133,7 @@ a {
  *
  */
 .posts > p {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .posts > p:last-of-type {
@@ -157,6 +157,14 @@ a {
     display: block;
     text-align: center;
 	padding: 10px 0;
+}
+
+.pagination a {
+	text-decoration: none;
+}
+
+.pagination .previous > i, .pagination .next > i {
+	vertical-align: middle;
 }
 
 .pagination.post > .previous {
