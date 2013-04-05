@@ -2,58 +2,42 @@
 {% include post_header.html %}
 {% include navigation.html %}
 <div class="content">
-	{{ content }}
+{{ content }}
 </div>
 
 {% if page.comments %}
 <div class="comments">
-	<h2>Comments!</h2>
-    <div id="disqus_thread"></div>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<h2>Comments!</h2>
+<div id="disqus_thread"></div>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
 {% endif %}
 
 <div class="pagination post">
-  {% if page.previous %}
-		<a href="{{ page.previous.url }}" class="previous"><i class="icon-caret-left icon-2x"></i></a>
-  {% else %}
-    <span class="previous disabled"><i class="icon-caret-left icon-2x"></i></span>
-  {% endif %}
-  {% if page.next %}
-    <a href="{{ page.next.url }}" class="next"><i class="icon-caret-right icon-2x"></i></a>
-  {% else %}
-    <span class="next disabled"><i class="icon-caret-right icon-2x"></i></span>
-  {% endif %}
+{% if page.previous %}
+<a href="{{ page.previous.url }}" class="previous"><i class="icon-caret-left icon-2x"></i></a>
+{% else %}
+<span class="previous disabled"><i class="icon-caret-left icon-2x"></i></span>
+{% endif %}
+{% if page.next %}
+<a href="{{ page.next.url }}" class="next"><i class="icon-caret-right icon-2x"></i></a>
+{% else %}
+<span class="next disabled"><i class="icon-caret-right icon-2x"></i></span>
+{% endif %}
 </div>
 
 {% include footer.html %}
-	</div>
-		<!-- Javascript Files -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="/js/fittext.js"></script>
-		<script src="/js/main.js"></script>
-		{% if page.comments %}
-	    <script type="text/javascript">
-	        var disqus_shortname = 'srikarg';
+</div>
+{% if page.comments %}
+<script type="text/javascript">
+var disqus_shortname = 'srikarg';
 
-	        (function() {
-	            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	        })();
-	    </script>
-		{% endif %}
-		<script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-39675222-1']);
-          _gaq.push(['_trackPageview']);
-          
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        </script>
-	</body>
-</html>
+(function() {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+{% endif %}
+{% include foot.html %}
