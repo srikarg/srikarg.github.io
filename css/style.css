@@ -16,14 +16,14 @@
 .highlight {
     background: #222;
     color: white;
-    /*padding: .2em .9em;*/
-    margin: 1em 0;
-    font: normal normal normal 115%/normal Monaco, 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace !important;
+    margin-bottom: 1em;
+    padding: 0.6em;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
     line-height: 1.1em;
     overflow: auto;
-    font-size: 1em;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
     border-radius: 7px;
 }
 
@@ -377,6 +377,10 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
+p {
+    margin-bottom: 1em;
+}
+
 h1 {
     font-size: 36px;
     font-size: 3.6rem;
@@ -542,14 +546,10 @@ section:not(.resume-section) {
     opacity: 0.3;
 }
 
-/* =Comments */
-#disqus_thread {
-    margin-top: 3em;
-}
-
 /* =Resume */
 .resume h3 {
     margin: 1em 0;
+    font-style: italic;
 }
 
 /* =Sidebar
