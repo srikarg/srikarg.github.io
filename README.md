@@ -1,4 +1,4 @@
-srikarg.github.com
+srikarg.github.io
 ==================
 
-My personal website. Visit http://srikarg.github.com/ to view it!
+My personal website. Visit http://srikarg.github.io/ to view it!
