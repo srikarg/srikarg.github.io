@@ -356,8 +356,7 @@ body {
 }
 
 .wrapper {
-    width: 100%;
-    max-width: 57em;
+    width: 90%;
     margin: 0 auto;
     padding: 0 1em;
 }
@@ -529,6 +528,7 @@ section:not(.resume-section) {
 
 .sidebar p {
     padding-top: 0.5em;
+    font-size: 1em;
 }
 
 /* =Footer
