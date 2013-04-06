@@ -348,11 +348,18 @@ code,pre {
   font-weight: normal;
 }
 
+html {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 62.5%;
+    color: #222;
+    background: #F1F1F1;
+}
+
 body {
-	font-family: 'Noto Sans', sans-serif;
-	font-size: 100%;
 	background: #F1F1F1;
 	color: #222;
+    font-size: 20px;
+    font-size: 2rem;
 }
 
 .wrapper {
@@ -368,6 +375,21 @@ a {
 
 a:hover, a:focus {
     text-decoration: underline;
+}
+
+h1 {
+    font-size: 36px;
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 32px;
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 28px;
+    font-size: 2.8rem;
 }
 
 ::-moz-selection {
@@ -390,7 +412,8 @@ header {
 
 .site-title {
     float: left;
-    font-size: 2.5em;
+    font-size: 40px;
+    font-size: 4rem;
 }
 
 .site-title a, nav ul li a {
@@ -404,6 +427,8 @@ header {
 nav ul {
     float: right;
     list-style: none;
+    font-size: 20px;
+    font-size: 2rem;
 }
 
 nav ul li {
@@ -434,6 +459,16 @@ nav ul li a:hover {
     margin: 1em 0;
 }
 
+.post h2 {
+    font-size: 28px;
+    font-size: 2.8rem;
+}
+
+.post h4 {
+    font-size: 17px;
+    font-size: 1.7rem;
+}
+
 .post a {
     color: #222;
 }
@@ -453,7 +488,7 @@ section:not(.resume-section) {
 
 /* =Contact Info */
 .social {
-    padding: 1em 0;
+    padding: 0.5em 0;
 }
 
 .social p {
@@ -515,7 +550,6 @@ section:not(.resume-section) {
 /* =Resume */
 .resume h3 {
     margin: 1em 0;
-    font-weight: bold;
 }
 
 /* =Sidebar
@@ -528,7 +562,6 @@ section:not(.resume-section) {
 
 .sidebar p {
     padding-top: 0.5em;
-    font-size: 1em;
 }
 
 /* =Footer
@@ -537,6 +570,8 @@ section:not(.resume-section) {
     clear: both;
     border-top: 3px solid #F56200;
     padding-top: 0.5em;
+    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 /* =Media Queries
@@ -556,10 +591,12 @@ section:not(.resume-section) {
     }
 }
 
-@media all and (max-width: 37.1875em) {
+@media all and (max-width: 46em) {
     .site-title {
         float: none;
         text-align: center;
+        font-size: 2.8rem;
+        font-size: 28px;
     }
 
     nav ul {
@@ -570,5 +607,9 @@ section:not(.resume-section) {
     nav ul li {
         float: none;
         display: inline-block;
+    }
+
+    .wrapper {
+        padding: 0;
     }
 }
