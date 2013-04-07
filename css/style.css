@@ -396,6 +396,10 @@ h3 {
     font-size: 2.8rem;
 }
 
+section {
+    margin: 1em 0;
+}
+
 ::-moz-selection {
   background: #F56200;
   color: #222;
@@ -486,8 +490,19 @@ nav ul li a:hover {
     margin-bottom: 3em;
 }
 
-section:not(.resume-section) {
-    margin: 1em 0;
+h2 a[href^="#"] {
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+section h2:hover a {
+    pointer-events: auto;
+    opacity: 100;
 }
 
 /* =Contact Info */
