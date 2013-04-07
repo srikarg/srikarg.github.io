@@ -577,15 +577,16 @@ section:not(.resume-section) {
 /* =Media Queries
 -----------------------------------------------------------------------------*/
 @media all and (max-width: 51.875em) {
-    .main {
+    .main, .sidebar {
         float: none;
         width: 100%;
+    }
+
+    .main {
         margin-right: 0;
     }
 
     .sidebar {
-        float: none;
-        width: 100%;
         border-top: 3px solid #F56200;
         padding-top: 0.5em;
     }
@@ -621,5 +622,11 @@ section:not(.resume-section) {
     .social {
         font-size: 15px;
         font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 38em) {
+    .main, .sidebar, .footer {
+        text-align: center;
     }
 }
