@@ -624,9 +624,3 @@ section:not(.resume-section) {
         font-size: 1.5rem;
     }
 }
-
-@media all and (max-width: 38em) {
-    .main, .sidebar, .footer {
-        text-align: center;
-    }
-}
