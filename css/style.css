@@ -17,6 +17,7 @@
     background: #222;
     color: white;
     margin-bottom: 1em;
+    padding: 0.6em;
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     line-height: 1.1em;
     overflow: auto;
