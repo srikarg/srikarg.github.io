@@ -1,6 +1,6 @@
 {% include head.html %}
 {% include header.html %}
-<div class="main">
+<article class="main">
 	{% include post_header.html %}
 	{{ content }}
 	{% if page.comments %}
@@ -19,7 +19,7 @@
 		<span class="next disabled"><i class="icon-caret-right icon-2x"></i></span>
 		{% endif %}
 	</div>
-</div>
+</article>
 {% include sidebar.html %}
 {% include footer.html %}
 {% include foot.html %}

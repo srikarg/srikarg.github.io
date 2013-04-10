@@ -377,7 +377,7 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-p {
+p, ul, ol {
     margin-bottom: 1em;
 }
 
@@ -397,7 +397,11 @@ h3 {
 }
 
 section {
-    margin: 1em 0;
+    margin: 2em 0;
+}
+
+ul, ol {
+    padding-left: 1.5em;
 }
 
 ::-moz-selection {
@@ -424,7 +428,7 @@ header {
     font-size: 4rem;
 }
 
-.site-title a, nav ul li a {
+.site-title a, .navigation li a {
     color: #222;
 }
 
@@ -432,23 +436,25 @@ header {
     text-decoration: none;
 }
 
-nav ul {
+.navigation {
     float: right;
     list-style: none;
     font-size: 20px;
     font-size: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li {
+.navigation li {
     float: left;
 }
 
-nav ul li a {
+.navigation li a {
     display: block;
     padding: 1em 0.5em;
 }
 
-nav ul li a:hover {
+.navigation li a:hover {
     text-decoration: none;
     color: #F56200;
 }
@@ -503,6 +509,16 @@ h2 a[href^="#"] {
 section h2:hover a {
     pointer-events: auto;
     opacity: 100;
+}
+
+.table-of-contents {
+    border: 3px solid #F56200;
+    border-radius: 7px;
+    padding: 0.5em;
+}
+
+.table-of-contents p, .table-of-contents ul {
+    margin: 0;
 }
 
 /* =Contact Info */
@@ -615,12 +631,12 @@ section h2:hover a {
         font-size: 28px;
     }
 
-    nav ul {
+    .navigation {
         float: none;
         text-align: center;
     }
 
-    nav ul li {
+    .navigation li {
         float: none;
         display: inline-block;
     }

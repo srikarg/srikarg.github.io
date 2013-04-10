@@ -3,6 +3,22 @@
 		<!-- JavaScript Scripts -->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="/js/main.js"></script>
+		{% if page.toc %}
+		<script>
+			var ToC = "<nav class='table-of-contents'>" + "<p>Table of Contents:</p>" + "<ul>";
+			var el, title, link;
+			$(".main h2").each(function() {
+			    el = $(this);
+			    title = el.text();
+			    title = title.substring(0, title.length - 1).trim();
+			    link = el.children("a").attr("href");
+			    newLine = "<li>" + "<a href='" + link + "'>" + title + "</a>" + "</li>";
+			    ToC += newLine;
+			});
+			ToC += "</ul>" + "</nav>";
+			$(".post-info").append(ToC);
+		</script>
+		{% endif %}
 		<script type="text/javascript">
 			var disqus_shortname = 'srikarg';
 
@@ -34,6 +50,9 @@
 			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
+		</script>
+		<script>
+			$("p:empty").remove();
 		</script>
     </body>
 </html>
