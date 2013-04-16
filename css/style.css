@@ -34,7 +34,7 @@ code, pre {
 }
 
 code {
-    background: #CCCCCC;
+    background: #ccc;
     border-radius: 7px;
     padding: 0.1em;
 }
@@ -478,6 +478,25 @@ header {
     width: 68%;
     margin-right: 2%;
     margin: 1em 0;    
+}
+
+/* =Back to top link */
+#top {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    font-size: 30px;
+    color: #222;
+}
+
+#top:hover {
+    text-decoration: none;
+}
+
+#top:hover i {
+    color: #F56200;
 }
 
 /* =Posts */
