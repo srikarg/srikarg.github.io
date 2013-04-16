@@ -404,12 +404,6 @@ ul, ol {
     padding-left: 1.5em;
 }
 
-code {
-    background: #CCCCCC;
-    border-radius: 7px;
-    padding: 0.1em;
-}
-
 ::-moz-selection {
   background: #F56200;
   color: #222;
