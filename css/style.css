@@ -27,10 +27,22 @@
     border-radius: 7px;
 }
 
-code,pre {
+code, pre {
     font-family: Consolas, "Courier New", Courier, FreeMono, monospace;
     font-size: .95em;
     margin: 1em 0 1.5em;
+}
+
+code {
+    background: #CCCCCC;
+    border-radius: 7px;
+    padding: 0.1em;
+}
+
+.highlight code {
+    background: #222;
+    border-radius: 0px;
+    padding: 0;
 }
 
 .highlight .hll {
