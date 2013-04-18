@@ -6,7 +6,8 @@ $(function() {
     });
 
     //Smooth scrolling links
-    $('a[href^="#"]').on('click', function() {
+    $('.table-of-contents a[href^="#"], #top').on('click', function(e) {
+        e.preventDefault();
         var target = $(this.hash);
         if (target.length == 0) target = $('html');
         $('html, body').animate({
