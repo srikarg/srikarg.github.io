@@ -480,19 +480,16 @@ header {
     margin: 1em 0;    
 }
 
-/* =Back to top link */
+/* =Back to top span */
 #top {
     opacity: 0;
     pointer-events: none;
+    cursor: pointer;
     position: fixed;
     right: 35px;
     bottom: 35px;
     font-size: 30px;
     color: #222;
-}
-
-#top:hover {
-    text-decoration: none;
 }
 
 #top:hover i {
