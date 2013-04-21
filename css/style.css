@@ -524,7 +524,7 @@ header {
     margin-bottom: 3em;
 }
 
-h2 a[href^="#"] {
+section h2 a[href^="#"] {
     -webkit-transition: opacity 0.3s ease;
     -moz-transition: opacity 0.3s ease;
     -o-transition: opacity 0.3s ease;
@@ -534,7 +534,7 @@ h2 a[href^="#"] {
     pointer-events: none;
 }
 
-section h2:hover a {
+section h2:hover a[href^="#"] {
     pointer-events: auto;
     opacity: 100;
 }
@@ -681,5 +681,10 @@ section h2:hover a {
     .social {
         font-size: 15px;
         font-size: 1.5rem;
+    }
+
+    section h2 a[href^="#"] {
+        opacity: 100;
+        pointer-events: auto;
     }
 }
