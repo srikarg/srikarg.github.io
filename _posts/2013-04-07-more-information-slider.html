@@ -38,32 +38,32 @@ toc: true
 	<p>Next, we use basic CSS to set each quarter to take up 25% of the screen width. We also hide the info by default with <code>display: none;</code>.</p>
 	{% highlight css %}
 	* {
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		-ms-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-
-	body {
-	  background: #222;
-	  color: white;
-	}
-
-	.quarter {
-	  float: left;
-	  width: 25%;
-	}
-
-	.quarter img {
-	  width: 100%;
-	  margin: 0 auto;
-	  cursor: pointer;
-	}
-
-	.quarter .info {
-	  text-align: center;
-	  display: none;
-	}
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: #222;
+        color: #FFF;
+    }
+    
+    .quarter {
+        float: left;
+        width: 25%;
+    }
+    
+    .quarter img {
+        width: 100%;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    
+    .quarter .info {
+        text-align: center;
+        display: none;
+    }
 	{% endhighlight %}
 	<p>Finally, we use jQuery to take each image from each quarter and display the info on a click event.</p>
 	{% highlight javascript %}

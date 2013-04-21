@@ -1,0 +1,135 @@
+---
+title: Popup Image Gallery using jQuery!
+layout: post
+comments: true
+category: tutorials
+toc: true
+---
+
+<section id="introduction">
+    <h2>Introduction <a href="#introduction">#</a></h2>
+    <p>A simple search for <code>jquery image galleries</code> on Google will bring you to several projects created by different people! However, creating your own gallery can sometimes be more efficient. For example, making your own gallery can save your website extra loading time!</p>
+</section>
+
+<section id="procedure">
+    <h2>Procedure <a href="#procedure">#</a></h2>
+    <p>Let's get started! We'll first need some basic markup in HTML for our images and the box that will hold the current and selected image.</p>
+    {% highlight html %}
+    <div class="images">
+        <img src="http://placebox.es/300/300/f1f1f1/222/Image 1,25" />
+        <img src="http://placebox.es/300/300/f1f1f1/222/Image 2,25" />
+        <img src="http://placebox.es/300/300/f1f1f1/222/Image 3,25" />
+        <img src="http://placebox.es/300/300/f1f1f1/222/Image 4,25" />
+        <img src="http://placebox.es/300/300/f1f1f1/222/Image 5,25" />
+        <img src="http://placebox.es/300/300/f1f1f1/222/Image 6,25" />
+        <img src="http://placebox.es/300/300/f1f1f1/222/Image 7,25" />
+        <img src="http://placebox.es/300/300/f1f1f1/222/Image 8,25" />
+        <img src="http://placebox.es/300/300/f1f1f1/222/Image 9,25" />
+        <img src="http://placebox.es/300/300/f1f1f1/222/Image 10,25" />
+    </div>
+
+    <div class="focus">
+        <span class="close">&#10005;</span>
+    </div>
+    {% endhighlight %}
+    <p>In the code above, <code>div.images</code> holds the images and <code>div.focus</code> holds the enlarged and focused image. The <code>span.close</code> contains a Unicode entity for the multiplication symbol, which we will use for a close button.</p>
+    <p>Next, we'll style the elements we just created using the following CSS.</p>
+    {% highlight css %}
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: #222;
+    }
+    
+    .images {
+        position: absolute;
+        width: 640px;
+        left: 50%;
+        top: 50%;
+        margin-top: -128px;
+        margin-left: -320px;
+    }
+    
+    .images img {
+        cursor: pointer;
+        float: left;
+        padding: 3px;
+        width: 128px;
+        height: auto;
+    }
+    
+    .focus {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 50%;
+        left: 50%;
+        margin-left: -150px;
+        margin-top: -150px;
+        display: none;
+        z-index: 10;
+    }
+    
+    .focus .close {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        font-size: 30px;
+        cursor: pointer;
+        color: #F50000;
+    }
+    
+    .overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.3);
+    }
+    
+    .darken {
+        opacity: 0.3;
+    }
+    {% endhighlight %}
+    <p>The <code>div.images</code> is absolutely positioned in the middle of the page. The <code>div.focus</code> is also absolutely positioned in the middle above the <code>div.images</code> due to the <code>z-index: 10;</code> line. Next, there are two helper classes, <code>.overlay</code> and <code>.darken</code>, which will help us in our jQuery code.</p>
+    <p>Next, we add  functionality of the image gallery using jQuery.</p>
+    {% highlight javascript %}
+    $(function() {
+        var image = $('.images>img');
+        var box = $('.focus');
+        var close = $('.focus .close');
+        var images = $('.images');
+        
+        image.on('click', function() {
+            var $this = $(this);
+            var src = $this.attr('src');
+            box.find('img').remove();
+            box.append('<img src=\"' + src + '\" />');
+            box.fadeIn();
+            images.addClass('darken');
+            images.append('<div class="overlay">');
+        });
+        close.on('click', function() {
+            box.css('display', 'none');
+            images.removeClass('darken');
+            $('.overlay').remove();
+        });
+    });
+    {% endhighlight %}
+    <p>First, we are caching the elements of our gallery inside <code>image</code>, <code>box</code>, <code>close</code>, and <code>images</code>. Next, we set up a click handler for all the images inside <code>div.images</code>. On click, jQuery will find any existing images inside <code>div.focus</code>, remove them, and then insert the image that was clicked into the <code>div</code>. Next, it will fade in <code>div.focus</code>, darken the images behind the selected one, and make the unselected ones disabled. Finally, the close click handler hides <code>div.focus</code> and removes the <code>.overlay</code> and <code>.darken</code> elements.</p>
+</section>
+
+<section id="closing">
+    <h2>Closing <a href="#closing">#</a></h2>
+    <p>And there we have it! A simple image gallery! Check it out below and don't hesitate to tinker with it! Next time you decide to include an image gallery inside your website, be sure to think about whether you need a massive jQuery plugin or not.</p>
+    <div>
+        <pre class="codepen" data-height="400" data-type="result" data-href="qGzbn" data-user="srig99" data-safe="true"><code></code><a href="http://codepen.io/srig99/pen/qGzbn">Check out this Pen!</a></pre>
+        <script async src="http://codepen.io/assets/embed/ei.js"></script>
+    </div>
+</section>
