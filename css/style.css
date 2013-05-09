@@ -5,7 +5,8 @@
 .highlight {
 	background: #222;
 	color: #3FB1DE;
-	padding: 2.125em;
+	padding: 1em;
+	line-height: 1.4;
 	margin: 1em 0;
 	border-radius: 7px;
 	overflow-x: auto;
