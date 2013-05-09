@@ -3,15 +3,13 @@ title: Resume
 layout: default
 ---
 
-<div class="resume">
-<h1><i class="icon-briefcase"></i> My Skills</h1>
+# Skills
 
-<h3>Web Development</h3>
-<p>Knowledge of XHTML, HTML5, CSS2, CSS3, PHP, MySQL, JavaScript, jQuery, and Ajax.
+1. Web Development  
+	Knowledge of XHTML, HTML5, CSS2, CSS3, PHP, MySQL, JavaScript, jQuery, and Ajax.
 
-<h3>Application Development</h3>
-<p>Knowledge of C, C++, Python, and Java.</p>
+2. Application Development  
+	Knowledge of C, C++, Python, and Java.
 
-<h3>Software Familiar With</h3>
-<p><a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="http://www.eclipse.org/">Eclipse</a>, <a href="http://brackets.io/">Brackets</a>, <a href="http://mac.github.com/">Github Application</a>, Terminal, and <a href="http://www.mamp.info/en/index.html">MAMP</a>.</p>
-</div>
+3. Software Familiar With  
+	[Sublime Text](http://www.sublimetext.com/), [Eclipse](http://www.eclipse.org/), [Brackets](http://brackets.io/), [Github Application](http://mac.github.com/), Terminal, and [MAMP](http://www.mamp.info/en/index.html).

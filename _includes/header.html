@@ -1,13 +1,18 @@
-            <header>
-                <h1 class="site-title">
-                    <a href="/" title="Home">Srikar Gudipati</a>
-                </h1>
-                
-                <nav class="clearfix">
-                    <ul class="navigation">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/resume/">Resume</a></li>
-                        <li><a href="/contact/">Contact Me</a></li>
-                    </ul>
-                </nav>
-            </header>
+<header>
+	<h1 class="site-title"><a href="/">Srikar Gudipati</a></h1>
+	
+	<nav>
+		<ul class="clearfix">
+			<li><i class="icon-home"></i> <a href="/">Home</a></li>
+			<li><i class="icon-suitcase"></i> <a href="/resume">Resume</a></li>
+			<li><i class="icon-address-book"></i> <a href="/contact">Contact Me</a></li>
+		</ul>
+
+		<select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+			<option>Navigation</option>
+			<option value="/">Home</option>
+			<option value="/resume">Resume</option>
+			<option value="/contact">Contact Me</option>
+		</select>
+	</nav>
+</header>

@@ -1,27 +1,31 @@
 {% include head.html %}
 {% include header.html %}
-<article class="main">
-	{% include post_header.html %}
+<article class="main post">
+	<div class="post-info">
+		<h1>{{ page.title }}</h1>
+		<p>Published on {{ page.date | date: "%d %B %Y" }}{% if page.comments %} with <a href="#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>{% endif %}.</p>
+	</div>
+
 	{{ content }}
-	<span id="top"><i class="icon-arrow-up icon-2x"></i></span>
+
 	{% if page.comments %}
 	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	<div id="disqus_thread"></div>
 	{% endif %}
+	
 	<div class="pagination post">
 		{% if page.previous %}
-		<a href="{{ page.previous.url }}" class="previous"><i class="icon-caret-left icon-2x"></i></a>
+		<a href="{{ page.previous.url }}" class="previous"><i class="icon-arrow-left"></i></a>
 		{% else %}
-		<span class="previous disabled"><i class="icon-caret-left icon-2x"></i></span>
+		<span class="previous disabled"><i class="icon-arrow-left"></i></span>
 		{% endif %}
 		
 		{% if page.next %}
-		<a href="{{ page.next.url }}" class="next"><i class="icon-caret-right icon-2x"></i></a>
+		<a href="{{ page.next.url }}" class="next"><i class="icon-arrow-right"></i></a>
 		{% else %}
-		<span class="next disabled"><i class="icon-caret-right icon-2x"></i></span>
+		<span class="next disabled"><i class="icon-arrow-right"></i></span>
 		{% endif %}
 	</div>
 </article>
-{% include sidebar.html %}
 {% include footer.html %}
 {% include foot.html %}

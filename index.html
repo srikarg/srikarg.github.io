@@ -3,30 +3,38 @@ title: Srikar Gudipati
 layout: default
 ---
 
-<h1><i class="icon-edit"></i> Latest Posts</h1>
+<div class="banner">
+	<h1 class="about">About Me</h1>
+	<p>Hey! Welcome to my personal website/blog! I'm Srikar, an enthusiastic developer and student! Get in touch with me by visiting the contact page!</p>
+</div>
 
-{% for post in paginator.posts %}
-    <article class="post">
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {% if post.comments %}<h4><i class="icon-comment"></i> <a href="http://srikarg.github.io{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a></h4>{% endif %}
-        <h4><i class="icon-time"></i> {{ post.date | date_to_long_string }}</h4>
-    </article>
-{% endfor %}
+<div class="posts">
+	<h1>Blog Posts</h1>
+
+	<ul>
+	{% for post in paginator.posts %}
+		<li>
+			<span>{{ post.date | date_to_string }}</span>
+			<a href="{{ post.url }}">{{ post.title }}</a>
+		</li>
+	{% endfor %}
+	</ul>
+</div>
 
 <div class="pagination">
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-        <a href="/" class="previous"><i class="icon-caret-left icon-2x"></i></a>
+        <a href="/" class="previous"><i class="icon-arrow-left"></i></a>
     {% else %}
-        <a href="/page{{paginator.previous_page}}" class="previous"><i class="icon-caret-left icon-2x"></i></a>
+        <a href="/page{{paginator.previous_page}}" class="previous"><i class="icon-arrow-left"></i></a>
     {% endif %}
   {% else %}
-    <span class="previous disabled"><i class="icon-caret-left icon-2x"></i></span>
+    <span class="previous disabled"><i class="icon-arrow-left"></i></span>
   {% endif %}
-  <span class="page_number">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
+  <span class="page-number">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
   {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" class="next"><i class="icon-caret-right icon-2x"></i></a>
+    <a href="/page{{paginator.next_page}}" class="next"><i class="icon-arrow-right"></i></a>
   {% else %}
-    <span class="next disabled"><i class="icon-caret-right icon-2x"></i></span>
+    <span class="next disabled"><i class="icon-arrow-right"></i></span>
   {% endif %}
 </div>
