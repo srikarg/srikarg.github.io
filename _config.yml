@@ -6,5 +6,5 @@ exclude: ['README.md']
 paginate: 6
 
 markdown: rdiscount
-permalink: pretty
+permalink: /blog/:title
 pygments: true

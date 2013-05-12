@@ -5,13 +5,12 @@ comments: true
 category: tutorials
 ---
 
-# Introduction
-
 Hey guys! Navigation is extremely important for any website. It is the foundation of the site, as it provides the user with a sense of the various crooks and nannies of it. Today, we'll create a basic table menu. If you want to view the video version of this tutorial that I made a few months ago, click [here](http://www.youtube.com/watch?v=xjZMlQUFsJY&feature=player_detailpage).
 
 # Procedure
 
 First off, we create a simple table for our menu with the following HTML:
+
 {% highlight html %}
 <table cellpadding="0px" cellspacing="0px" id="navBar">
 	<tr>
@@ -33,7 +32,9 @@ First off, we create a simple table for our menu with the following HTML:
 	</tr>
 </table>
 {% endhighlight %}
+
 and then we use the following CSS to style the table:
+
 {% highlight css %}
 body {
 	background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/satinweave.png);

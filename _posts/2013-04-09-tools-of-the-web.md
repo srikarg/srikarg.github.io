@@ -5,8 +5,6 @@ comments: true
 category: tutorials
 ---
 
-# Introduction
-
 Hello guys! Today I want to discuss a few prominent tools of the web that are currently being used to enhance the workflows of web developers and software developers all over the world! There are several tools available and therefore, I cannot possibly cover every single one of them. However, I will reveal a few of my favorites. Feel free to include your own tools and workflows in the comments!
 
 # Editors

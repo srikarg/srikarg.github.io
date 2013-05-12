@@ -524,11 +524,12 @@ header nav ul li {
 }
 
 .posts ul li {
-	margin: 0.313em 0;
+	margin: 0.625em 0;
 }
 
 .posts ul li span {
 	color: #3FB1DE;
+	margin-right: 0.313em;
 }
 
 .posts ul li a {
@@ -573,10 +574,9 @@ header nav ul li {
 .pagination.post, .pagination span:not(.page-number), .pagination a {
 	font-size: 40px;
 	font-size: 4rem;
-	padding: 0.625em 0;
 }
 
-.pagination.post > .previous:hover, .pagination.post > .previous:focus, .pagination.post > .next:hover, .pagination.post > .next:focus {
+.previous:hover, .previous:focus, .next:hover, .next:focus {
 	color: #222;
 	background: none;
 }

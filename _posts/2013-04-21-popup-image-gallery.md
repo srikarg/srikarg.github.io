@@ -5,13 +5,12 @@ comments: true
 category: tutorials
 ---
 
-# Introduction
-
 A simple search for `jquery image galleries` on Google will bring you to several projects created by different people! However, creating your own gallery can sometimes be more efficient. For example, making your own gallery can save your website extra loading time!
 
 # Procedure
 
 Let's get started! We'll first need some basic markup in HTML for our images and the box that will hold the current and selected image.
+
 {% highlight html %}
 <div class="images">
     <img src="http://placebox.es/300/300/f1f1f1/222/Image 1,25" />
@@ -30,9 +29,11 @@ Let's get started! We'll first need some basic markup in HTML for our images and
     <span class="close">&#10005;</span>
 </div>
 {% endhighlight %}
+
 In the code above, `div.images` holds the images and `div.focus` holds the enlarged and focused image. The `span.close` contains a Unicode entity for the multiplication symbol, which we will use for a close button.
 
 Next, we'll style the elements we just created using the following CSS.
+
 {% highlight css %}
 * {
     -webkit-box-sizing: border-box;
@@ -96,9 +97,11 @@ body {
     opacity: 0.3;
 }
 {% endhighlight %}
+
 The `div.images` is absolutely positioned in the middle of the page. The `div.focus` is also absolutely positioned in the middle above the `div.images` due to the `z-index: 10;` line. Next, there are two helper classes, `.overlay` and `.darken`, which will help us in our jQuery code.
 
 Next, we add  functionality of the image gallery using jQuery.
+
 {% highlight javascript %}
 $(function() {
     var image = $('.images>img');
@@ -122,6 +125,7 @@ $(function() {
     });
 });
 {% endhighlight %}
+
 First, we are caching the elements of our gallery inside `image`, `box`, `close`, and `images`. Next, we set up a click handler for all the images inside `div.images`. On click, jQuery will find any existing images inside `div.focus`, remove them, and then insert the image that was clicked into the `div`. Next, it will fade in `div.focus`, darken the images behind the selected one, and make the unselected ones disabled. Finally, the close click handler hides `div.focus` and removes the `.overlay` and `.darken` elements.
 
 # Closing
