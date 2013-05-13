@@ -74,4 +74,8 @@ What if we wanted to extract the current articles on the front page of the New Y
 ?>
 {% endhighlight %}
 
-Clearly, the PHP Simple HTML DOM Parser can be exceedingly useful in situations such as the one I recently encountered. You can find more information about it [here](http://simplehtmldom.sourceforge.net/manual.htm) and you can find documentation [here](http://simplehtmldom.sourceforge.net/manual_api.htm). Thanks for reading!
+Clearly, the PHP Simple HTML DOM Parser can be exceedingly useful in situations such as the one I recently encountered. You can find more information about it [here](http://simplehtmldom.sourceforge.net/manual.htm) and you can find documentation [here](http://simplehtmldom.sourceforge.net/manual_api.htm).
+
+# More information
+
+You can learn more about this library by reading David Walsh's [tutorial](http://davidwalsh.name/php-notifications). Also, be sure to check out [this](http://stackoverflow.com/questions/3577641/how-to-parse-and-process-html-xml) helpful answer on StackOverflow! Thanks for reading!

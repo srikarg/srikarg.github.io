@@ -455,6 +455,22 @@ ul, ol {
     padding-left: 1.5em;
 }
 
+blockquote {
+	padding-left: 0.625em;
+	margin-left: 2em;
+	border-left: 6px solid #3FB1DE;
+	font-size: 30px;
+	font-size: 3rem;
+}
+
+blockquote p:before {
+	content: "\201c";
+}
+
+blockquote p:after {
+	content: "\201d";
+}
+
 ::-moz-selection {
   background: #3FB1DE;
   color: #222;

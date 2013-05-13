@@ -45,6 +45,16 @@ Hello guys! Today I want to discuss a few prominent tools of the web that are cu
 2. [Dirty Markup](http://www.dirtymarkup.com/)  
 	Dirty Markup is a code formatter for HTML, CSS, and JavaScript which uses several scripts, such as <a href="https://github.com/einars/js-beautify">JS Beautifier</a> in the background.
 
+# Web Development Playgrounds
+
+1. [CodePen](http://codepen.io/)
+
+2. [JSBin](http://jsbin.com/)
+
+3. [CSSDesk](http://cssdesk.com/)
+
+4. [JSFiddle](http://jsfiddle.net/)
+
 # Closing
 
 There are several other tools coming out every single day! It's getting more and more difficult to keep track of all of them! Therefore, please share your knowledge in the comments below so others can benefit and tidy up their workflow. Thanks for reading!
