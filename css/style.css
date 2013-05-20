@@ -456,8 +456,8 @@ ul, ol {
 }
 
 blockquote {
-	padding-left: 0.625em;
-	margin-left: 2em;
+	padding: 0 0 0 0.625em;
+	margin: 0 0 0 2em;
 	border-left: 6px solid #3FB1DE;
 	font-size: 30px;
 	font-size: 3rem;
