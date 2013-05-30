@@ -1,5 +1,5 @@
 ---
-title: Scraping an HTML page with PHP!
+title: Scraping an HTML page with PHP
 layout: post
 comments: true
 category: tutorials

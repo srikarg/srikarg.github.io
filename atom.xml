@@ -4,11 +4,11 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>srikar gudipati</title>
- <link href="http://srikarg.github.com/atom.xml" rel="self"/>
- <link href="http://srikarg.github.com/"/>
+ <title>Srikar Gudipati</title>
+ <link href="http://srikarg.github.io/atom.xml" rel="self"/>
+ <link href="http://srikarg.github.io/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://srikarg.github.com/</id>
+ <id>http://srikarg.github.io/</id>
  <author>
    <name>Srikar Gudipati</name>
  </author>

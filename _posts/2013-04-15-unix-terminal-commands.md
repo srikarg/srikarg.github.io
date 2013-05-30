@@ -1,5 +1,5 @@
 ---
-title: Unix Terminal Commands!
+title: Unix Terminal Commands
 layout: post
 comments: true
 category: tutorials

@@ -1,5 +1,5 @@
 ---
-title: Popup Image Gallery using jQuery!
+title: Popup Image Gallery using jQuery
 layout: post
 comments: true
 category: tutorials

@@ -1,5 +1,5 @@
 ---
-title: More Information Slider using jQuery.
+title: More Information Slider using jQuery
 layout: post
 comments: true
 category: tutorials

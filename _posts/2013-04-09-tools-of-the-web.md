@@ -1,5 +1,5 @@
 ---
-title: Tools of the Web.
+title: Tools of the Web
 layout: post
 comments: true
 category: tutorials
@@ -54,6 +54,8 @@ Hello guys! Today I want to discuss a few prominent tools of the web that are cu
 3. [CSSDesk](http://cssdesk.com/)
 
 4. [JSFiddle](http://jsfiddle.net/)
+
+5. [Dabblet](http://dabblet.com/)
 
 # Closing
 
