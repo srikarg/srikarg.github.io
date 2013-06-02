@@ -669,8 +669,12 @@ header nav ul li {
 \*------------------------------------*/
 
 footer {
-	margin-top: 1.25em;
+	padding: 1em 0 1em 0;
 	text-align: center;
+}
+
+footer p {
+	margin: 0;
 }
 
 /*------------------------------------*\
