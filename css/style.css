@@ -8,7 +8,7 @@
 	padding: 1em;
 	line-height: 1.4;
 	margin: 1em 0;
-	border-radius: 7px;
+	border-radius: 0.188em;
 	overflow-x: auto;
 }
 
@@ -428,6 +428,10 @@ p, ul, ol {
 	margin-bottom: 1em;
 }
 
+ul ol, ol ul, ol ol, ul ul {
+	margin-bottom: 0;
+}
+
 h1 {
 	font-size: 36px;
 	font-size: 3.6rem;
@@ -471,6 +475,26 @@ blockquote p:after {
 	content: "\201d";
 }
 
+figure {
+	margin: 1em 0 1em 0;
+	padding: 1em;
+	background: #3FB1DE;
+	border-radius: 0.188em;
+}
+
+figure img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 30em;
+}
+
+figure figcaption {
+	text-align: center;
+	font-size: 0.9em;
+	padding: 1em 0 0 0;
+}
+
 ::-moz-selection {
   background: #3FB1DE;
   color: #222;
@@ -489,6 +513,7 @@ header {
 	padding: 60px;
 	background: #3FB1DE;
 	text-align: center;
+	border-radius: 0 0 0.188em 0.188em;
 }
 
 .site-title a, nav a {
@@ -531,6 +556,7 @@ header nav ul li {
 .banner {
 	margin-top: 1.25em;
 	background: #3FB1DE;
+	border-radius: 0.188em;
 }
 
 .posts ul {
@@ -568,6 +594,7 @@ header nav ul li {
 
 .post-info {
 	background: #3FB1DE;
+	border-radius: 0.188em;
 	padding: 1.25em;
 	margin: 1.25em 0;
 	text-align: center;
