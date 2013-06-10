@@ -4,7 +4,6 @@ layout: post
 comments: true
 category: tutorials
 ---
-
 Let's say you need an easy way to create a blog within minutes. Well, [Jekyll](http://jekyllrb.com/) does exactly that! It's a highly popular tool in the modern blogging field!
 
 # What is it?
