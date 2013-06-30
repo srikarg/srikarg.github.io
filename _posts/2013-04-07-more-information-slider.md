@@ -1,8 +1,8 @@
 ---
 title: More Information Slider using jQuery
 layout: post
+share: true
 comments: true
-category: tutorials
 ---
 
 Welcome again readers! Today, I have a quick little tutorial for displaying information about a certain image only when the user clicks on the said image.

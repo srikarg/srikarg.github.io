@@ -389,7 +389,7 @@
 }
 
 /*------------------------------------*\
-	$COMMON
+	$GENERAL
 \*------------------------------------*/
 
 html, body {
@@ -505,6 +505,13 @@ figure figcaption {
   color: #222;
 }
 
+.module {
+	background: #3FB1DE;
+	border-radius: 0.188em;
+	padding: 1.25em;
+	margin: 1.25em 0;
+}
+
 /*------------------------------------*\
 	$HEADER
 \*------------------------------------*/
@@ -545,7 +552,7 @@ header nav ul li {
 	$INDEX PAGE
 \*------------------------------------*/
 
-.banner, .posts {
+.posts {
 	padding: 1.25em;
 }
 
@@ -554,9 +561,7 @@ header nav ul li {
 }
 
 .banner {
-	margin-top: 1.25em;
-	background: #3FB1DE;
-	border-radius: 0.188em;
+	margin-bottom: 0;
 }
 
 .posts ul {
@@ -593,10 +598,6 @@ header nav ul li {
 \*------------------------------------*/
 
 .post-info {
-	background: #3FB1DE;
-	border-radius: 0.188em;
-	padding: 1.25em;
-	margin: 1.25em 0;
 	text-align: center;
 }
 
@@ -716,4 +717,17 @@ footer p {
 	header nav select {
 		display: inline-block;
 	}
+}
+
+/*------------------------------------*\
+	$ADD THIS SHARING
+\*------------------------------------*/
+
+.addthis_toolbox {
+	width: 216px;
+	margin: 1.25em auto;
+}
+
+.addthis_toolbox a:hover {
+	background: none;
 }

@@ -1,8 +1,8 @@
 ---
 title: PHP Sessions vs. Cookies
 layout: post
+share: true
 comments: true
-category: tutorials
 ---
 
 As a beginning PHP developer, you may have heard of sessions or cookies before. But do you truly understand what they are and when to use them? If not, let's explore them in this article!

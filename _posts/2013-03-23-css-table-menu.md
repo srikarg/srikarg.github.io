@@ -1,8 +1,8 @@
 ---
 title: A simple table menu using CSS and HTML
 layout: post
+share: true
 comments: true
-category: tutorials
 ---
 
 Hey guys! Navigation is extremely important for any website. It is the foundation of the site, as it provides the user with a sense of the various crooks and nannies of it. Today, we'll create a basic table menu. If you want to view the video version of this tutorial that I made a few months ago, click [here](http://www.youtube.com/watch?v=xjZMlQUFsJY&feature=player_detailpage).

@@ -1,8 +1,8 @@
 ---
 title: Unix Terminal Commands
 layout: post
+share: true
 comments: true
-category: tutorials
 ---
 
 The terminal is an extremely useful tool for any advanced computer user. It can allow you to perform tasks at a rapid rate, often faster than using a [GUI](http://en.wikipedia.org/wiki/Graphical_user_interface). Today, I'll show you guys a couple of commands that are available in any Unix terminal. However, this is just a starter list of commands. Discover more commands [here](http://www.math.harvard.edu/computing/unix/unixcommands.html)!

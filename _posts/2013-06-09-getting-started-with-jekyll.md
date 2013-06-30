@@ -1,9 +1,10 @@
 ---
 title: Getting Started with Jekyll
 layout: post
+share: true
 comments: true
-category: tutorials
 ---
+
 Let's say you need an easy way to create a blog within minutes. Well, [Jekyll](http://jekyllrb.com/) does exactly that! It's a highly popular tool in the modern blogging field!
 
 # What is it?
@@ -33,7 +34,7 @@ jekyll serve --watch
 
 Now that the server is set up, we can point our browser to `localhost:4000` in order to view our newly generated site! It should look something like the following:
 
-<figure><img src="/images/jekyll-new-site.png" alt="A new Jekyll blog"><figcaption>A new blog created with Jekyll</figcaption></figure>
+<figure><img src="/images/2013/06/09/getting-started-with-jekyll/jekyll-new-site.png" alt="A new Jekyll blog"><figcaption>A new blog created with Jekyll</figcaption></figure>
 
 # Directory Structure
 

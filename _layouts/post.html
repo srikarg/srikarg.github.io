@@ -1,7 +1,7 @@
 {% include head.html %}
 {% include header.html %}
 <article class="main post">
-	<div class="post-info">
+	<div class="post-info module">
 		<h1>{{ page.title }}</h1>
 		<p>Published on {{ page.date | date: "%d %B %Y" }}{% if page.comments %} with <a href="#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>{% endif %}.</p>
 	</div>
@@ -11,6 +11,18 @@
 	{% if page.comments %}
 	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	<div id="disqus_thread"></div>
+	{% endif %}
+
+	{% if page.share %}
+	<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		<a class="addthis_button_facebook"></a>
+		<a class="addthis_button_twitter"></a>
+		<a class="addthis_button_google_plusone_share"></a>
+		<a class="addthis_button_hackernews"></a>
+		<a class="addthis_button_pocket"></a>
+		<a class="addthis_button_email"></a>
+	</div>
+	<script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51d0955d18b1633a"></script>
 	{% endif %}
 	
 	<div class="pagination post">

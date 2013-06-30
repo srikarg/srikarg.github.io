@@ -1,8 +1,8 @@
 ---
 title: Popup Image Gallery using jQuery
 layout: post
+share: true
 comments: true
-category: tutorials
 ---
 
 A simple search for `jquery image galleries` on Google will bring you to several projects created by different people! However, creating your own gallery can sometimes be more efficient. For example, making your own gallery can save your website extra loading time!

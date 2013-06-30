@@ -1,8 +1,8 @@
 ---
 title: Scraping an HTML page with PHP
 layout: post
+share: true
 comments: true
-category: tutorials
 ---
 
 Let's just say you run into a situation where you need to access data from a website that does not provide JSON or XML formats for the information you want. Well, this recently happened to me, as I wanted to access some text from an HTML table on a web page. I tried looking for a solution and eventually stumbled across [PHP Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net/). This is a really fast and useful PHP library which can parse HTML from a URL or string and extract information for you. Let's check it out!
