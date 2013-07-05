@@ -1,1 +1,0 @@
-A popup image gallery made using jQuery. Created by Srikar Gudipati.
