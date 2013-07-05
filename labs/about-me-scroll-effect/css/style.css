@@ -1,0 +1,29 @@
+html {
+  background: #ccc;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.wrapper {
+  padding: 100px;
+  width: 500px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  color: #222;
+}
+
+.roles {
+    font-size: 30px;
+    display: inline-block;
+    height: 50px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.roles div {
+    height: 50px;
+    -webkit-transition: margin-top 1s ease-in-out;
+    -moz-transition: margin-top 1s ease-in-out;
+    -o-transition: margin-top 1s ease-in-out;
+    transition: margin-top 1s ease-in-out;
+}
