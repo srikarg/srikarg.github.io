@@ -131,5 +131,8 @@ First, we are caching the elements of our gallery inside `image`, `box`, `close`
 # Closing
 
 And there we have it! A simple image gallery! Check it out below and don't hesitate to tinker with it! Next time you decide to include an image gallery inside your website, be sure to think about whether you need a massive jQuery plugin or not.
-<pre class="codepen" data-height="500" data-type="result" data-href="qGzbn" data-user="srig99" data-safe="true"> <code> </code> <a href="http://codepen.io/srig99/pen/qGzbn">Check out this Pen!</a> </pre>
-<script src="http://codepen.io/assets/embed/ei.js"> </script>
+
+<div class="lab-download">
+    <a href="/labs/popup-image-gallery">Demo</a>
+    <a href="/labs/popup-image-gallery/popup-image-gallery.zip">Download</a>
+</div>

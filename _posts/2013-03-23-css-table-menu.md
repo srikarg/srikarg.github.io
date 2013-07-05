@@ -83,7 +83,9 @@ table {
 
 # Closing
 
-Voila! We have a menu! You can see the code and the result below!
-<div class="codepen"><pre class="codepen" data-height="300" data-type="result" data-href="JfAqo" data-user="srig99" data-safe="true"> <code> </code> <a href="http://codepen.io/srig99/pen/JfAqo">Check out this Pen!</a> </pre>
-<script src="http://codepen.io/assets/embed/ei.js"> </script></div>
-Thanks for reading this tutorial!
+Voila! We have a menu! Thanks for reading this tutorial! Check out the code below!
+
+<div class="lab-download">
+	<a href="/labs/css-table-menu">Demo</a>
+	<a href="/labs/css-table-menu/css-table-menu.zip">Download</a>
+</div>

@@ -264,7 +264,7 @@
 	font-style: normal;
 }
 
-.icon-twitter-sign, .icon-facebook, .icon-twitter, .icon-google-plus, .icon-github, .icon-user, .icon-suitcase, .icon-home, .icon-arrow-left, .icon-arrow-right, .icon-address-book, .icon-envelope-alt {
+.icon-twitter-sign, .icon-facebook, .icon-twitter, .icon-google-plus, .icon-github, .icon-user, .icon-suitcase, .icon-home, .icon-arrow-left, .icon-arrow-right, .icon-address-book, .icon-envelope-alt, .icon-lab {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -284,7 +284,7 @@
 }
 
 .icon-twitter-sign:before {
-	content: "\f081";
+	content: "\21";
 	color: #3FB1DE;
 }
 
@@ -293,7 +293,7 @@
 }
 
 .icon-facebook:before {
-	content: "\e000";
+	content: "\22";
 	color: #3FB1DE;
 }
 
@@ -302,7 +302,7 @@
 }
 
 .icon-twitter:before {
-	content: "\e001";
+	content: "\23";
 	color: #3FB1DE;
 }
 
@@ -311,7 +311,7 @@
 }
 
 .icon-google-plus:before {
-	content: "\e002";
+	content: "\24";
 	color: #3FB1DE;
 }
 
@@ -320,7 +320,7 @@
 }
 
 .icon-github:before {
-	content: "\e003";
+	content: "\25";
 	color: #3FB1DE;
 }
 
@@ -329,7 +329,7 @@
 }
 
 .icon-user:before {
-	content: "\f007";
+	content: "\26";
 	color: #3FB1DE;
 }
 
@@ -338,32 +338,36 @@
 }
 
 .icon-suitcase:before {
-	content: "\f0f2";
+	content: "\27";
 }
 
 .icon-home:before {
-	content: "\f015";
+	content: "\28";
 }
 
 .icon-arrow-left:before {
-	content: "\f060";
+	content: "\29";
 }
 
 .icon-arrow-right:before {
-	content: "\f061";
+	content: "\2a";
 }
 
 .icon-address-book:before {
-	content: "\e004";
+	content: "\2b";
 }
 
 .icon-envelope-alt:before {
-	content: "\f0e0";
+	content: "\2c";
 	color: #3FB1DE;
 }
 
 .icon-envelope-alt:hover:before {
 	color: #d64937;
+}
+
+.icon-lab:before {
+	content: "\2d";
 }
 
 /*------------------------------------*\
@@ -398,6 +402,7 @@ html, body {
 
 html {
 	font-family: 'Lato', sans-serif;
+	font-weight: 400;
 	font-size: 62.5%;
 	color: #222;
 	background: #EBEBEB;
@@ -590,6 +595,40 @@ header nav ul li {
 
 .pagination {
 	text-align: center;
+}
+
+/*------------------------------------*\
+	$LABS
+\*------------------------------------*/
+
+.lab-item {
+	margin: 2.5em 0;
+	overflow: hidden;
+}
+
+.lab-item img {
+	max-width: 40%;
+	float: left;
+	vertical-align: bottom;
+}
+
+.lab-item .lab-details {
+	width: 60%;
+	float: left;
+	padding-left: 1.25em;
+}
+
+.lab-download a {
+	background: #3FB1DE;
+	color: #222;
+	display: inline-block;
+	padding: 0.5em 1em;
+	margin: 0.5em 0.5em 0 0;
+}
+
+.lab-download a:hover {
+	background: #222;
+	color: #3FB1DE;
 }
 
 /*------------------------------------*\

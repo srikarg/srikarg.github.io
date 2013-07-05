@@ -89,5 +89,8 @@ $(function(){
 # Closing
 
 That's it! Feel free to view the code below and tinker with it!
-<pre class="codepen" data-height="300" data-type="result" data-href="EKFoi" data-user="srig99" data-safe="true"> <code> </code> <a href="http://codepen.io/srig99/pen/EKFoi">Check out this Pen!</a> </pre>
-<script src="http://codepen.io/assets/embed/ei.js"> </script>
+
+<div class="lab-download">
+    <a href="/labs/more-information-slider">Demo</a>
+    <a href="/labs/more-information-slider/more-information-slider.zip">Download</a>
+</div>
