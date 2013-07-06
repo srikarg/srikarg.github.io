@@ -401,7 +401,7 @@ html, body {
 }
 
 html {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 	font-weight: 400;
 	font-size: 62.5%;
 	color: #222;
@@ -561,7 +561,7 @@ header nav ul li {
 }
 
 .banner h1, .posts h1 {
-	margin: 0;
+	margin: 0 0 0.125em 0;
 }
 
 .banner {
