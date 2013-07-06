@@ -21,3 +21,7 @@ layout: default
 
 2. ## Team 224 Former Website
 	The past [website](https://github.com/srikarg/Old-Robotics-Team-224-Website) of [Team 224](http://team224.com/), a FIRST robotics team.
+
+# Labs
+
+To see quick experiments and other little projects, visit the [Labs](/labs) section of this website!

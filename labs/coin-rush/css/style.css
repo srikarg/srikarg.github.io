@@ -1,0 +1,39 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background: #222;
+    color: #ccc;
+    overflow: auto;
+}
+div {
+    margin: 0 auto;
+}
+.buttons {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.buttons button {
+    width: 100%;
+}
+.buttons button:first-child {
+    margin-bottom: 5px;
+}
+.counter, .lives, .timer {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+.timer {
+    margin-bottom: 5px;
+}
+.counter:hover, .lives:hover, .timer:hover {
+    text-shadow: 0 0 15px #ccc;
+}
