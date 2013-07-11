@@ -1,0 +1,11 @@
+.wrapper {
+  padding: 2.5em;
+}
+
+.weather table {
+	margin: 0 auto;
+}
+
+.weather table td, .weather table th {
+	text-align: center;
+}
