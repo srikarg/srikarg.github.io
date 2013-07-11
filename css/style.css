@@ -549,7 +549,7 @@ header nav ul {
 
 header nav ul li {
 	display: inline-block;
-	margin: 0 20px;
+	margin: 0 0.75em;
 }
 
 /*------------------------------------*\
@@ -768,7 +768,7 @@ footer p {
 	$MEDIA QUERIES
 \*------------------------------------*/
 
-@media all and (max-width: 42em) {
+@media all and (max-width: 48em) {
 	header nav ul {
 		display: none;
 	}
