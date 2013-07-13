@@ -400,9 +400,12 @@ html, body {
 	height: 100%;
 }
 
-html {
+html, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Droid Sans', sans-serif;
 	font-weight: 400;
+}
+
+html {
 	font-size: 62.5%;
 	color: #222;
 	background: #EBEBEB;
