@@ -432,6 +432,19 @@ a:hover, a:focus {
 	color: #222;
 }
 
+a.button {
+	background: #3FB1DE;
+	color: #222;
+	display: inline-block;
+	padding: 0.5em 1em;
+	margin: 0.5em 0.5em 0 0;
+}
+
+a.button:hover {
+	background: #222;
+	color: #3FB1DE;
+}
+
 p, ul, ol {
 	margin-bottom: 1em;
 }
@@ -619,19 +632,6 @@ header nav ul li {
 	width: 60%;
 	float: left;
 	padding-left: 1.25em;
-}
-
-.lab-download a {
-	background: #3FB1DE;
-	color: #222;
-	display: inline-block;
-	padding: 0.5em 1em;
-	margin: 0.5em 0.5em 0 0;
-}
-
-.lab-download a:hover {
-	background: #222;
-	color: #3FB1DE;
 }
 
 /*------------------------------------*\

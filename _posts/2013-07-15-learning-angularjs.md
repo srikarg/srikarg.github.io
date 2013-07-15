@@ -286,3 +286,5 @@ Inside the directive function, we are restricting the directive to only elements
 # Further Reading
 
 Well, that's it for now! To discover more about AngularJS, you can go to the framework's amazing API [here](http://docs.angularjs.org/api/) and the AngularJS official website [here](http://angularjs.org/). You can watch some awesome videos on AngularJS [here](http://www.egghead.io/) and [here](http://www.youtube.com/watch?feature=player_detailpage&v=i9MHigUZKEM). Go to [Built With AngularJS](http://builtwith.angularjs.org/) to see actual apps created with AngularJS in action! If you still need resources, check out [this](https://github.com/angular/angular.js/wiki/JsFiddle-Examples) exhaustive list of JSFiddles dealing with AngularJS. Thanks for reading and be sure to check out future tutorials that I will be making about AngularJS!
+
+<a href="https://news.ycombinator.com/item?id=6049181" class="button">Discuss on Hacker News</a>
