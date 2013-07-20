@@ -12,15 +12,14 @@
   <body ng-controller="WeatherCtrl">
     <div class="wrapper">
       <form class="forms text-centered">
-        <ul>
-          <li>
-            <input type="text" size="30" class="input-search" ng-model="query"/>
-            <button class="btn btn-round" ng-click="loadWeather()">Search</button>
-          </li>
-        </ul>
+        <label class="forms-inline">
+          <input type="text" size="30" class="input-search" ng-model="query" />
+          <button class="btn btn-round" ng-click="loadWeather()">Search</button>
+        </label>
       </form>
+
       <div class="weather">
-        <table class="bordered" ng-show="woeid != 0 && query">
+        <table class="width-100 table-bordered" ng-cloak ng-show="woeid != 0 && query">
           <thead>
             <tr>
               <th>Location</th>
