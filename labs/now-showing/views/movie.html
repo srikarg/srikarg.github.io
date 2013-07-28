@@ -1,0 +1,15 @@
+<div class="movie noborder" ng-cloak="">
+	<div class="units-row">
+		<div class="unit-30">
+			<img ng-src="{{ movie.posters.original }}">
+		</div>
+
+		<div class="unit-70">
+			<h2>{{ movie.title }}</h2>
+			<h2>{{ movie.release_dates.theater }}</h2>
+			<p>{{ movie.synopsis }}</p>
+			<p>Critics Score: {{ movie.ratings.critics_score }}%</p>
+			<p>Rated {{ movie.mpaa_rating }}</p>
+		</div>
+	</div>
+</div>
