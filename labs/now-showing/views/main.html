@@ -1,24 +1,28 @@
-<form class="forms forms-columnar">
-	<p>
-		<label>Search Titles</label>
-		<input type="text" class="width-100" ng-model="search.title">
-	</p>
+<div class="panel">
+	<form>
+		<fieldset>
+			<div class="form-group">
+				<label for="titleSearch">Search Titles</label>
+				<input type="text" class="form-control" id="titleSearch" placeholder="Enter a title to search for!" ng-model="search.title">
+			</div>
+			<div class="form-group">
+				<label for="mpaaSearch">Search MPAA Rating</label>
+				<input type="text" class="form-control" id="mpaaSearch" placeholder="Enter a MPAA rating to search for!" ng-model="search.mpaa_rating">
+			</div>
+		</fieldset>
+	</form>
+</div>
 
-	<p>
-		<label>Search MPAA Rating</label>
-		<input type="text" class="width-100" ng-model="search.mpaa_rating">
-	</p>
-</form>
+<div class="movie panel clearfix" ng-repeat="movie in movies | filter:search">
+	<img class="pull-left" ng-src="{{ movie.posters.detailed }}">
 
-<div class="movie" ng-repeat="movie in movies | filter:search" ng-cloak="">
-	<div class="units-row">
-		<div class="unit-30">
-			<img ng-src="{{ movie.posters.original }}">
-		</div>
-		<div class="unit-70">
-			<h2><a href="#/movie/{{ movies.indexOf(movie) }}">{{ movie.title }}</a></h2>
-			<p>Critics Score: {{ movie.ratings.critics_score }}%</p>
-			<p>{{ movie.synopsis }}</p>
-		</div>
+	<div class="details pull-right">
+		<h3><a ng-href="#/movie/{{ movies.indexOf(movie) }}">{{ movie.title }}</a></h3>
+		<ul class="list-group">
+			<li class="list-group-item">Rated {{ movie.mpaa_rating }}.</li>
+			<li class="list-group-item">Releases on {{ movie.release_dates.theater }}.</li>
+			<li class="list-group-item">Runs for {{ movie.runtime }} minutes.</li>
+			<li class="list-group-item" ng-class="{'alert alert-danger': {{ movie.ratings.critics_score }} < 50, 'alert alert-success': {{ movie.ratings.critics_score }} >= 50}">Received a critics score of {{ movie.ratings.critics_score }}%</li>
+		</ul>
 	</div>
 </div>
