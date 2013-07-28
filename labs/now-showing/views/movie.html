@@ -22,3 +22,8 @@
 		</div>
 	</div>
 </div>
+
+<ul class="pager">
+	<li ng-class="{disabled: currentPage == 0}"><a ng-href="#/movie/{{ prevPage }}">Previous</a></li>
+	<li ng-class="{disabled: currentPage == 15}"><a ng-href="#/movie/{{ nextPage }}">Next</a></li>
+</ul>
