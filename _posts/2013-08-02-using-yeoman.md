@@ -5,7 +5,7 @@ share: true
 comments: true
 ---
 
-Chances are, you've heard of [Yeoman](http://yeoman.io/) but don't exactly know what it is. Well, hopefully I can help you get started with using this awesome web development workflow tool in less than 10 minutes.
+Chances are, you've heard of [Yeoman](http://yeoman.io/) before, but don't exactly know what it is. Well, hopefully I can help you get started with using this awesome web development workflow tool in less than 10 minutes.
 
 # So what is it?
 
