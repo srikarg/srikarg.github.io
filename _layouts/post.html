@@ -2,7 +2,7 @@
 {% include header.html %}
 <div class="post-info module">
 	<h1>{{ page.title }}</h1>
-	<p>Published on {{ page.date | date: "%d %B %Y" }}{% if page.comments %} with <a href="#disqus_thread" data-disqus-identifier="{{ page.url }}"></a>{% endif %}.</p>
+	<p>Published on {{ page.date | date: "%d %B %Y" }}{% if page.comments %} with <a href="#disqus_thread"></a>{% endif %}.</p>
 </div>
 <article class="main post">
 	{{ content }}
