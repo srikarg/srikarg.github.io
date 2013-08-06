@@ -1,13 +1,14 @@
 ---
 title: Unix Terminal Commands
 layout: post
+toc: true
 share: true
 comments: true
 ---
 
 The terminal is an extremely useful tool for any advanced computer user. It can allow you to perform tasks at a rapid rate, often faster than using a [GUI](http://en.wikipedia.org/wiki/Graphical_user_interface). Today, I'll show you guys a couple of commands that are available in any Unix terminal. However, this is just a starter list of commands. Discover more commands [here](http://www.math.harvard.edu/computing/unix/unixcommands.html)!
 
-# Commands
+<h1 id="commands">Commands</h1>
 
 1. `man`  
 	This is an essential command to learn as it will allow you to look up the manual for any command. In essence, it will bring up a tutorial for a certain command. For example, `man man` will bring up information about the `man` command.
@@ -27,7 +28,7 @@ The terminal is an extremely useful tool for any advanced computer user. It can 
 6. `open`  
 	This will open files or directories that you pass to it. For example, `open .` will open the current directory, where `.` represents the current directory (note that `.` can be used in other commands as well).
 
-# Workflow
+<h1 id="workflow">Workflow</h1>
 
 Now let's use the commands we just learned in a sample workflow that you, a developer or another person, might use during a typical day.
 
@@ -39,6 +40,6 @@ Now let's use the commands we just learned in a sample workflow that you, a deve
 
 4. Finally, open the current directory using `open .`.
 
-# Closing
+<h1 id="closing">Closing</h1>
 
 There you have it! A list of some simple commands to get you started with Unix terminal! Feel free to add comments below to point out more commands or help others!

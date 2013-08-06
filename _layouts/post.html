@@ -2,8 +2,14 @@
 {% include header.html %}
 <div class="post-info module">
 	<h1>{{ page.title }}</h1>
-	<p>Published on {{ page.date | date: "%d %B %Y" }}{% if page.comments %} with <a href="#disqus_thread"></a>{% endif %}.</p>
+	<p>Published on {{ page.date | date: "%d %B %Y" }}{% if page.comments %} with <a href="#disqus_thread" class="smoothScroll"></a>{% endif %}.</p>
 </div>
+{% if page.toc %}
+<div class="module">
+	<h1>Table of Contents</h1>
+	<ul class="toc"></ul>
+</div>
+{% endif %}
 <article class="main post">
 	{{ content }}
 

@@ -1,13 +1,14 @@
 ---
 title: Tools of the Web
 layout: post
+toc: true
 share: true
 comments: true
 ---
 
 Hello guys! Today I want to discuss a few prominent tools of the web that are currently being used to enhance the workflows of web developers and software developers all over the world! There are several tools available and therefore, I cannot possibly cover every single one of them. However, I will reveal a few of my favorites. Feel free to include your own tools and workflows in the comments!
 
-# Editors
+<h1 id="editors">Editors</h1>
 
 1. [Sublime Text](http://www.sublimetext.com/)  
 	This has been an extremely popular editor among developers as it contains numerous features, such as multiple cursors and incremental search, and it is actively developed, among other reasons. As I write, a new version, [Sublime Text 3](http://www.sublimetext.com/3), is coming out (currently in beta).
@@ -29,7 +30,7 @@ Hello guys! Today I want to discuss a few prominent tools of the web that are cu
 
 	Price: Free
 
-# Extensions
+<h1 id="extensions">Extensions</h1>
 
 1. [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe)  
 	Stylish is an extension that one can use to edit the CSS of any website quickly and efficiently! It also features a saving feature to save your custom CSS styles for future use on any certain website.
@@ -37,7 +38,7 @@ Hello guys! Today I want to discuss a few prominent tools of the web that are cu
 2. [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm)  
 	Web Developer is essentially a toolkit with various features to ease your daily work. For example, it can display class and id details for all the elements on the page or resize the browser to various widths and heights to test your responsive layout!
 
-# Web Applications
+<h1 id="webapps">Web Applications</h1>
 
 1. [Chop](http://chopapp.com/)  
 	Chop allows you to send code snippets (like [gists](https://gist.github.com/)) to your friends! However, the key feature here is that your friend can then comment on your code seamlessly, allowing you to make edits and fixes quickly!
@@ -45,7 +46,7 @@ Hello guys! Today I want to discuss a few prominent tools of the web that are cu
 2. [Dirty Markup](http://www.dirtymarkup.com/)  
 	Dirty Markup is a code formatter for HTML, CSS, and JavaScript which uses several scripts, such as <a href="https://github.com/einars/js-beautify">JS Beautifier</a> in the background.
 
-# Web Development Playgrounds
+<h1 id="playgrounds">Web Development Playgrounds</h1>
 
 1. [CodePen](http://codepen.io/)
 
@@ -57,6 +58,6 @@ Hello guys! Today I want to discuss a few prominent tools of the web that are cu
 
 5. [Dabblet](http://dabblet.com/)
 
-# Closing
+<h1 id="closing">Closing</h1>
 
 There are several other tools coming out every single day! It's getting more and more difficult to keep track of all of them! Therefore, please share your knowledge in the comments below so others can benefit and tidy up their workflow. Thanks for reading!

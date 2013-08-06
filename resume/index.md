@@ -6,7 +6,7 @@ layout: default
 # Skills
 
 1. ## Web Development
-	Knowledge of XHTML, HTML5, CSS2, CSS3, PHP, MySQL, JavaScript, jQuery, and AJAX.
+	Knowledge of XHTML, HTML5, CSS2, CSS3, PHP, MySQL, JavaScript, jQuery, CoffeeScript, and AJAX.
 
 2. ## Application Development
 	Knowledge of C, C++, Python, and Java.

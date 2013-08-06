@@ -1,13 +1,14 @@
 ---
 title: More Information Slider using jQuery
 layout: post
+toc: true
 share: true
 comments: true
 ---
 
 Welcome again readers! Today, I have a quick little tutorial for displaying information about a certain image only when the user clicks on the said image.
 
-# Procedure
+<h1 id="procedure">Procedure</h1>
 
 First, we need some simple HTML to hold our images. I'll use a simple grid of quarters with an image inside each of them.
 
@@ -86,11 +87,9 @@ $(function(){
 });
 {% endhighlight %}
 
-# Closing
+<h1 id="closing">Closing</h1>
 
 That's it! Feel free to view the code below and tinker with it!
 
-<div class="lab-download">
-    <a href="/labs/more-information-slider">Demo</a>
-    <a href="/labs/more-information-slider/more-information-slider.zip">Download</a>
-</div>
+<a href="/labs/more-information-slider" class="button">Demo</a>
+<a href="/labs/more-information-slider/more-information-slider.zip" class="button">Download</a>

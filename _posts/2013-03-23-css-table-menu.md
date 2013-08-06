@@ -1,6 +1,7 @@
 ---
 title: A simple table menu using CSS and HTML
 layout: post
+toc: true
 share: true
 comments: true
 ---
@@ -9,7 +10,7 @@ Hey guys! Navigation is extremely important for any website. It is the foundatio
 
 <div class="video-container"><iframe width="640" height="360" src="//www.youtube.com/embed/xjZMlQUFsJY?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
-# Procedure
+<h1 id="procedure">Procedure</h1>
 
 First off, we create a simple table for our menu with the following HTML:
 
@@ -81,11 +82,9 @@ table {
 }
 {% endhighlight %}
 
-# Closing
+<h1 id="closing">Closing</h1>
 
 Voila! We have a menu! Thanks for reading this tutorial! Check out the code below!
 
-<div class="lab-download">
-	<a href="/labs/css-table-menu">Demo</a>
-	<a href="/labs/css-table-menu/css-table-menu.zip">Download</a>
-</div>
+<a href="/labs/css-table-menu" class="button">Demo</a>
+<a href="/labs/css-table-menu/css-table-menu.zip" class="button">Download</a>

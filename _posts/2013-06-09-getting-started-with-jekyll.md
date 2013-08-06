@@ -1,17 +1,18 @@
 ---
 title: Getting Started with Jekyll
 layout: post
+toc: true
 share: true
 comments: true
 ---
 
 Let's say you need an easy way to create a blog within minutes. Well, [Jekyll](http://jekyllrb.com/) does exactly that! It's a highly popular tool in the modern blogging field!
 
-# What is it?
+<h1 id="what">What is it?</h1>
 
 Jekyll is a static site generator built using Ruby. It allows you to write basic HTML and CSS to create a fully functional website that's ready for your server! You can also use [Markdown](http://daringfireball.net/projects/markdown/) for your posts and [Liquid](https://github.com/Shopify/liquid/#readme) for templating.
 
-# How do I get started?
+<h1 id="how">How do I get started?</h1>
 
 First, open up Command Prompt or Terminal depending on your operating system. Next, install Jekyll onto your system:
 
@@ -36,7 +37,7 @@ Now that the server is set up, we can point our browser to `localhost:4000` in o
 
 <figure><img src="/img/posts/jekyll-new-site.png" alt="A new Jekyll blog"><figcaption>A new blog created with Jekyll</figcaption></figure>
 
-# Directory Structure
+<h1 id="directory">Directory Structure</h1>
 
 Jekyll blogs often have a directory structure similar to the one below:
 
@@ -67,17 +68,17 @@ pygments: true
 
 The posts for the blog are put into the `_posts` directory. These files can be written using HTML or Markdown. Jekyll blog posts must be named with a specific date prefix, as shown above. They must be named in the following format: `year-month-day-title-with-dashes-for-separation.md`.
 
-# Adjusting your blog
+<h1 id="adjusting">Adjusting your blog</h1>
 
 > Layouts allow you to define a template that a set of HTML files will follow.
 
 What if you wanted to define a standard template for all of your posts? How about making a separate one for the non-post pages on your blog, such as the About or Resume pages? Well, Jekyll allows you to accomplish both of these tasks using something called layouts. Layouts allow you to define a template that a set of HTML files will follow. Two layouts are already provided for you in the `_layouts` folder if you executed the `jekyll new` command previously. The `default.html` template is for non-post pages and the other one, `post.html`, is for posts. Changing these files will allow you to change all of your non-post or post pages at once, which is extremely useful for implementing something that will be consistent throughout several pages! For example, you can make a header with navigation and a logo for each page.
 
-# Styling
+<h1 id="styling">Styling</h1>
 
 In order to change the styling, use the `css` directory. The `syntax.css` file contains code highlighting styles, while the `styles.css` is for general site styles.
 
-# Post, post, post!
+<h1 id="posting">Post, post, post!</h1>
 
 Now that the Jekyll blog is set up, start posting! To write a new post, make a new file in `_posts`, but don't forget to include the date prefix that was previously mentioned! Once the file is created, you will have to define the title and layout of the post using YAML inside the file. This is called *front matter*. Say I have a post named *All About Rainbows*. Then I'll have to fill the file with the following:
 
@@ -103,6 +104,6 @@ Yes, rainbows are amazing, but do you know everything about them?
 ...
 {% endhighlight %}
 
-# More Information
+<h1 id="moreInfo">More Information</h1>
 
 This was just a preview of Jekyll as there is much more to learn! You can find out more about Jekyll and its various other features by visiting their amazing [documentation site](http://jekyllrb.com/docs/home/). Thanks for reading!

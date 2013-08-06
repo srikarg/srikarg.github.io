@@ -1,13 +1,14 @@
 ---
 title: PHP Sessions vs. Cookies
 layout: post
+toc: true
 share: true
 comments: true
 ---
 
 As a beginning PHP developer, you may have heard of sessions or cookies before. But do you truly understand what they are and when to use them? If not, let's explore them in this article!
 
-# Sessions
+<h1 id="sessions">Sessions</h1>
 
 > Session variables are stored on the server side.
 
@@ -41,7 +42,7 @@ It's as simple as that! These variables can be accessed later on through the sam
 ?>
 {% endhighlight %}
 
-# Cookies
+<h1 id="cookies">Cookies</h1>
 
 > Cookies are stored on the client side.
 
@@ -76,6 +77,6 @@ To delete a cookie, one can simply fill its value with an empty string and then 
 ?>
 {% endhighlight %}
 
-# Further reading
+<h1 id="furtherReading">Further reading</h1>
 
 You can find more information about cookies [here](http://davidwalsh.name/php-cookies) and [here](http://php.net/manual/en/function.setcookie.php). Thanks for reading!

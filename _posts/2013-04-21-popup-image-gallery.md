@@ -1,13 +1,14 @@
 ---
 title: Popup Image Gallery using jQuery
 layout: post
+toc: true
 share: true
 comments: true
 ---
 
 A simple search for `jquery image galleries` on Google will bring you to several projects created by different people! However, creating your own gallery can sometimes be more efficient. For example, making your own gallery can save your website extra loading time!
 
-# Procedure
+<h1 id="procedure">Procedure</h1>
 
 Let's get started! We'll first need some basic markup in HTML for our images and the box that will hold the current and selected image.
 
@@ -128,11 +129,9 @@ $(function() {
 
 First, we are caching the elements of our gallery inside `image`, `box`, `close`, and `images`. Next, we set up a click handler for all the images inside `div.images`. On click, jQuery will find any existing images inside `div.focus`, remove them, and then insert the image that was clicked into the `div`. Next, it will fade in `div.focus`, darken the images behind the selected one, and make the unselected ones disabled. Finally, the close click handler hides `div.focus` and removes the `.overlay` and `.darken` elements.
 
-# Closing
+<h1 id="closing">Closing</h1>
 
 And there we have it! A simple image gallery! Check it out below and don't hesitate to tinker with it! Next time you decide to include an image gallery inside your website, be sure to think about whether you need a massive jQuery plugin or not.
 
-<div class="lab-download">
-    <a href="/labs/popup-image-gallery">Demo</a>
-    <a href="/labs/popup-image-gallery/popup-image-gallery.zip">Download</a>
-</div>
+<a href="/labs/popup-image-gallery" class="button">Demo</a>
+<a href="/labs/popup-image-gallery/popup-image-gallery.zip" class="button">Download</a>

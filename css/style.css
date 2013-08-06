@@ -264,7 +264,7 @@
 	font-style: normal;
 }
 
-.icon-twitter-sign, .icon-facebook, .icon-twitter, .icon-google-plus, .icon-github, .icon-user, .icon-suitcase, .icon-home, .icon-arrow-left, .icon-arrow-right, .icon-address-book, .icon-envelope-alt, .icon-lab {
+.icon-twitter-sign, .icon-facebook, .icon-twitter, .icon-google-plus, .icon-github, .icon-user, .icon-suitcase, .icon-home, .icon-arrow-left, .icon-arrow-right, .icon-address-book, .icon-envelope-alt, .icon-lab, .icon-search {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -368,6 +368,10 @@
 
 .icon-lab:before {
 	content: "\2d";
+}
+
+.icon-search:before {
+	content: "\f002";
 }
 
 /*------------------------------------*\
@@ -537,7 +541,7 @@ figure figcaption {
 \*------------------------------------*/
 
 header {
-	padding: 60px;
+	padding: 60px 60px 20px 60px;
 	background: #3FB1DE;
 	text-align: center;
 	border-radius: 0 0 0.188em 0.188em;
@@ -553,6 +557,10 @@ header {
 	margin-bottom: 20px;
 }
 
+header nav {
+	margin-bottom: 1em;
+}
+
 header nav select {
 	display: none;
 }
@@ -566,6 +574,39 @@ header nav ul {
 header nav ul li {
 	display: inline-block;
 	margin: 0 0.75em;
+}
+
+/*------------------------------------*\
+	$SEARCH
+\*------------------------------------*/
+
+.icon-search {
+	cursor: pointer;
+}
+
+.search-field {
+	display: none;
+	width: 50%;
+	margin: 1em 0 0 0;
+	padding: 5px 15px;
+	font-size: 14px;
+	border: 1px solid #222;
+	border-radius: 5px;
+}
+
+.search-results ul {
+	list-style: none;
+	margin-top: 1em;
+}
+
+.search-results a {
+	color: #222;
+	text-decoration: none;
+}
+
+.search-results a:hover, .search a:focus {
+	color: #3FB1DE;
+	background: #222;
 }
 
 /*------------------------------------*\
@@ -656,9 +697,26 @@ header nav ul li {
 	background: none;
 }
 
-.pagination.post, .pagination span:not(.page-number), .pagination a {
+.page-number {
+	margin: 0 1.25em;
+}
+
+.pagination.home > .previous {
+	padding-right: 0.625em;
+}
+
+.pagination.home > .next {
+	padding-left: 0.625em;
+}
+
+.pagination.home span:not(.page-number), .pagination.home a {
 	font-size: 40px;
 	font-size: 4rem;
+}
+
+.pagination.post, .pagination.post a {
+	font-size: 60px;
+	font-size: 6rem;
 }
 
 .previous:hover, .previous:focus, .next:hover, .next:focus {
@@ -666,16 +724,39 @@ header nav ul li {
 	background: none;
 }
 
+.pagination.post > .previous, .pagination.post > .next {
+	position: fixed;
+	top: 50%;
+	padding: 5px;
+}
+
 .pagination.post > .previous {
-	padding-right: 0.625em;
+	float: left;
+	clear: left;
+	left: 0;
 }
 
 .pagination.post > .next {
-	padding-left: 0.625em;
+	float: right;
+	right: 0;
 }
 
-.page-number {
-	margin: 0 1.25em;
+/*------------------------------------*\
+	$TABLE OF CONTENTS
+\*------------------------------------*/
+
+.toc {
+	margin: 0.5em 0 0 0;
+}
+
+.toc a {
+	color: #222;
+	text-decoration: none;
+}
+
+.toc a:hover {
+	color: #3FB1DE;
+	background: #222;
 }
 
 /*------------------------------------*\
@@ -778,6 +859,13 @@ footer p {
 
 	header nav select {
 		display: inline-block;
+	}
+}
+
+@media all and (max-width: 56.25em) {
+	.pagination.post > .previous, .pagination.post > .next {
+		float: none;
+		position: static;
 	}
 }
 
