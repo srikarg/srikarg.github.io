@@ -15,14 +15,13 @@ $(function() {
 			results.empty();
 	});
 
-	icon.on('click', function(e) {
-		e.stopPropagation();
+	icon.on('click', function() {
 		field.animate({width: 'toggle'});
 		field.focus();
 	});
 
-	$(document).on('click', function() {
-		if (field.css('display') !== 'none')
+	field.on('blur mouseleave', function() {
+		if (field.val() === '')
 			field.animate({width: 'toggle'});
 	});
 
