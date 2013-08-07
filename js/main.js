@@ -20,7 +20,7 @@ $(function() {
 		field.focus();
 	});
 
-	field.on('blur mouseleave', function() {
+	field.on('blur', function() {
 		if (field.val() === '')
 			field.animate({width: 'toggle'});
 	});
