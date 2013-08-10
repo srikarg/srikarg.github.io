@@ -105,7 +105,7 @@ The HTML:
 	<h4>View People</h4>
 	<ul>
 		<li ng-repeat="person in people">
-			{{ person.name }} from {{ person.city }}, {{ person.state }}
+			{% raw %}{{ person.name }} from {{ person.city }}, {{ person.state }}{% endraw %}
 		</li>
 	</ul>
 
@@ -160,7 +160,7 @@ Next, we can add a feature to allow the user to input names into the `people` ob
 	<h4>View People</h4>
 	<ul>
 		<li ng-repeat="person in people">
-			{{ person.name }} from {{ person.city }}, {{ person.state }}
+			{% raw %}{{ person.name }} from {{ person.city }}, {{ person.state }}{% endraw %}
 		</li>
 	</ul>
 
@@ -236,7 +236,7 @@ AngularJS filters filter data inside your web application. This can lead to feat
 	Search! <input type="text" ng-model="search" />
 	<ul>
 		<li ng-repeat="person in people | filter:search">
-			{{ person.name }} from {{ person.city }}, {{ person.state }}
+			{% raw %}{{ person.name }} from {{ person.city }}, {{ person.state }}{% endraw %}
 		</li>
 	</ul>
 
