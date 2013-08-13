@@ -1,0 +1,32 @@
+<canvas id="chart" width="400" height="400"></canvas>
+
+
+<div class="buttons">
+    <button class="btn btn-default btn-action" ng-click="addSlice()">Add a new slice!</button>
+    <button class="btn btn-default btn-action" onclick="window.open(document.getElementById('chart').toDataURL())">Save as image!</button>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <form>
+            <fieldset>
+                <legend>Enter the pie graph's colors!</legend>
+                <div class="form-group" ng-repeat="color in pieColors">
+                    <label for="inputColor{{$index+1}}">Color #{{$index+1}}</label>
+                    <colorpicker ng-model="color.value"></colorpicker>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="col-lg-6">
+        <form>
+            <fieldset>
+                <legend>Enter the pie graph's data!</legend>
+                <div class="form-group" ng-repeat="data in pieData">
+                    <label for="inputData{{$index+1}}">Data for color #{{$index+1}}</label>
+                    <input type="number" class="form-control" id="inputData{{$index+1}}" placeholder="Enter data" ng-model="data.value">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

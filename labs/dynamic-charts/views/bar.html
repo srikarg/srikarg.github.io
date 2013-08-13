@@ -1,0 +1,31 @@
+<canvas id="chart" width="400" height="400"></canvas>
+
+<div class="buttons">
+    <button class="btn btn-default btn-action" ng-click="addBar()">Add a new bar!</button>
+    <button class="btn btn-default btn-action" onclick="window.open(document.getElementById('chart').toDataURL())">Save as image!</button>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <form>
+            <fieldset>
+                <legend>Enter the bar graph's labels!</legend>
+                <div class="form-group" ng-repeat="label in barLabels">
+                    <label for="inputLabel{{$index+1}}">Label #{{$index+1}}</label>
+                    <input type="text" class="form-control" id="inputLabel{{$index+1}}" placeholder="Enter label" ng-model="label.text">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="col-lg-6">
+        <form>
+            <fieldset>
+                <legend>Enter the bar graph's data!</legend>
+                <div class="form-group" ng-repeat="data in barData">
+                    <label for="inputData{{$index+1}}">Data for label #{{$index+1}}</label>
+                    <input type="number" class="form-control" id="inputData{{$index+1}}" placeholder="Enter data" ng-model="data.value">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
