@@ -10,15 +10,18 @@ Lately, the offcanvas menu pattern has been extremely popular in various website
 
 <h1 id="html">The HTML</h1>
 
-First, we'll set up the navigation and main content components using some simple HTML.
+First, we'll set up the navigation and main content components using some simple HTML. Please note that I am using the Actor font from Google Fonts and Font Awesome (these two are present in the link tags).
 
 {% highlight html %}
+<link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+
 <nav class="main-nav" role='navigation'>
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About Me</a></li>
-    <li><a href="#">My Work</a></li>
-    <li><a href="#">Contact Me</a></li>
+    <li><a href="#">Home<i class="icon-home"></i></a></li>
+    <li><a href="#">About Me<i class="icon-info"></i></a></li>
+    <li><a href="#">My Work<i class="icon-briefcase"></i></a></li>
+    <li><a href="#">Contact Me<i class="icon-phone"></i></a></li>
   </ul>
 </nav>
 
@@ -51,7 +54,7 @@ body {
 }
 
 .js .main-nav {
-  transition: width 0.3s ease;
+  transition: width 0.6s ease;
   width: 0;
 }
 
@@ -70,14 +73,19 @@ body {
 }
 
 .main-nav a {
+  font-size: 1.2em;
   padding: 0.625em;
   text-decoration: none;
   display: block;
   color: white;
 }
 
+.main-nav i {
+  margin-left: 0.5em;
+}
+
 .js article {
-  transition: width 0.3s ease;
+  transition: width 0.6s ease;
   width: 100%;
 }
 
@@ -89,7 +97,7 @@ article {
 }
 
 .js .nav-control {
-  display: block;
+  display: inline-block;
 }
 
 .nav-control {
@@ -158,4 +166,4 @@ $(function() {
 
 You can fork the demo on CodePen and view it below!
 
-<div class="codepen"><p data-height="268" data-theme-id="132" data-slug-hash="xwpAv" data-user="srig99" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/srig99/pen/xwpAv'>Offcanvas Sidebar Concept</a> by Srikar G. (<a href='http://codepen.io/srig99'>@srig99</a>) on <a href='http://codepen.io'>CodePen</a></p><script src="http://codepen.io/assets/embed/ei.js"></script></div>
+<div class="codepen"><p data-height="500" data-theme-id="132" data-slug-hash="xwpAv" data-user="srig99" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/srig99/pen/xwpAv'>Offcanvas Sidebar Concept</a> by Srikar G. (<a href='http://codepen.io/srig99'>@srig99</a>) on <a href='http://codepen.io'>CodePen</a></p><script src="http://codepen.io/assets/embed/ei.js"></script></div>
