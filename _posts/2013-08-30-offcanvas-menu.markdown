@@ -166,8 +166,4 @@ $(function() {
 
 You can fork the demo on CodePen and view it below!
 
-<<<<<<< HEAD:_posts/2013-08-30-offcanvas-menu.markdown
 <div class="codepen"><p data-height="500" data-theme-id="132" data-slug-hash="xwpAv" data-user="srig99" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/srig99/pen/xwpAv'>Offcanvas Sidebar Concept</a> by Srikar G. (<a href='http://codepen.io/srig99'>@srig99</a>) on <a href='http://codepen.io'>CodePen</a></p><script src="http://codepen.io/assets/embed/ei.js"></script></div>
-=======
-<div class="codepen"><p data-height="500" data-theme-id="132" data-slug-hash="xwpAv" data-user="srig99" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/srig99/pen/xwpAv'>Offcanvas Sidebar Concept</a> by Srikar G. (<a href='http://codepen.io/srig99'>@srig99</a>) on <a href='http://codepen.io'>CodePen</a></p><script src="http://codepen.io/assets/embed/ei.js"></script></div>
->>>>>>> 0017741b72ee503074b0a5affdfaa19ec7ce0429:_posts/2013-08-30-offcanvas-menu.md
