@@ -1,16 +1,20 @@
-{% include head.html %}
-{% include header.html %}
-<div class="post-info module">
-	<h1>{{ page.title }}</h1>
-	<p>Published on {{ page.date | date: "%d %B %Y" }}{% if page.comments %} with <a href="#disqus_thread" class="smoothScroll"></a>{% endif %}.</p>
-</div>
+---
+layout: default
+---
+
+<section class="post-info module">
+	<h1 class="post-title">{{ page.title }}</h1>
+	<p class="post-date">Published on {{ page.date | date: "%d %B %Y" }}{% if page.comments %} with <a href="#disqus_thread" class="smoothScroll"></a>{% endif %}.</p>
+</section>
+
 {% if page.toc %}
 <div class="module">
 	<h1>Table of Contents</h1>
 	<ul class="toc"></ul>
 </div>
 {% endif %}
-<article class="main post">
+
+<article class="post">
 	{{ content }}
 
 	{% if page.comments %}
@@ -29,20 +33,17 @@
 	</div>
 	<script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51d0955d18b1633a"></script>
 	{% endif %}
-	
-	<div class="pagination post">
+
+	<section class="pagination post">
 		{% if page.previous %}
-		<a href="{{ page.previous.url }}" class="previous"><i class="icon-arrow-left"></i></a>
+			<a href="{{ page.previous.url }}" class="previous"><i class="icon-circle-arrow-left"></i></a>
 		{% else %}
-		<span class="previous disabled"><i class="icon-arrow-left"></i></span>
+			<span class="previous disabled"><i class="icon-circle-arrow-left"></i></span>
 		{% endif %}
-		
 		{% if page.next %}
-		<a href="{{ page.next.url }}" class="next"><i class="icon-arrow-right"></i></a>
+			<a href="{{ page.next.url }}" class="next"><i class="icon-circle-arrow-right"></i></a>
 		{% else %}
-		<span class="next disabled"><i class="icon-arrow-right"></i></span>
+			<span class="next disabled"><i class="icon-circle-arrow-right"></i></span>
 		{% endif %}
-	</div>
+	</section>
 </article>
-{% include footer.html %}
-{% include foot.html %}

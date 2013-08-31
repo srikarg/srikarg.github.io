@@ -158,4 +158,4 @@ $(function() {
 
 You can fork the demo on CodePen and view it below!
 
-<div class="codepen"><p data-height="268" data-theme-id="132" data-slug-hash="xwpAv" data-user="srig99" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/srig99/pen/xwpAv'>Offcanvas Sidebar Concept</a> by Srikar G. (<a href='http://codepen.io/srig99'>@srig99</a>) on <a href='http://codepen.io'>CodePen</a></p><script src="http://codepen.io/assets/embed/ei.js"></script></div>
+<div class="codepen"><p data-height="500" data-theme-id="132" data-slug-hash="xwpAv" data-user="srig99" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/srig99/pen/xwpAv'>Offcanvas Sidebar Concept</a> by Srikar G. (<a href='http://codepen.io/srig99'>@srig99</a>) on <a href='http://codepen.io'>CodePen</a></p><script src="http://codepen.io/assets/embed/ei.js"></script></div>

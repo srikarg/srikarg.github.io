@@ -1,10 +1,10 @@
-name: Srikar Gudipati
-description: My personal website/blog!
+name: "Srikar Gudipati"
+author: "Srikar Gudipati"
+description: "My personal website/blog!"
 
-exclude: ['README.md']
-
-paginate: 6
-
-markdown: rdiscount
-permalink: /blog/:title
+markdown: redcarpet
+permalink: "/blog/:title"
 pygments: true
+
+paginate: 7
+paginate_path: "/page/:num"
