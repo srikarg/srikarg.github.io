@@ -29,10 +29,21 @@ $(function() {
             });
     });
 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200)
+            $('.go-top').fadeIn(200);
+        else
+            $('.go-top').fadeOut(200);
+    });
+
     $('.smoothScroll').on('click', function(e) {
         e.preventDefault();
         var target = this.hash,
             $target = $(target);
+        if (target == '') {
+            target = '';
+            $target = $('body');
+        }
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top
         }, 900, 'swing', function() {
