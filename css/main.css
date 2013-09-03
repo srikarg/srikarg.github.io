@@ -38,7 +38,7 @@ p, ul, ol {
 /*p:last-of-type, ul:last-child, ol:last-child {
     margin-bottom: 0;
 }*/
-ul ol, ol ul, ol ol, ul ul {
+ ul ol, ol ul, ol ol, ul ul {
     margin-bottom: 0;
 }
 ul, ol {
@@ -284,19 +284,16 @@ header nav ul li {
 /*------------------------------------*\
     $LABS
 \*------------------------------------*/
-
-.lab-item {
+ .lab-item {
     margin: 25px 0;
     margin: 1.563rem 0;
     overflow: hidden;
 }
-
 .lab-item img {
     max-width: 40%;
     float: left;
     vertical-align: bottom;
 }
-
 .lab-item .lab-details {
     width: 60%;
     float: left;
@@ -420,5 +417,9 @@ footer p {
     }
     header nav select {
         display: inline-block;
+    }
+    .lab-item .button {
+        margin: 4px 0;
+        margin: 0.3rem 0;
     }
 }
