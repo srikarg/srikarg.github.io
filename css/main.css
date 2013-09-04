@@ -300,6 +300,10 @@ header nav ul li {
     padding-left: 12px;
     padding-left: 0.750rem;
 }
+.lab-item .button {
+    margin: 4px 0;
+    margin: 0.3rem 0;
+}
 /*------------------------------------*\
     $PAGINATION
 \*------------------------------------*/
@@ -436,9 +440,5 @@ footer p {
     }
     header nav select {
         display: inline-block;
-    }
-    .lab-item .button {
-        margin: 4px 0;
-        margin: 0.3rem 0;
     }
 }
