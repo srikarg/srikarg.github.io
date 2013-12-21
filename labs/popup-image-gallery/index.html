@@ -4,28 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>jQuery Popup Image Gallery</title>
-  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 </head>
 
 <body>
   <div class="images">
-    <img src="http://placebox.es/300/300/f1f1f1/222/Image 1,25" />
-    <img src="http://placebox.es/300/300/f1f1f1/222/Image 2,25" />
-    <img src="http://placebox.es/300/300/f1f1f1/222/Image 3,25" />
-    <img src="http://placebox.es/300/300/f1f1f1/222/Image 4,25" />
-    <img src="http://placebox.es/300/300/f1f1f1/222/Image 5,25" />
-    <img src="http://placebox.es/300/300/f1f1f1/222/Image 6,25" />
-    <img src="http://placebox.es/300/300/f1f1f1/222/Image 7,25" />
-    <img src="http://placebox.es/300/300/f1f1f1/222/Image 8,25" />
-    <img src="http://placebox.es/300/300/f1f1f1/222/Image 9,25" />
-    <img src="http://placebox.es/300/300/f1f1f1/222/Image 10,25" />
+    <img src="http://placebox.es/500/500/f1f1f1/222/Image 1,25" />
+    <img src="http://placebox.es/500/500/f1f1f1/222/Image 2,25" />
+    <img src="http://placebox.es/500/500/f1f1f1/222/Image 3,25" />
+    <img src="http://placebox.es/500/500/f1f1f1/222/Image 4,25" />
+    <img src="http://placebox.es/500/500/f1f1f1/222/Image 5,25" />
+    <img src="http://placebox.es/500/500/f1f1f1/222/Image 6,25" />
+    <img src="http://placebox.es/500/500/f1f1f1/222/Image 7,25" />
+    <img src="http://placebox.es/500/500/f1f1f1/222/Image 8,25" />
+    <img src="http://placebox.es/500/500/f1f1f1/222/Image 9,25" />
   </div>
 
   <div class="focus">
-    <span class="close">&#10005;</span>
+    <div class="container"></div>
+    <div class="controls">
+      <i class="close fa fa-times-circle"></i>
+      <i class="prev fa fa-arrow-left"></i>
+      <i class="next fa fa-arrow-right"></i>
+    </div>
   </div>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
   <script src="js/main.js" type="text/javascript"></script>
 </body>
 

@@ -35,9 +35,6 @@ p, ul, ol {
     margin-bottom: 16px;
     margin-bottom: 1rem;
 }
-/*p:last-of-type, ul:last-child, ol:last-child {
-    margin-bottom: 0;
-}*/
  ul ol, ol ul, ol ol, ul ul {
     margin-bottom: 0;
 }
@@ -211,7 +208,7 @@ header nav ul li {
 \*------------------------------------*/
  .content {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     font-size: 20px;
     font-size: 1.25rem;
@@ -423,9 +420,15 @@ footer p {
         font-size: 120%;
     }
 }
-@media only screen and (max-width: 1279px) and (min-width: 768px) {
+@media only screen and (max-width: 1279px) and (min-width: 1000px) {
     html {
         font-size: 100%;
+    }
+}
+@media only screen and (max-width: 999px) and (min-width: 768px) {
+    .pagination.post .previous, .pagination.post .next {
+        float: none;
+        position: static;
     }
 }
 @media only screen and (max-width: 767px) {

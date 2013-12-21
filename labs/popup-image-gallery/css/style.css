@@ -3,6 +3,9 @@
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -10,51 +13,65 @@ body {
 }
 
 .images {
-  position: absolute;
-  width: 640px;
-  left: 50%;
-  top: 50%;
-  margin-top: -128px;
-  margin-left: -320px;
+  text-align: center;
 }
 
 .images img {
   cursor: pointer;
-  float: left;
-  padding: 3px;
-  width: 128px;
-  height: auto;
+  display: inline-block;
+  width: 500px;
+  margin: 1em;
 }
-
 
 .focus {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  top: 50%;
-  left: 50%;
-  margin-left: -150px;
-  margin-top: -150px;
-  display: none;
   z-index: 10;
+  width: 500px;
+  height: 500px;
+  display: none;
 }
 
-.focus .close {
+.focus.enabled {
+  margin: auto;
   position: absolute;
-  top: -2%;
+  top: 0;
   left: 0;
-  font-size: 30px;
+  bottom: 0;
+  right: 0;
+}
+
+.focus.enabled .container {
+  width: 500px;
+  height: 500px;
+}
+
+.focus.enabled img {
+  width: 100%;
+}
+
+.focus.enabled .controls {
+  margin-top: 1em;
+  padding: 1em;
+  text-align: center;
+  background: #f1f1f1;
+}
+
+.focus.enabled .controls i {
   cursor: pointer;
+  font-size: 60px;
+  margin-right: 0.5em;
+}
+
+.close {
   color: #F50000;
 }
 
 .overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(0,0,0,0.3); 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .darken {
