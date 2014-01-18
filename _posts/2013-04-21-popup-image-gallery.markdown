@@ -8,11 +8,11 @@ comments: true
 
 A simple search for `jquery image galleries` on Google will show you several jQuery plugins created by different people! However, creating your own gallery can sometimes be more efficient. For example, making your own gallery can save your website extra loading time!
 
-<h1 id="procedure">Procedure</h1>
+# The HTML
 
 Let's get started! We'll first need some basic markup in HTML for our images and the box that will hold the current and selected image:
 
-``` html
+{% highlight html %}
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 
 <div class="images">
@@ -35,13 +35,15 @@ Let's get started! We'll first need some basic markup in HTML for our images and
         <i class="next fa fa-arrow-right"></i>
     </div>
 </div>
-```
+{% endhighlight %}
 
 In the code above, `div.images` holds the images and `div.container` will hold the enlarged and focused image. The `div.controls` contains icons which will allow the user to close the image and go to the next or previous image. Finally, the `link` element retrieves the [Font Awesome](http://fontawesome.io/) icon library by the use of a [CDN](http://en.wikipedia.org/wiki/Content_delivery_network).
 
+# The CSS
+
 Next, we'll style the elements we just created using the following CSS:
 
-``` css
+{% highlight css %}
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -120,13 +122,15 @@ body {
 .darken {
     opacity: 0.3;
 }
-```
+{% endhighlight %}
 
 The images are centered using `display: inline-block;` and `text-align: center;` on the parent element, or `div.images`. The `div.focus` is absolutely positioned in the middle using the `top`, `bottom`, `left`, and `right` properties. Next, there are two helper classes, `.overlay` and `.darken`, which will help us when we write the jQuery code.
 
+# The jQuery
+
 The next step is to add the functionality of the image gallery using jQuery:
 
-``` javascript
+{% highlight javascript %}
 $(function() {
     var images = $('.images');
     var image = $('.images>img');
@@ -163,17 +167,17 @@ $(function() {
         container.append('<img src=\"' + image.eq(current).attr('src') + '\" />');
     });
 });
-```
+{% endhighlight %}
 
 First, we set up various variables to hold the elements of our gallery. Most importantly, the variable `current` will hold the zero-based index of the current image in the array of all the images inside `div.images`. In other words, the first image in `div.images` will have an index of 0, the second will have 1, and so forth. A click handler is set for all the images in `div.images`. When it is called, the variable `current` is updated with the correct index, any existing images in the focus container are removed, the background is darkened using the previously defined utility CSS classes, and finally, the image that was clicked is appended to the focus container and displayed. The close, previous, and next click handlers perform their self-explanatory jobs.
 
-<h1 id="closing">Closing</h1>
+# Closing
 
 That's it! We now have a simple image gallery! Check it out below and don't hesitate to tinker with it. I have also included a CodePen link. Next time you decide to include an image gallery inside your website, be sure to ask yourself whether or not you need a massive jQuery plugin!
 
 <div class="codepen">
-    <p data-height="700" data-theme-id="132" data-slug-hash="qGzbn" data-user="srig99" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/srig99/pen/qGzbn'>Popup Image Loader</a> by Srikar G. (<a href='http://codepen.io/srig99'>@srig99</a>) on <a href='http://codepen.io'>CodePen</a></p>
-    <script async src="//codepen.io/assets/embed/ei.js"></script>
+    <p data-height="700" data-theme-id="132" data-slug-hash="qGzbn" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/srig99/pen/qGzbn'>Popup Image Loader</a> by Srikar G. (<a href='http://codepen.io/srig99'>@srig99</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    <script async="true" src="//codepen.io/assets/embed/ei.js"> </script>
 </div>
 
 <a href="/labs/popup-image-gallery" class="button">Demo</a>

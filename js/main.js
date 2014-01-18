@@ -36,7 +36,7 @@ $(function() {
             $('.go-top').fadeOut(200);
     });
 
-    $('.smoothScroll').on('click', function(e) {
+    $(document).on('click', '.smoothScroll', function(e) {
         e.preventDefault();
         var target = this.hash,
             $target = $(target);

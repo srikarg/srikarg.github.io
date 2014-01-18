@@ -8,7 +8,7 @@ comments: true
 
 Lately, the offcanvas menu pattern has been extremely popular in various websites and apps. For example, Facebook and Gmail make use of it in their mobile apps. Creating an offcanvas menu for your own site is relatively simple, so let's see how!
 
-<h1 id="html">The HTML</h1>
+# The HTML
 
 First, we'll set up the navigation and main content components using some simple HTML. Please note that I am using the Actor font from Google Fonts and Font Awesome (these two are present in the link tags).
 
@@ -37,7 +37,7 @@ First, we'll set up the navigation and main content components using some simple
 
 The HTML is pretty self-explanatory, although there is one thing to note: `&raar;` is a right arrow HTML entity, which we are going to use for expanding and closing the offcanvas menu.
 
-<h1 id="css">The CSS</h1>
+# The CSS
 
 The next section is the CSS. Note the `.js` class. This is used to show the menu by default if the user does not have JavaScript enabled. The navigation is fixed and takes up 20% of the browser width with the content taking up the other 80%.
 
@@ -136,7 +136,7 @@ article.menu-open {
 }
 {% endhighlight %}
 
-<h1 id="javascript">The jQuery</h1>
+# The jQuery
 
 Finally, the jQuery is needed to make the menu toggle button functional. Additionally, it adds a `.js` class to the `body` tag indicating that the user has JavaScript enabled. The button click handler simply adds/removes classes and changes the arrow inside the button as required.
 
@@ -146,7 +146,7 @@ $(function() {
   var navButton = $('.nav-control');
   var nav = $('.main-nav');
   var article = $('article');
-  
+
   navButton.on('click', function() {
     if (nav.hasClass('menu-open')) {
       nav.removeClass('menu-open');
@@ -162,7 +162,7 @@ $(function() {
 });
 {% endhighlight %}
 
-<h1 id="demo">Demonstration</h1>
+# Demonstration
 
 You can fork the demo on CodePen and view it below!
 

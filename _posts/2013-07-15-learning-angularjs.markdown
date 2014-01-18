@@ -8,7 +8,7 @@ comments: true
 
 AngularJS is a JavaScript framework developed by Google that makes coding web apps painless, quick, and easy! In this tutorial, I'll try to guide you through the basics of this framework and what it has to offer.
 
-<h1 id="enable">Enabling AngularJS</h1>
+# Enabling AngularJS
 
 To install AngularJS into your web project, just head over to [AngularJS's website](http://angularjs.org/) and click the download button. This will show you a couple of options. Personally, I use the CDN as the following:
 
@@ -40,7 +40,7 @@ Now that AngularJS is available to us, we must tell it where our web app is. Thi
 </html>
 {% endhighlight %}
 
-<h1 id="dataBinding">Basic Data Binding</h1>
+# Basic Data Binding
 
 Now that the installation is complete, we can start with the basics of AngularJS! Data binding permits your web app's HTML to directly communicate with the app's JavaScript. Those of you familiar with the [MVC pattern](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (Model-View-Controller) should know that data binding in this framework allows the view and model to directly communicate and update based on the other's data. The following is an example of data binding:
 
@@ -85,7 +85,7 @@ Here's what the previous code creates:
 
 <div class="codepen"><pre class="codepen" data-height="300" data-type="result" data-href="Fsila" data-user="srig99" data-safe="true"> <code> </code> <a href="http://codepen.io/srig99/pen/Fsila">Check out this Pen!</a> </pre> <script src="http://codepen.io/assets/embed/ei.js"> </script></div>
 
-<h1 id="controllers">Controllers</h1>
+# Controllers
 
 > Controllers allow the user to change the web application's data and thus manipulate the app's output (or the view in MVC terms).
 
@@ -219,7 +219,7 @@ In the HTML, `ng-click` allows the `MainCtrl` function `addPerson()` to get exec
 
 <div class="codepen"><pre class="codepen" data-height="300" data-type="result" data-href="qEiDH" data-user="srig99" data-safe="true"> <code> </code> <a href="http://codepen.io/srig99/pen/qEiDH">Check out this Pen!</a> </pre> <script src="http://codepen.io/assets/embed/ei.js"> </script></div>
 
-<h1 id="filters">Filters</h1>
+# Filters
 
 AngularJS filters filter data inside your web application. This can lead to features such as searching, ordering, and more! Let's add a search functionality to The People App that we have been working on. First, we need to add a new `<input>` tag for the search text. Then we will need to filter the results in the `<ul>` list using the search text. The new modified code will be:
 
@@ -261,7 +261,7 @@ The only new code we needed to add was of course the search `<input>` and the `f
 
 <div class="codepen"><pre class="codepen" data-height="300" data-type="result" data-href="DrFfs" data-user="srig99" data-safe="true"> <code> </code> <a href="http://codepen.io/srig99/pen/DrFfs">Check out this Pen!</a> </pre> <script src="http://codepen.io/assets/embed/ei.js"> </script></div>
 
-<h1 id="directives">Directives</h1>
+# Directives
 
 The final topic we will be discovering in AngularJS today will be directives, which are custom HTML elements or attributes created using AngularJS. Making a new directive is simple! Let's say you wanted to create a directive (we will name it emphasize) which looks like this: `<p emphasize></p>` or this: `<emphasize></emphasize>`. First, we will need to declare a module (see [this](http://upload.wikimedia.org/wikipedia/commons/f/fd/MVC-Process.png) if you need to see how a model interacts with a view and controller) like so:
 
@@ -284,7 +284,7 @@ Inside the directive function, we are restricting the directive to only elements
 
 <div class="codepen"><pre class="codepen" data-height="300" data-type="result" data-href="qIdBE" data-user="srig99" data-safe="true"> <code> </code> <a href="http://codepen.io/srig99/pen/qIdBE">Check out this Pen!</a> </pre> <script src="http://codepen.io/assets/embed/ei.js"> </script></div>
 
-<h1 id="furtherReading">Further Reading</h1>
+# Further Reading
 
 Well, that's it for now! To discover more about AngularJS, you can go to the framework's amazing API [here](http://docs.angularjs.org/api/) and the AngularJS official website [here](http://angularjs.org/). You can watch some awesome videos on AngularJS [here](http://www.egghead.io/) and [here](http://www.youtube.com/watch?feature=player_detailpage&v=i9MHigUZKEM). Go to [Built With AngularJS](http://builtwith.angularjs.org/) to see actual apps created with AngularJS in action! If you still need resources, check out [this](https://github.com/angular/angular.js/wiki/JsFiddle-Examples) exhaustive list of JSFiddles dealing with AngularJS. Thanks for reading and be sure to check out future tutorials that I will be making about AngularJS!
 

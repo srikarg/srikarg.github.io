@@ -2,7 +2,7 @@ name: "Srikar Gudipati"
 author: "Srikar Gudipati"
 description: "My personal website/blog!"
 
-markdown: redcarpet
+markdown: maruku
 permalink: "/blog/:title"
 pygments: true
 
