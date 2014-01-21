@@ -18,9 +18,9 @@ First off, we create a simple table for our menu with the following HTML:
 
 {% highlight html %}
 <table cellpadding="0px" cellspacing="0px" id="navBar">
-	<tr>
+    <tr>
 		<td>
-			<a class="selected" href="index.html">Home</a>
+            <a class="selected" href="index.html">Home</a>
 		</td>
 
 		<td>
