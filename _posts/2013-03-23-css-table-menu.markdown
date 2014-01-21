@@ -19,22 +19,19 @@ First off, we create a simple table for our menu with the following HTML:
 {% highlight html %}
 <table cellpadding="0px" cellspacing="0px" id="navBar">
     <tr>
-		<td>
+        <td>
             <a class="selected" href="index.html">Home</a>
-		</td>
-
-		<td>
-			<a href="#">Link 1</a>
-		</td>
-
-		<td>
-			<a href="#">Link 2</a>
-		</td>
-
-		<td>
-			<a href="#">Link 3</a>
-		</td>
-	</tr>
+        </td>
+        <td>
+            <a href="#">Link 1</a>
+        </td>
+        <td>
+            <a href="#">Link 2</a>
+        </td>
+        <td>
+            <a href="#">Link 3</a>
+        </td>
+    </tr>
 </table>
 {% endhighlight %}
 
