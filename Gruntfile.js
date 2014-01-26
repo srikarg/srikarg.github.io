@@ -46,7 +46,7 @@ module.exports = function(grunt) {
                 tasks: ['concat:css', 'cssmin', 'shell:copyCSS']
             },
             other: {
-                files: ['resume/index.md', 'contact/index.html', 'labs/index.html', '_posts/*.markdown', '_config.yml', 'index.html'],
+                files: ['resume/index.md', 'contact/index.html', 'labs/index.html', '_layouts/*.html', '_posts/*.markdown', '_config.yml', 'index.html'],
                 tasks: ['shell:jekyllBuild']
             }
         },

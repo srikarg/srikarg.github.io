@@ -21,6 +21,17 @@ body {
     color: #222;
     background: #ecf0f1;
 }
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -110px;
+}
+.wrapper:after {
+    content: "";
+    display: block;
+}
+footer, .wrapper:after {
+    height: 110px;
+}
 a {
     color: #222;
     text-decoration: underline;
@@ -162,6 +173,9 @@ figure figcaption {
 .site-title {
     font-size: 50px;
     font-size: 3.125rem;
+    line-height: 1.2;
+    padding-bottom: 16px;
+    padding-bottom: 1rem;
 }
 .site-title a {
     text-decoration: none;
@@ -285,8 +299,8 @@ header nav ul li {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: 80px;
-    font-size: 5rem;
+    font-size: 7rem;
+    font-size: 112px;
 }
 .social a {
     color: #222;
