@@ -15,7 +15,8 @@ Recently, I became an avid visitor of the [MinimalWallpaper subreddit](http://ww
 The following Python script solved my issue:
 
 {% highlight python %}
-import requests, urllib, os, sys
+import requests, urllib
+import os, sys, time
 
 counter = 0
 
@@ -32,7 +33,7 @@ def getPosts(subreddit, postLimit):
         print('Sorry, but there was an error retrieving the subreddit\'s data!')
         return None
 
-def saveImages(posts, scoreLimit, save_dir='images'):
+def saveImages(posts, scoreLimit, save_dir='reddit_wallpapers'):
     for post in posts:
         url = post['data']['url']
         score = post['data']['score']
@@ -43,7 +44,8 @@ def saveImages(posts, scoreLimit, save_dir='images'):
 def saveImage(url, title, save_dir):
     global counter
     save_dir = makeSaveDir(save_dir)
-    filename = (save_dir + title.replace('/', ':') + url[-4:]).encode('utf-8')
+    dot_location = url.rfind('.')
+    filename = (save_dir + title.replace('/', ':') + url[dot_location: dot_location + 4]).encode('utf-8')
     if not os.path.exists(filename):
         print('Saving ' + filename + '!\n')
         counter += 1
@@ -58,13 +60,15 @@ def downloadImagesFromReddit(subreddits, postLimit=100, scoreLimit=20):
     for subreddit in subreddits:
         posts = getPosts(subreddit, postLimit)
         saveImages(posts, scoreLimit, subreddit.lower())
-    print str(counter) + ' images have been scraped!'
+        print('Sleeping for 5 seconds...\n')
+        time.sleep(5)
+    print(str(counter) + ' images have been scraped!')
 
 def main():
     if len(sys.argv) > 1:
         downloadImagesFromReddit(sys.argv[1:])
     else:
-        downloadImagesFromReddit(['MinimalWallpaper'])
+        downloadImagesFromReddit(['wallpapers', 'wallpaper'])
 
 if __name__ == '__main__':
     main()
