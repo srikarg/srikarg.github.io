@@ -1,5 +1,5 @@
 ---
-title: Unix Terminal Commands
+title: Unix terminal commands
 layout: post
 toc: true
 share: true

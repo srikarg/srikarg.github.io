@@ -1,5 +1,5 @@
 ---
-title: Tools of the Web
+title: Tools of the web
 layout: post
 toc: true
 share: true
@@ -49,13 +49,9 @@ Hello guys! Today I want to discuss a few prominent tools of the web that are cu
 # Web Development Playgrounds
 
 1. [CodePen](http://codepen.io/)
-
 2. [JSBin](http://jsbin.com/)
-
 3. [CSSDesk](http://cssdesk.com/)
-
 4. [JSFiddle](http://jsfiddle.net/)
-
 5. [Dabblet](http://dabblet.com/)
 
 # Closing

@@ -1,5 +1,5 @@
 ---
-title: Popup Image Gallery using jQuery
+title: Popup image gallery with jQuery
 layout: post
 toc: true
 share: true

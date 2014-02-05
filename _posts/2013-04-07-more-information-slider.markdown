@@ -1,5 +1,5 @@
 ---
-title: More Information Slider using jQuery
+title: More information slider with jQuery
 layout: post
 toc: true
 share: true

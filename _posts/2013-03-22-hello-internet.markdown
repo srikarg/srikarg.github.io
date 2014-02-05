@@ -1,5 +1,5 @@
 ---
-title: Hello Internet
+title: Hello internet
 layout: post
 ---
 

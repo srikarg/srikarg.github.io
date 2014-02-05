@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Jekyll
+title: Getting started with Jekyll
 layout: post
 toc: true
 share: true
