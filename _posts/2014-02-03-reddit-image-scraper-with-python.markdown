@@ -8,7 +8,7 @@ comments: true
 
 # The Problem
 
-Recently, I became an avid visitor of the [MinimalWallpaper subreddit](http://www.reddit.com/r/minimalwallpaper). After tediously downloading wallpapers for several days, I realized that I could automate this task using Python and the [Reddit API](http://www.reddit.com/dev/api).
+I am an avid reader of the [MinimalWallpaper subreddit](http://www.reddit.com/r/minimalwallpaper). After tediously downloading wallpapers for several days, I realized that I could automate this task using Python and the [Reddit API](http://www.reddit.com/dev/api).
 
 # The Solution
 
@@ -28,6 +28,8 @@ def getPosts(subreddit, postLimit):
     r = requests.get(url, headers=headers)
     if r.status_code == requests.codes.ok:
         data = r.json()
+        print('Sleeping for 3 seconds...\n')
+        time.sleep(3)
         return data['data']['children']
     else:
         print('Sorry, but there was an error retrieving the subreddit\'s data!')
@@ -60,15 +62,16 @@ def downloadImagesFromReddit(subreddits, postLimit=100, scoreLimit=20):
     for subreddit in subreddits:
         posts = getPosts(subreddit, postLimit)
         saveImages(posts, scoreLimit, subreddit.lower())
-        print('Sleeping for 5 seconds...\n')
-        time.sleep(5)
     print(str(counter) + ' images have been scraped!')
 
 def main():
     if len(sys.argv) > 1:
         downloadImagesFromReddit(sys.argv[1:])
     else:
-        downloadImagesFromReddit(['wallpapers', 'wallpaper'])
+        downloadImagesFromReddit([
+            'MinimalWallpaper',
+            'wallpapers'
+        ])
 
 if __name__ == '__main__':
     main()
