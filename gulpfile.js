@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var plugins = require("gulp-load-plugins")();
+var plugins = require('gulp-load-plugins')();
 var port = 4000;
 
 gulp.task('styles', function() {
@@ -40,7 +40,8 @@ gulp.task('copyJS', ['scripts'], function() {
 
 gulp.task('images', function() {
     return gulp.src('src/assets/img/**/*')
-        .pipe(plugins.cache(plugins.imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+        .pipe(plugins.newer('dist/assets/img'))
+        .pipe(plugins.imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
         .pipe(gulp.dest('dist/assets/img'))
         .pipe(plugins.connect.reload())
         .pipe(plugins.notify({ message: 'Images task complete.' }));
@@ -59,7 +60,7 @@ gulp.task('clean', function() {
         .pipe(plugins.notify({ message: 'Clean task complete.' }));
 });
 
-gulp.task('jekyll', function() {
+gulp.task('jekyll', ['images', 'styles', 'scripts'], function() {
     return gulp.src('/')
         .pipe(plugins.exec('jekyll build', { silent: true }))
         .pipe(plugins.connect.reload())

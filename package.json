@@ -18,11 +18,11 @@
     "gulp-concat": "~2.1.7",
     "gulp-autoprefixer": "0.0.6",
     "gulp-notify": "~0.4.1",
-    "gulp-cache": "~0.1.1",
     "gulp-jshint": "~1.4.0",
     "gulp-imagemin": "~0.1.5",
     "gulp-load-plugins": "~0.3.0",
     "gulp-connect": "~0.3.1",
-    "gulp-exec": "~1.0.4"
+    "gulp-exec": "~1.0.4",
+    "gulp-newer": "~0.2.1"
   }
 }
