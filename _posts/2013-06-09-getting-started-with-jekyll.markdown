@@ -36,7 +36,7 @@ jekyll serve --watch
 Now that the server is set up, we can point our browser to `localhost:4000` in order to view our newly generated site! It should look something like the following:
 
 <figure>
-    <img src="/dist/assets/img/posts/jekyll-new-site.png" alt="A new Jekyll blog">
+    <img src="/dest/images/posts/jekyll-new-site.png" alt="A new Jekyll blog">
     <figcaption>A new blog created with Jekyll</figcaption>
 </figure>
 

@@ -1,20 +1,38 @@
 ---
-title: Resume
 layout: default
+title: Resume
 ---
 
-# Skills
+<h1 class="module">Skills</h1>
 
 1. ## Web Development
-	Knowledge of XHTML, HTML5, CSS2, CSS3, PHP, MySQL, JavaScript, jQuery, Node.js, CoffeeScript, Wordpress, and AJAX.
+    - HTML
+    - CSS
+    - JavaScript
+    - jQuery
+    - Node.js
+    - CoffeeScript
+    - AJAX
+    - PHP
+    - MySQL
+    - Wordpress
 
 2. ## Application Development
-	Knowledge of C, C++, Python, Ruby, and Java
+    - C
+    - C++
+    - Python
+    - Ruby
+    - Java
 
 3. ## Software Familiar With
-	[Sublime Text](http://www.sublimetext.com/), [Eclipse](http://www.eclipse.org/), [Brackets](http://brackets.io/), [Github/Git](http://mac.github.com/), iTerm, Terminal, and [MAMP](http://www.mamp.info/en/index.html).
+    - [Sublime Text](http://www.sublimetext.com/)
+    - [Eclipse](http://www.eclipse.org/)
+    - [Brackets](http://brackets.io/)
+    - [Github/Git](http://mac.github.com/)
+    - iTerm/Terminal
+    - [MAMP](http://www.mamp.info/en/index.html)
 
-# Personal Projects
+<h1 class="module">Personal Projects</h1>
 
 1. ## Coin Rush
 	An arcade game created using [CraftyJS](http://craftyjs.com/), a JavaScript game engine. Click [here](http://srikarg.github.io/Coin-Rush/) to play it!
@@ -25,6 +43,6 @@ layout: default
 3. ## Piscataway Key Club Website
     The current [website](http://pwaykeyclub.com/) of the Piscataway Key Club, a club devoted to community service! The website was built using [Wordpress](http://wordpress.org/) and [HTML5 Blank](http://html5blank.com/).
 
-# Labs
+<h1 class="module">Labs</h1>
 
 To see quick experiments and other little projects, visit the [Labs](/labs) section of this website!

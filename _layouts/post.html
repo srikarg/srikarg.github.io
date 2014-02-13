@@ -2,50 +2,10 @@
 layout: default
 ---
 
-<a href="#" class="go-top smoothScroll">Back to Top</a>
-
-<section class="post-info module">
-	<h1 class="post-title">{{ page.title }}</h1>
-	<p class="post-date">Published on {{ page.date | date: "%d %B %Y" }}{% if page.comments %} with <a href="#disqus_thread" class="smoothScroll"></a>{% endif %}.</p>
-</section>
-
-{% if page.toc %}
-<div class="module">
-    <h1>Table of Contents</h1>
-    <div class="toc"></div>
-</div>
-{% endif %}
+{% include post-header.html %}
 
 <article class="post">
 	{{ content }}
-
-	{% if page.comments %}
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	<div id="disqus_thread"></div>
-	{% endif %}
-
-	{% if page.share %}
-	<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-		<a class="addthis_button_facebook"></a>
-		<a class="addthis_button_twitter"></a>
-		<a class="addthis_button_google_plusone_share"></a>
-		<a class="addthis_button_hackernews"></a>
-		<a class="addthis_button_pocket"></a>
-		<a class="addthis_button_email"></a>
-	</div>
-	<script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51d0955d18b1633a"></script>
-	{% endif %}
-
-	<section class="pagination post">
-		{% if page.previous %}
-			<a href="{{ page.previous.url }}" class="previous"><i class="icon-circle-arrow-left"></i></a>
-		{% else %}
-			<span class="previous disabled"><i class="icon-circle-arrow-left"></i></span>
-		{% endif %}
-		{% if page.next %}
-			<a href="{{ page.next.url }}" class="next"><i class="icon-circle-arrow-right"></i></a>
-		{% else %}
-			<span class="next disabled"><i class="icon-circle-arrow-right"></i></span>
-		{% endif %}
-	</section>
+    {% include post-footer.html %}
+    {% include post-pagination.html %}
 </article>

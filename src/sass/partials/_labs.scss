@@ -1,0 +1,27 @@
+.lab-item {
+    margin-bottom: 35px;
+    margin-bottom: 3.5rem;
+    overflow: hidden;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    img {
+        max-width: 40%;
+        float: left;
+        vertical-align: middle;
+    }
+
+    .lab-details {
+        width: 60%;
+        float: left;
+        padding-left: 12px;
+        padding-left: 1.2rem;
+    }
+
+    .button {
+        margin: 4px;
+        margin: 0.4rem;
+    }
+}

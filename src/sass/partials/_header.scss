@@ -1,0 +1,149 @@
+.site-header {
+    ul {
+        margin-left: 0;
+    }
+
+    a {
+        color: $header-text;
+    }
+}
+
+.site-title {
+    font-size: 46px;
+    font-size: 4.6rem;
+    padding: 0;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.social {
+    list-style: none;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        padding-right: 10px;
+        padding-right: 1rem;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    i {
+        font-size: 30px;
+        font-size: 3rem;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .fa-facebook {
+        &:hover {
+            color: #47639E;
+        }
+    }
+
+    .fa-twitter {
+        &:hover {
+            color: #55ACEE;
+        }
+    }
+
+    .fa-google-plus {
+        &:hover {
+            color: #db4437;
+        }
+    }
+
+    .fa-envelope {
+        &:hover {
+            color: #db4437;
+        }
+    }
+}
+
+.about {
+    margin: 0;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $header-text;
+}
+
+.site-nav {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-top: 20px;
+        padding-top: 2rem;
+
+        @media only screen and (max-width: 640px) {
+            text-align: center;
+        }
+    }
+
+    li {
+        margin: 10px 0;
+        margin: 1rem 0;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        @media only screen and (max-width: 640px) {
+            display: inline-block;
+            margin: 0 10px 0 0;
+            margin: 0 1rem 0 0;
+        }
+    }
+
+    .search {
+        @media only screen and (max-width: 640px) {
+            display: block;
+        }
+    }
+}
+
+.search-form .fa-search {
+    font-size: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.search-field {
+    display: none;
+    width: 80%;
+    padding: 5px 15px;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
+    font-size: 20px;
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    border-radius: 0.4rem;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.search-results ol {
+    margin-bottom: 0;
+    margin-left: 32px;
+    margin-left: 3.2rem;
+    @media only screen and (max-width: 640px) {
+            list-style-position: inside !important;
+            margin-left: 0;
+    }
+}
+
+.search-results a {
+    color: $header-text;
+}

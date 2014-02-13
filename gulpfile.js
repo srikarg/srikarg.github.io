@@ -1,61 +1,61 @@
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
+
 var port = 4000;
 
 gulp.task('styles', function() {
-    return gulp.src('src/assets/css/**/*.css')
-        .pipe(plugins.concat('main.css'))
-        .pipe(plugins.autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+    return gulp.src('src/sass/main.scss')
+        .pipe(plugins.rubySass({ style: 'compressed' }))
+        .pipe(plugins.autoprefixer('last 15 version'))
         .pipe(plugins.rename({ suffix: '.min' }))
-        .pipe(plugins.minifyCss())
-        .pipe(gulp.dest('dist/assets/css'))
+        .pipe(gulp.dest('dest/css'))
         .pipe(plugins.connect.reload())
         .pipe(plugins.notify({ message: 'Styles task complete.' }));
 });
 
 gulp.task('copyCSS', ['styles'], function() {
     return gulp.src('/')
-        .pipe(plugins.exec('cp -R dist/assets/css/* _site/dist/assets/css/', { silent: true }))
+        .pipe(plugins.exec('cp -R dest/css/* _site/dest/css/', { silent: true }))
         .pipe(plugins.connect.reload())
         .pipe(plugins.notify({ message: 'CSS has been copied.' }));
 });
 
 gulp.task('scripts', function() {
-    return gulp.src('src/assets/js/**/*.js')
+    return gulp.src('src/js/**/*.js')
         .pipe(plugins.jshint.reporter('default'))
         .pipe(plugins.concat('main.js'))
         .pipe(plugins.rename({ suffix: '.min' }))
         .pipe(plugins.uglify())
-        .pipe(gulp.dest('dist/assets/js'))
+        .pipe(gulp.dest('dest/js'))
         .pipe(plugins.connect.reload())
         .pipe(plugins.notify({ message: 'Scripts task complete.' }));
 });
 
 gulp.task('copyJS', ['scripts'], function() {
     return gulp.src('/')
-        .pipe(plugins.exec('cp -R dist/assets/js/* _site/dist/assets/js/', { silent: true }))
+        .pipe(plugins.exec('cp -R dest/js/* _site/dest/js/', { silent: true }))
         .pipe(plugins.connect.reload())
         .pipe(plugins.notify({ message: 'JS has been copied.' }));
 });
 
 gulp.task('images', function() {
-    return gulp.src('src/assets/img/**/*')
-        .pipe(plugins.newer('dist/assets/img'))
+    return gulp.src('src/images/**/*')
+        .pipe(plugins.newer('dest/images'))
         .pipe(plugins.imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-        .pipe(gulp.dest('dist/assets/img'))
+        .pipe(gulp.dest('dest/images'))
         .pipe(plugins.connect.reload())
         .pipe(plugins.notify({ message: 'Images task complete.' }));
 });
 
 gulp.task('copyImages', ['images'], function() {
     return gulp.src('/')
-        .pipe(plugins.exec('cp -R dist/assets/img/* _site/dist/assets/img/', { silent: true }))
+        .pipe(plugins.exec('cp -R dest/images/* _site/dest/images/', { silent: true }))
         .pipe(plugins.connect.reload())
         .pipe(plugins.notify({ message: 'Images have been copied.' }));
 });
 
 gulp.task('clean', function() {
-    return gulp.src(['dist/assets/css', 'dist/assets/js', 'dist/assets/img'], {read: false})
+    return gulp.src(['dest/css', 'dest/js', 'dest/images'], {read: false})
         .pipe(plugins.clean())
         .pipe(plugins.notify({ message: 'Clean task complete.' }));
 });
@@ -77,10 +77,10 @@ gulp.task('connect', plugins.connect.server({
 }));
 
 gulp.task('watch', function() {
-    gulp.watch(['index.html', '_layouts/*.html', '_posts/*.markdown', 'resume/index.markdown', 'contact/index.html', 'labs/index.html'], ['jekyll'])
-    gulp.watch('src/assets/css/**/*.css', ['styles', 'copyCSS']);
-    gulp.watch('src/assets/js/**/*.js', ['scripts', 'copyJS']);
-    gulp.watch('src/assets/img/**/*', ['images', 'copyImages']);
+    gulp.watch(['index.html', '_includes/*.html', '_layouts/*.html', '_posts/*.markdown', 'resume/index.markdown', 'labs/index.html'], ['jekyll'])
+    gulp.watch('src/sass/**/*.scss', ['styles', 'copyCSS']);
+    gulp.watch('src/js/**/*.js', ['scripts', 'copyJS']);
+    gulp.watch('src/images/**/*', ['images', 'copyImages']);
 });
 
 gulp.task('default', ['clean', 'images', 'styles', 'scripts', 'jekyll', 'connect', 'watch']);

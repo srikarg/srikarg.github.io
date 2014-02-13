@@ -1,67 +1,7 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}{% if page.title != 'Srikar Gudipati' %} | {{ site.name }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
-
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/dist/assets/css/main.min.css">
-</head>
-
-<body>
-    <div class="wrapper">
-        <header>
-            <h1 class="site-title"><a href="/">{{ site.name }}</a>
-            </h1>
-
-            <nav>
-                <ul class="clearfix">
-                    <li><i class="icon-home"></i> <a href="/">Home</a></li>
-                    <li><i class="icon-code"></i> <a href="/labs">Labs</a></li>
-                    <li><i class="icon-briefcase"></i> <a href="/resume">Resume</a></li>
-                    <li><i class="icon-phone"></i> <a href="/contact">Contact</a></li>
-                </ul>
-
-                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
-                    <option>Navigation</option>
-                    <option value="/">Home</option>
-                    <option value="/labs">Labs</option>
-                    <option value="/resume">Resume</option>
-                    <option value="/contact">Contact</option>
-                </select>
-            </nav>
-
-            <form class="search">
-                <i class="icon-search"></i>
-                <input type="text" class="search-field" placeholder="Search Posts!" name="search" />
-            </form>
-
-            <div class="search-results"><ul></ul></div>
-        </header>
-
-        <section class="content">
-            {{ content }}
-        </section>
-    </div>
-
-    <footer>
-        <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
-            <tr><td>
-                <p>&copy;&nbsp;<script>document.write(new Date().getFullYear());</script>&nbsp;{{ site.author }}. Built with <a href="http://jekyllrb.com/">Jekyll</a>. Hosted on <a href="https://github.com/srikarg/srikarg.github.io">GitHub</a>. Follow this blog with <a href="http://feeds.feedburner.com/srikarg">RSS</a> or <a href="http://feedburner.google.com/fb/a/mailverify?uri=srikarg&amp;loc=en_US">Email</a>.</p>
-            </td></tr>
-        </table>
-    </footer>
-    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <script src="/dist/assets/js/main.min.js"></script>
-    <script>(function(e,t,n,r,i,s,o){e["GoogleAnalyticsObject"]=i;e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},e[i].l=1*new Date;s=t.createElement(n),o=t.getElementsByTagName(n)[0];s.async=1;s.src=r;o.parentNode.insertBefore(s,o)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-39675222-1","srikarg.github.io");ga("send","pageview")</script>
-    <script type="text/javascript">var disqus_shortname='srikarg';(function(){var s=document.createElement('script');s.async=true;s.type='text/javascript';s.src='//'+disqus_shortname+'.disqus.com/count.js';(document.getElementsByTagName('HEAD')[0]||document.getElementsByTagName('BODY')[0]).appendChild(s)}());</script>
-    {% if page.comments %}
-    <script type="text/javascript">var disqus_shortname='srikarg';(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq)})();</script>
-    {% endif %}
-</body>
-
-</html>
+{% include head.html %}
+{% include header.html %}
+    <section class="content">
+        {{ content }}
+    </section>
+{% include footer.html %}
+{% include foot.html %}

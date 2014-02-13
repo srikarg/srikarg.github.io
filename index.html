@@ -1,36 +1,17 @@
 ---
 layout: default
-title: "Srikar Gudipati"
+title: Srikar Gudipati
 ---
 
-<div class="module">
-    <h1>About Me</h1>
-    <p>I'm Srikar, a 16 year old striving to convert coffee into world-changing code. Talk to me by visiting the contact page.</p>
-</div>
-
-<article class="home">
-    <h1>Blog Posts</h1>
+<article>
+    <h1 class="module">Blog Posts</h1>
     <ul class="posts">
         {% for post in paginator.posts %}
         <li>
-            <span>{{ post.date | date: "%d %B %Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+            {{ post.date | date: "%d %B %Y" }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
         {% endfor %}
     </ul>
 </article>
 
-<section class="pagination home">
-    {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
-        <a href="/" class="previous"><i class="icon-circle-arrow-left"></i></a>
-    {% else %}
-        <a href="/page/{{paginator.previous_page}}" class="previous"><i class="icon-circle-arrow-left"></i></a>
-    {% endif %} {% else %}
-    <span class="previous disabled"><i class="icon-circle-arrow-left"></i>
-    </span>
-    {% endif %} {% if paginator.next_page %}
-    <a href="/page/{{paginator.next_page}}" class="next"><i class="icon-circle-arrow-right"></i></a>
-    {% else %}
-    <span class="next disabled"><i class="icon-circle-arrow-right"></i>
-    </span>
-    {% endif %}
-</section>
+{% include home-pagination.html %}
