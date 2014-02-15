@@ -12,7 +12,7 @@ A simple search for `jquery image galleries` on Google will show you several jQu
 
 Let's get started! We'll first need some basic markup in HTML for our images and the box that will hold the current and selected image:
 
-{% highlight html %}
+```html
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 
 <div class="images">
@@ -35,7 +35,7 @@ Let's get started! We'll first need some basic markup in HTML for our images and
         <i class="next fa fa-arrow-right"></i>
     </div>
 </div>
-{% endhighlight %}
+```
 
 In the code above, `div.images` holds the images and `div.container` will hold the enlarged and focused image. The `div.controls` contains icons which will allow the user to close the image and go to the next or previous image. Finally, the `link` element retrieves the [Font Awesome](http://fontawesome.io/) icon library by the use of a [CDN](http://en.wikipedia.org/wiki/Content_delivery_network).
 
@@ -43,7 +43,7 @@ In the code above, `div.images` holds the images and `div.container` will hold t
 
 Next, we'll style the elements we just created using the following CSS:
 
-{% highlight css %}
+```css
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -122,7 +122,7 @@ body {
 .darken {
     opacity: 0.3;
 }
-{% endhighlight %}
+```
 
 The images are centered using `display: inline-block;` and `text-align: center;` on the parent element, or `div.images`. The `div.focus` is absolutely positioned in the middle using the `top`, `bottom`, `left`, and `right` properties. Next, there are two helper classes, `.overlay` and `.darken`, which will help us when we write the jQuery code.
 
@@ -130,7 +130,7 @@ The images are centered using `display: inline-block;` and `text-align: center;`
 
 The next step is to add the functionality of the image gallery using jQuery:
 
-{% highlight javascript %}
+```javascript
 $(function() {
     var images = $('.images');
     var image = $('.images>img');
@@ -167,7 +167,7 @@ $(function() {
         container.append('<img src=\"' + image.eq(current).attr('src') + '\" />');
     });
 });
-{% endhighlight %}
+```
 
 First, we set up various variables to hold the elements of our gallery. Most importantly, the variable `current` will hold the zero-based index of the current image in the array of all the images inside `div.images`. In other words, the first image in `div.images` will have an index of 0, the second will have 1, and so forth. A click handler is set for all the images in `div.images`. When it is called, the variable `current` is updated with the correct index, any existing images in the focus container are removed, the background is darkened using the previously defined utility CSS classes, and finally, the image that was clicked is appended to the focus container and displayed. The close, previous, and next click handlers perform their self-explanatory jobs.
 

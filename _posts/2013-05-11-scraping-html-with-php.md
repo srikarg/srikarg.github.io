@@ -12,7 +12,7 @@ Let's just say you run into a situation where you need to access data from a web
 
 The obvious first step in trying this library out is to download it. You can find it [here](http://sourceforge.net/projects/simplehtmldom/files/). Once you have it downloaded and extracted, you can load it into your PHP file and then specify an HTML string or URL to parse. There are two ways to parse the URL. In the following snippet, I'll show you both methods of parsing.
 
-{% highlight php %}
+```php
 <?php
 	// Include the library to actually use it.
 	include_once('simple_html_dom.php');
@@ -24,7 +24,7 @@ The obvious first step in trying this library out is to download it. You can fin
 	// Way #2: Quick way
 	$html = file_get_html('http://www.google.com/');
 ?>
-{% endhighlight %}
+```
 
 # Extracting data
 
@@ -39,7 +39,7 @@ Once we have the library ready to go, we can invoke it to retrieve what we need.
 
 For the sake of example, let's get all of the links from the Yahoo! [website](http://www.yahoo.com/) and print them out.
 
-{% highlight php %}
+```php
 <?php
 	// Include the library to use it.
 	include_once('simple_html_dom.php');
@@ -55,11 +55,11 @@ For the sake of example, let's get all of the links from the Yahoo! [website](ht
 		echo $link."<br/>";
 	}
 ?>
-{% endhighlight %}
+```
 
 What if we wanted to extract the current articles on the front page of the New York Times [website](http://www.nytimes.com/)? Luckily, the website wraps each story within a `div` with a class of story. Knowing this, we can get all of the articles on the front page using the selector `div.story` as shown below.
 
-{% highlight php %}
+```php
 <?php
     include_once('lib/simple_html_dom.php');
 
@@ -73,7 +73,7 @@ What if we wanted to extract the current articles on the front page of the New Y
 		echo $element."<br/>";
 	}
 ?>
-{% endhighlight %}
+```
 
 Clearly, the PHP Simple HTML DOM Parser can be exceedingly useful in situations such as the one I recently encountered. You can find more information about it [here](http://simplehtmldom.sourceforge.net/manual.htm) and you can find documentation [here](http://simplehtmldom.sourceforge.net/manual_api.htm).
 

@@ -12,7 +12,7 @@ Lately, the offcanvas menu pattern has been extremely popular in various website
 
 First, we'll set up the navigation and main content components using some simple HTML. Please note that I am using the Actor font from Google Fonts and Font Awesome (these two are present in the link tags).
 
-{% highlight html %}
+```html
 <link href='http://fonts.googleapis.com/css?family=Actor' rel='stylesheet' type='text/css'>
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 
@@ -33,7 +33,7 @@ First, we'll set up the navigation and main content components using some simple
   </header>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, reiciendis.</p>
 </article>
-{% endhighlight %}
+```
 
 The HTML is pretty self-explanatory, although there is one thing to note: `&raar;` is a right arrow HTML entity, which we are going to use for expanding and closing the offcanvas menu.
 
@@ -41,7 +41,7 @@ The HTML is pretty self-explanatory, although there is one thing to note: `&raar
 
 The next section is the CSS. Note the `.js` class. This is used to show the menu by default if the user does not have JavaScript enabled. The navigation is fixed and takes up 20% of the browser width with the content taking up the other 80%.
 
-{% highlight css %}
+```css
 * {
   box-sizing: border-box;
   margin: 0;
@@ -134,13 +134,13 @@ article.menu-open {
 .main-nav.menu-open {
   width: 20%;
 }
-{% endhighlight %}
+```
 
 # The jQuery
 
 Finally, the jQuery is needed to make the menu toggle button functional. Additionally, it adds a `.js` class to the `body` tag indicating that the user has JavaScript enabled. The button click handler simply adds/removes classes and changes the arrow inside the button as required.
 
-{% highlight javascript %}
+```javascript
 $(function() {
   $('body').addClass('js');
   var navButton = $('.nav-control');
@@ -160,7 +160,7 @@ $(function() {
     }
   });
 });
-{% endhighlight %}
+```
 
 # Demonstration
 

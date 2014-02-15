@@ -41,6 +41,7 @@ gulp.task('copyJS', ['scripts'], function() {
 gulp.task('images', function() {
     return gulp.src('src/images/**/*')
         .pipe(plugins.newer('dest/images'))
+        .pipe(plugins.imagemin())
         .pipe(plugins.imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
         .pipe(gulp.dest('dest/images'))
         .pipe(plugins.connect.reload())
@@ -77,7 +78,7 @@ gulp.task('connect', plugins.connect.server({
 }));
 
 gulp.task('watch', function() {
-    gulp.watch(['index.html', '_includes/*.html', '_layouts/*.html', '_posts/*.markdown', 'resume/index.markdown', 'labs/index.html'], ['jekyll'])
+    gulp.watch(['index.html', '_includes/*.html', '_layouts/*.html', '_posts/*.md', 'resume/index.md', 'labs/index.html'], ['jekyll'])
     gulp.watch('src/sass/**/*.scss', ['styles', 'copyCSS']);
     gulp.watch('src/js/**/*.js', ['scripts', 'copyJS']);
     gulp.watch('src/images/**/*', ['images', 'copyImages']);

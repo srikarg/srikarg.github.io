@@ -16,7 +16,7 @@ Hey guys! Navigation is extremely important for any website. It is the foundatio
 
 First off, we create a simple table for our menu with the following HTML:
 
-{% highlight html %}
+```html
 <table cellpadding="0px" cellspacing="0px" id="navBar">
     <tr>
         <td>
@@ -33,13 +33,13 @@ First off, we create a simple table for our menu with the following HTML:
         </td>
     </tr>
 </table>
-{% endhighlight %}
+```
 
 # The CSS
 
 Next, we'll use the following CSS to style the table:
 
-{% highlight css %}
+```css
 body {
 	background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/satinweave.png);
 }
@@ -81,7 +81,7 @@ table {
 	background: #B9B9B9;
 	text-decoration: none;
 }
-{% endhighlight %}
+```
 
 # Closing
 

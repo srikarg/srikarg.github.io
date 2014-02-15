@@ -16,9 +16,9 @@ Yeoman is a command line tool built for the purpose of helping you (a web develo
 
 If you haven't already, install node.js by visiting its [website](http://nodejs.org/) and clicking the install button. Next, open up Terminal or the Command Prompt (depending on what OS you're using) and enter the following command:
 
-{% highlight console %}
+```console
 npm install -g yo grunt-cli bower
-{% endhighlight %}
+```
 
 This should install Yeoman and it's dependencies (yo, [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/)).
 
@@ -26,29 +26,29 @@ This should install Yeoman and it's dependencies (yo, [Grunt](http://gruntjs.com
 
 Next, you need to install generators in order to use the starter templates described above. Let's say you wanted Yeoman to create a basic template for a web application. First, you need to install the generator for this functionality. This is as simple as:
 
-{% highlight console %}
+```console
 npm install -g generator-webapp
-{% endhighlight %}
+```
 
 Installing other generators follows this same format. For example, if you needed an AngularJS generator, you would use:
 
-{% highlight console %}
+```console
 npm install -g generator-angular
-{% endhighlight %}
+```
 
 # Using Generators
 
 After installation, using generators is as simple as going to the directory where you want the template to be installed and typing the following in the Terminal or Command Prompt:
 
-{% highlight console %}
+```console
 yo webapp
-{% endhighlight %}
+```
 
 This assumes that you are using the webapp generator. Using the AngularJS generator instead would look like this:
 
-{% highlight console %}
+```console
 yo angular
-{% endhighlight %}
+```
 
 Once you run the generator, you should get a folder full of all the dependencies and source files for your web development project.
 
@@ -56,9 +56,9 @@ Once you run the generator, you should get a folder full of all the dependencies
 
 To start developing locally, simply run:
 
-{% highlight console %}
+```console
 grunt server
-{% endhighlight %}
+```
 
 This will fire up a localhost server for you to develop on. Another neat feature is that the server updates automatically as you edit the project's source files, meaning you can see your changes instantaneously.
 
@@ -66,9 +66,9 @@ This will fire up a localhost server for you to develop on. Another neat feature
 
 Once you're done developing your amazing application, you can build it into a production folder using:
 
-{% highlight console %}
+```console
 grunt build
-{% endhighlight %}
+```
 
 This will concatenate all of your JavaScript scripts and CSS files, link them up in the `index.html` file, and create a `dist` folder in the main directory for you. Then, you can simply transport your completed application elsewhere by using the `dist` folder (short for distribution).
 

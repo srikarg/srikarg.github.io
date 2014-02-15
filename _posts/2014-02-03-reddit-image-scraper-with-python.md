@@ -14,7 +14,7 @@ I am an avid reader of the [MinimalWallpaper subreddit](http://www.reddit.com/r/
 
 The following Python script solved my issue:
 
-{% highlight python %}
+```python
 import requests, urllib
 import os, sys, time
 
@@ -75,7 +75,7 @@ def main():
 
 if __name__ == '__main__':
     main()
-{% endhighlight %}
+```
 
 # What does the script do?
 

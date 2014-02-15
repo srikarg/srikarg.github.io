@@ -28,3 +28,9 @@
         overflow: inherit;
     }
 }
+
+.content, footer {
+    margin: 0;
+    padding: 0;
+    max-width: 800px;
+}

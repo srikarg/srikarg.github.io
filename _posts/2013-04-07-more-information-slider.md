@@ -12,7 +12,7 @@ Welcome again readers! Today, I have a quick little tutorial for displaying info
 
 First, we need some simple HTML to hold our images. I'll use a simple grid of quarters with an image inside each of them.
 
-{% highlight html %}
+```html
 <div class="quarter">
     <div class="info">
     	This is some info.
@@ -40,13 +40,13 @@ First, we need some simple HTML to hold our images. I'll use a simple grid of qu
     </div>
     <img src="http://lorempixel.com/300/300/sports/">
 </div>
-{% endhighlight %}
+```
 
 # The CSS
 
 Next, we use basic CSS to set each quarter to take up 25% of the screen width. We also hide the info by default with `display: none;`.
 
-{% highlight css %}
+```css
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -74,13 +74,13 @@ body {
     text-align: center;
     display: none;
 }
-{% endhighlight %}
+```
 
 # The jQuery
 
 Finally, we use jQuery to take each image from each quarter and display the info on a click event.
 
-{% highlight javascript %}
+```javascript
 $(function(){
 	var image = $('.quarter>img');
 
@@ -89,7 +89,7 @@ $(function(){
 		$(this).siblings('.info').slideToggle();
 	});
 });
-{% endhighlight %}
+```
 
 # Closing
 

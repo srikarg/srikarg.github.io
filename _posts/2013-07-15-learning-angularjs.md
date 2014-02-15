@@ -12,7 +12,7 @@ AngularJS is a JavaScript framework developed by Google that makes coding web ap
 
 To install AngularJS into your web project, just head over to [AngularJS's website](http://angularjs.org/) and click the download button. This will show you a couple of options. Personally, I use the CDN as the following:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +23,11 @@ To install AngularJS into your web project, just head over to [AngularJS's websi
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 </body>
 </html>
-{% endhighlight %}
+```
 
 Now that AngularJS is available to us, we must tell it where our web app is. This is simply accomplished by including an `ng-app` attribute inside the container that houses our app. For now, we'll put it inside the `html` tag as such:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="en" ng-app>
 <head>
@@ -38,13 +38,13 @@ Now that AngularJS is available to us, we must tell it where our web app is. Thi
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 </body>
 </html>
-{% endhighlight %}
+```
 
 # Basic Data Binding
 
 Now that the installation is complete, we can start with the basics of AngularJS! Data binding permits your web app's HTML to directly communicate with the app's JavaScript. Those of you familiar with the [MVC pattern](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (Model-View-Controller) should know that data binding in this framework allows the view and model to directly communicate and update based on the other's data. The following is an example of data binding:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="en" ng-app>
 <head>
@@ -57,7 +57,7 @@ Now that the installation is complete, we can start with the basics of AngularJS
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 </body>
 </html>
-{% endhighlight %}
+```
 
 Here, the `ng-model` tells AngularJS to make the data from the `input` a variable that can be accessed and manipulated through the web application's script. In addition, a programmer can output any variables that he/she defines through AngularJS by using double braces (\{\{ \}\}) as shown above. In the code, the user's name is retrieved using `ng-model="user_name"` and then it is displayed in `<p>` tags using <code>&#123;&#123; user_name &#125;&#125;</code>. Here's what it produces:
 
@@ -65,7 +65,7 @@ Here, the `ng-model` tells AngularJS to make the data from the `input` a variabl
 
 One can also output answers to simple math using AngularJS. For example, two numbers can be taken from `<input type="number">` tags and then their sum can be displayed like so:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="en" ng-app>
 <head>
@@ -79,7 +79,7 @@ One can also output answers to simple math using AngularJS. For example, two num
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 </body>
 </html>
-{% endhighlight %}
+```
 
 Here's what the previous code creates:
 
@@ -93,7 +93,7 @@ What if you needed more functionality than the simple apps seen above? Well, Ang
 
 The HTML:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="en" ng-app ng-controller="MainCtrl">
 <head>
@@ -112,11 +112,11 @@ The HTML:
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 </body>
 </html>
-{% endhighlight %}
+```
 
 The JavaScript:
 
-{% highlight javascript %}
+```javascript
 function MainCtrl ($scope) {
   $scope.people = [
     {
@@ -136,7 +136,7 @@ function MainCtrl ($scope) {
     }
   ];
 }
-{% endhighlight %}
+```
 
 First off, in the HTML, we tell AngularJS that the app uses the controller named *MainCtrl* by typing `ng-controller="MainCtrl"` as a `<html>` tag attribute. This allows the HTML to communicate with the JavaScript. Next, we use `ng-repeat` to loop through each `person` in the `people` JSON object that is created in the JavaScript code. The following description of `ng-repeat` is from the AngularJS [API](http://docs.angularjs.org/api/):
 
@@ -148,7 +148,7 @@ Inside each `<li>` the values for the name, city, and state keys are used from t
 
 Next, we can add a feature to allow the user to input names into the `people` object! First, we will need to modify the HTML as so:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="en" ng-app ng-controller="MainCtrl">
 <head>
@@ -179,11 +179,11 @@ Next, we can add a feature to allow the user to input names into the `people` ob
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 </body>
 </html>
-{% endhighlight %}
+```
 
 Next, we'll update the JavaScript as so:
 
-{% highlight javascript %}
+```javascript
 function MainCtrl ($scope) {
   $scope.people = [
     {
@@ -213,7 +213,7 @@ function MainCtrl ($scope) {
 	$scope.person_state = '';
   }
 }
-{% endhighlight %}
+```
 
 In the HTML, `ng-click` allows the `MainCtrl` function `addPerson()` to get executed when the button is clicked. The function `addPerson()` simply pushes the new person, with the data from the three `<input>` tags, into the `people` JSON object. Then, the list we created earlier (to display the people) gets automatically updated with the new person that was just added. Here's the updated app:
 
@@ -223,7 +223,7 @@ In the HTML, `ng-click` allows the `MainCtrl` function `addPerson()` to get exec
 
 AngularJS filters filter data inside your web application. This can lead to features such as searching, ordering, and more! Let's add a search functionality to The People App that we have been working on. First, we need to add a new `<input>` tag for the search text. Then we will need to filter the results in the `<ul>` list using the search text. The new modified code will be:
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html lang="en" ng-app ng-controller="MainCtrl">
 <head>
@@ -255,7 +255,7 @@ AngularJS filters filter data inside your web application. This can lead to feat
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 </body>
 </html>
-{% endhighlight %}
+```
 
 The only new code we needed to add was of course the search `<input>` and the `filter:search` inside the `ng-repeat` attribute! The pipe character (|) inside the `ng-repeat` simply allows the filter to use the data from the `people` JSON object. Let's view the search in action!
 
@@ -265,20 +265,20 @@ The only new code we needed to add was of course the search `<input>` and the `f
 
 The final topic we will be discovering in AngularJS today will be directives, which are custom HTML elements or attributes created using AngularJS. Making a new directive is simple! Let's say you wanted to create a directive (we will name it emphasize) which looks like this: `<p emphasize></p>` or this: `<emphasize></emphasize>`. First, we will need to declare a module (see [this](http://upload.wikimedia.org/wikipedia/commons/f/fd/MVC-Process.png) if you need to see how a model interacts with a view and controller) like so:
 
-{% highlight javascript %}
+```javascript
 angular.module('sampleDirective', []);
-{% endhighlight %}
+```
 
 Next, we can chain the `directive()` method onto the previous code to add a directive to the module.
 
-{% highlight javascript %}
+```javascript
 angular.module('sampleDirective', []).directive('emphasize', function () {
 	return {
 		restrict: 'E,A',
 		template: '<span style="color: red;font-size: 40px;">This is the emphasize directive!</span>'
 	};
 });
-{% endhighlight %}
+```
 
 Inside the directive function, we are restricting the directive to only elements and attributes using `restrict: 'E,A'`. Whenever the emphasize directive is used, the element that contains the attribute or the emphasize tag itself will be replaced with the content present in `template` above. You can view the code below!
 

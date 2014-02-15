@@ -16,22 +16,22 @@ Jekyll is a static site generator built using Ruby. It allows you to write basic
 
 First, open up Command Prompt or Terminal depending on your operating system. Next, install Jekyll onto your system:
 
-{% highlight console %}
+```console
 gem install jekyll
-{% endhighlight %}
+```
 
 Then, create a new site using:
 
-{% highlight console %}
+```console
 jekyll new my-amazing-site
-{% endhighlight %}
+```
 
 Next, go into the newly created site directory and set up a server to watch for changes.
 
-{% highlight console %}
+```console
 cd my-amazing-site
 jekyll serve --watch
-{% endhighlight %}
+```
 
 Now that the server is set up, we can point our browser to `localhost:4000` in order to view our newly generated site! It should look something like the following:
 
@@ -58,7 +58,7 @@ Jekyll blogs often have a directory structure similar to the one below:
 
 Jekyll populates the `_site` folder with the compiled blog. The configuration for your blog is stored in `_config.yml`. A sample configuration is shown below:
 
-{% highlight yaml %}
+```yaml
 name: My Awesome Website!
 description: This is an amazing site I made a while ago!
 
@@ -67,7 +67,7 @@ paginate: 6
 markdown: rdiscount
 permalink: pretty
 pygments: true
-{% endhighlight %}
+```
 
 The posts for the blog are put into the `_posts` directory. These files can be written using HTML or Markdown. Jekyll blog posts must be named with a specific date prefix, as shown above. They must be named in the following format: `year-month-day-title-with-dashes-for-separation.md`.
 
@@ -85,16 +85,16 @@ In order to change the styling, use the `css` directory. The `syntax.css` file c
 
 Now that the Jekyll blog is set up, start posting! To write a new post, make a new file in `_posts`, but don't forget to include the date prefix that was previously mentioned! Once the file is created, you will have to define the title and layout of the post using YAML inside the file. This is called *front matter*. Say I have a post named *All About Rainbows*. Then I'll have to fill the file with the following:
 
-{% highlight yaml %}
+```yaml
 ---
 title: All About Rainbows
 layout: post
 ---
-{% endhighlight %}
+```
 
 This tells Jekyll that I want to use the `post.html` template inside of the `_layouts` folder that we previously talked about. Then, I can start writing in Markdown (or HTML if I made a .html file):
 
-{% highlight text %}
+```text
 ---
 title: All About Rainbows
 layout: post
@@ -105,7 +105,7 @@ layout: post
 Yes, rainbows are amazing, but do you know everything about them?
 
 ...
-{% endhighlight %}
+```
 
 # More Information
 
