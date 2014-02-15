@@ -2,16 +2,13 @@ name: "Srikar Gudipati"
 author: "Srikar Gudipati"
 description: "My personal website/blog!"
 
-<<<<<<< HEAD
 markdown: redcarpet
 redcarpet:
   extensions: ["fenced_code_blocks", "disable_indented_code_blocks", "space_after_headers", "with_toc_data"]
 markdown_ext: md
 
-=======
 markdown: maruku
   fenced_code_blocks: true
->>>>>>> 8311b792ff870de55bbfb72e325139352386516c
 permalink: "/blog/:title"
 pygments: true
 
