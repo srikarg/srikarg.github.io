@@ -30,7 +30,7 @@ $(function() {
     });
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 200)
+        if ($(this).scrollTop() > 400)
             $('.top').fadeIn(200);
         else
             $('.top').fadeOut(200);
