@@ -1,5 +1,5 @@
 ---
-title: Using Yeoman
+title: "Using Yeoman"
 layout: post
 toc: true
 share: true

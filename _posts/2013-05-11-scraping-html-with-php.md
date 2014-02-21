@@ -1,5 +1,5 @@
 ---
-title: Scraping HTML with PHP
+title: "Scraping HTML with PHP"
 layout: post
 toc: true
 share: true

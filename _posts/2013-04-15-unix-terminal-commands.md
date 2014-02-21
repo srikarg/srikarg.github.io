@@ -1,5 +1,5 @@
 ---
-title: Unix terminal commands
+title: "Unix terminal commands"
 layout: post
 toc: true
 share: true

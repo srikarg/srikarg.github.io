@@ -1,5 +1,5 @@
 ---
-title: AngularJS for beginners
+title: "AngularJS for beginners"
 layout: post
 toc: true
 share: true

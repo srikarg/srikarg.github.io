@@ -1,5 +1,5 @@
 ---
-title: Implementing an offcanvas menu with jQuery
+title: "Implementing an offcanvas menu with jQuery"
 layout: post
 toc: true
 share: true
