@@ -1,3 +1,8 @@
+.me {
+    margin-bottom: 20px;
+    margin-bottom: 2rem;
+}
+
 .site-header {
     ul {
         margin-left: 0;
@@ -6,16 +11,16 @@
     a {
         color: $header-text;
     }
+
+    a:hover {
+        text-decoration: none;
+    }
 }
 
 .site-title {
     font-size: 46px;
     font-size: 4.6rem;
     padding: 0;
-
-    a {
-        text-decoration: none;
-    }
 }
 
 .social {
@@ -30,10 +35,6 @@
         &:last-child {
             padding-right: 0;
         }
-    }
-
-    a {
-        text-decoration: none;
     }
 
     i {
@@ -71,17 +72,12 @@
     margin: 0;
     font-size: 16px;
     font-size: 1.6rem;
-    padding-bottom: 20px;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid $header-text;
 }
 
 .site-nav {
     ul {
         list-style: none;
         margin: 0;
-        padding-top: 20px;
-        padding-top: 2rem;
 
         @media only screen and (max-width: 640px) {
             text-align: center;
@@ -105,8 +101,8 @@
         @media only screen and (max-width: 560px) {
             display: block;
             margin-right: 0;
-            margin-bottom: 5px;
-            margin-bottom: 0.5rem;
+            margin-bottom: 10px;
+            margin-bottom: 1rem;
         }
     }
 
@@ -123,6 +119,11 @@
 .search-form .fa-search {
     font-size: 20px;
     font-size: 2rem;
+    cursor: pointer;
+}
+
+.search-form .search-container {
+    display: inline-block;
     cursor: pointer;
 }
 

@@ -1,5 +1,5 @@
 ---
-title: "Getting started with Jekyll"
+title: "Getting Started with Jekyll"
 layout: post
 toc: true
 share: true

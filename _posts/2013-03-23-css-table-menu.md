@@ -1,5 +1,5 @@
 ---
-title: "A simple table menu using CSS and HTML"
+title: "A Simple Table Menu Using CSS and HTML"
 layout: post
 toc: true
 share: true

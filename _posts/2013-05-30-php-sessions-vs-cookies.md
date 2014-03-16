@@ -1,5 +1,5 @@
 ---
-title: "PHP sessions vs. cookies"
+title: "PHP Sessions vs. Cookies"
 layout: post
 toc: true
 share: true

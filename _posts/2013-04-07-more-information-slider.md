@@ -1,5 +1,5 @@
 ---
-title: "More information slider with jQuery"
+title: "A More Information Slider with jQuery"
 layout: post
 toc: true
 share: true

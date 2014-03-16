@@ -34,13 +34,16 @@ title: Resume
 
 <h1 class="module">Personal Projects</h1>
 
-1. ## Coin Rush
-	An arcade game created using [CraftyJS](http://craftyjs.com/), a JavaScript game engine. Click [here](http://srikarg.github.io/Coin-Rush/) to play it!
+1. ## Escape the Block
+    An arcade game created using [CraftyJS](http://craftyjs.com/), a JavaScript 2D game engine. Click [here](http://srikarg.github.io/escape-the-block/app/) to play it!
 
-2. ## Team 224 Former Website
+2. ## Coin Rush
+	Another arcade game created using CraftyJS. Click [here](http://srikarg.github.io/Coin-Rush/) to play it!
+
+3. ## Team 224 Former Website
 	The past [website](https://github.com/srikarg/Old-Robotics-Team-224-Website) of [Team 224](http://team224.com/), a FIRST robotics team.
 
-3. ## Piscataway Key Club Website
+4. ## Piscataway Key Club Website
     The current [website](http://pwaykeyclub.com/) of the Piscataway Key Club, a club devoted to community service! The website was built using [Wordpress](http://wordpress.org/) and [HTML5 Blank](http://html5blank.com/).
 
 <h1 class="module">Labs</h1>

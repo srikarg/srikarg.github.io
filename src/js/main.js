@@ -1,7 +1,9 @@
 $(function() {
     var json = [];
     var field = $('.search-field');
+    var container = $('.search-container');
     var icon = $('.search-form .fa-search');
+    var label = $('.search-form .search-label');
     var results = $('.search-results ol');
 
     $.getJSON('/search.json', function(data) {
@@ -15,18 +17,26 @@ $(function() {
             results.empty();
     });
 
-    icon.on('click', function() {
-        field.animate({
-            width: 'toggle'
-        });
-        field.focus();
-    });
-
-    field.on('blur', function() {
-        if (field.val() === '')
+    container.on('click', function() {
+        if (label.is(':visible')) {
+            label.hide();
             field.animate({
                 width: 'toggle'
             });
+            field.focus();
+        }
+    });
+
+    field.on('blur', function() {
+        if (field.val() === '') {
+            field.animate({
+                width: 'toggle'
+            }, {
+                complete: function() {
+                    label.show();
+                }
+            });
+        }
     });
 
     $(window).scroll(function() {

@@ -1,5 +1,5 @@
 ---
-title: "Popup image gallery with jQuery"
+title: "Popup Image Gallery with jQuery"
 layout: post
 toc: true
 share: true

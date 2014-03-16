@@ -26,7 +26,12 @@ h4 {
 }
 
 a {
-    color: $body-text;
+    text-decoration: none;
+    color: $header;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .button {

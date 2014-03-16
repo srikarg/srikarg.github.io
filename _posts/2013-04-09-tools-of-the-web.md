@@ -1,5 +1,5 @@
 ---
-title: "Tools of the web"
+title: "Tools of the Web"
 layout: post
 toc: true
 share: true

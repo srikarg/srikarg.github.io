@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
+plugins.connect = require('gulp-connect');
+plugins.jshint = require('gulp-jshint');
 
 var port = 4000;
 
@@ -40,9 +42,9 @@ gulp.task('copyJS', ['scripts'], function() {
 
 gulp.task('images', function() {
     return gulp.src('src/images/**/*')
-        .pipe(plugins.newer('dest/images'))
+        // .pipe(plugins.newer('dest/images'))
         .pipe(plugins.imagemin())
-        .pipe(plugins.imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+        // .pipe(plugins.imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
         .pipe(gulp.dest('dest/images'))
         .pipe(plugins.connect.reload())
         .pipe(plugins.notify({ message: 'Images task complete.' }));
@@ -69,11 +71,11 @@ gulp.task('jekyll', ['images', 'styles', 'scripts'], function() {
 });
 
 gulp.task('connect', plugins.connect.server({
-    root: '_site/',
+    root: ['_site'],
     port: port,
     livereload: true,
     open: {
-        browser: 'Google Chrome'
+        browser: 'Firefox'
     }
 }));
 

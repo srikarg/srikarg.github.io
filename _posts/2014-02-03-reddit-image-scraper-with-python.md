@@ -1,5 +1,5 @@
 ---
-title: "A Reddit image scraper with Python"
+title: "A Reddit Image Scraper with Python"
 layout: post
 toc: true
 share: true
