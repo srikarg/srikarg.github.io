@@ -3,6 +3,7 @@ title: "Song of the Week: Nightcall"
 layout: post
 share: true
 comments: true
+permalink: "/blog/:title"
 ---
 
 <div class="spotify">
