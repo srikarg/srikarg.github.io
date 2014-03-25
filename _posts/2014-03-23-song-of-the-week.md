@@ -1,5 +1,5 @@
 ---
-title: Song of the Week
+title: "Song of the Week: Midnight City"
 layout: post
 share: true
 comments: true
