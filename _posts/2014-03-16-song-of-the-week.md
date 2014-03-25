@@ -1,5 +1,5 @@
 ---
-title: "Song of the Week"
+title: "Song of the Week: Nightcall"
 layout: post
 share: true
 comments: true
