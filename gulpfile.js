@@ -65,7 +65,7 @@ gulp.task('clean', function() {
 
 gulp.task('jekyll', ['images', 'styles', 'scripts'], function() {
     return gulp.src('/')
-        .pipe(plugins.exec('jekyll build', { silent: true }))
+	.pipe(plugins.exec('jekyll build --drafts', { silent: true }))
         .pipe(plugins.connect.reload())
         .pipe(plugins.notify({ message: 'Jekyll task complete.' }));
 });
@@ -75,7 +75,7 @@ gulp.task('connect', plugins.connect.server({
     port: port,
     livereload: true,
     open: {
-        browser: 'Firefox'
+	browser: 'Google Chrome'
     }
 }));
 
