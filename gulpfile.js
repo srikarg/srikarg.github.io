@@ -65,7 +65,7 @@ gulp.task('clean', function() {
 
 gulp.task('jekyll', ['images', 'styles', 'scripts'], function() {
     return gulp.src('/')
-	.pipe(plugins.exec('jekyll build --drafts', { silent: true }))
+        .pipe(plugins.exec('jekyll build --drafts', { silent: true }))
         .pipe(plugins.connect.reload())
         .pipe(plugins.notify({ message: 'Jekyll task complete.' }));
 });
@@ -75,12 +75,12 @@ gulp.task('connect', plugins.connect.server({
     port: port,
     livereload: true,
     open: {
-	browser: 'Google Chrome'
+        browser: 'Google Chrome'
     }
 }));
 
 gulp.task('watch', function() {
-    gulp.watch(['index.html', '_includes/*.html', '_layouts/*.html', '_posts/*.md', 'resume/index.md', 'labs/index.html'], ['jekyll'])
+    gulp.watch(['index.html', '_includes/*.html', '_layouts/*.html', '_posts/*.md', '_drafts/*.md', 'resume/index.md', 'labs/index.html'], ['jekyll'])
     gulp.watch('src/sass/**/*.scss', ['styles', 'copyCSS']);
     gulp.watch('src/js/**/*.js', ['scripts', 'copyJS']);
     gulp.watch('src/images/**/*', ['images', 'copyImages']);
