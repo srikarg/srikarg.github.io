@@ -12,5 +12,8 @@
     <link rel="stylesheet" href="/css/main.css">
 
     <title>{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}</title>
+    {% if page.share %}
+        <script data-cfasync="false" type="text/javascript" src="//filamentapp.s3.amazonaws.com/2b879090602ee3272280ba6c5d5baa45.js" async="async"></script>
+    {% endif %}
 </head>
 <body>
