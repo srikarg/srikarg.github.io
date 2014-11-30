@@ -1,16 +1,20 @@
-name: "Srikar Gudipati"
-author: "Srikar Gudipati"
-description: "My personal website/blog!"
+title: Srikar Gudipati
+email: srikarvgudipati@gmail.com
+description: "The internet home of Srikar Gudipati."
+
+twitter: srikarg_
+facebook: srikar.gudipati
+linkedin: srikargudipati
+email: srikarvgudipati@gmail.com
 
 markdown: redcarpet
 markdown_ext: md
 redcarpet:
-  extensions: ["fenced_code_blocks", "disable_indented_code_blocks", "space_after_headers", "with_toc_data"]
+    extensions: ["fenced_code_blocks", "disable_indented_code_blocks", "space_after_headers", "with_toc_data"]
+
+highlighter: pygments
 
 permalink: "/blog/:title"
-pygments: true
 
-paginate: 7
-paginate_path: "/page/:num"
-
-exclude: ['node_modules', 'gulpfile.js', 'src']
+paginate: 5
+paginate_path: "/blog/page:num"

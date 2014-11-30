@@ -93,7 +93,9 @@ $(function(){
 
 # Closing
 
-That's it! Feel free to view the code below and tinker with it!
+That's it! Thanks for reading! Feel free to tinker with the code below!
 
-<a href="/labs/more-information-slider" class="button">Demo</a>
-<a href="/labs/more-information-slider/more-information-slider.zip" class="button">Download</a>
+<div class="codepen">
+    <p data-height="279" data-theme-id="132" data-slug-hash="EKFoi" data-default-tab="result" data-user="srikarg" class='codepen'>See the Pen <a href='http://codepen.io/srikarg/pen/EKFoi/'>A jQuery "More Information" effect!</a> by Srikar G. (<a href='http://codepen.io/srikarg'>@srikarg</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>

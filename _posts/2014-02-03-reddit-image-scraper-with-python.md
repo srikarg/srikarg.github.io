@@ -77,7 +77,7 @@ if __name__ == '__main__':
     main()
 ```
 
-# What does the script do?
+# What the Script Does
 
 The script's workflow is as follows:
 

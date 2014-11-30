@@ -85,7 +85,9 @@ table {
 
 # Closing
 
-Voila! We have a menu! Thanks for reading this tutorial! Check out the code below!
+Voila! We have a menu! Thanks for reading this tutorial! Feel free to tinker with the code below!
 
-<a href="/labs/css-table-menu" class="button">Demo</a>
-<a href="/labs/css-table-menu/css-table-menu.zip" class="button">Download</a>
+<div class="codepen">
+    <p data-height="268" data-theme-id="132" data-slug-hash="JfAqo" data-default-tab="result" data-user="srikarg" class='codepen'>See the Pen <a href='http://codepen.io/srikarg/pen/JfAqo/'>Table Menu</a> by Srikar G. (<a href='http://codepen.io/srikarg'>@srikarg</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>

@@ -1,0 +1,40 @@
+.pagination {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 20px 0;
+    margin: 2rem 0;
+
+    li {
+        display: inline-block;
+        float: none;
+        margin: 0;
+    }
+
+    .disabled {
+        pointer-events: none;
+        opacity: 0.4;
+    }
+
+    .previous, .next {
+        text-decoration: none;
+        color: $header-color;
+        font-size: 45px;
+        font-size: 4.5rem;
+    }
+
+    .previous {
+        margin-right: 32px;
+        margin-right: 3.2rem;
+    }
+
+    .next {
+        margin-left: 32px;
+        margin-left: 3.2rem;
+    }
+
+    .previous, .next, .previous:hover, .next:hover {
+        background: none;
+        color: $header-color;
+    }
+}

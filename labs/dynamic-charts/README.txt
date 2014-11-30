@@ -1,1 +1,0 @@
-A realtime chart generator built using AngularJS and Chart.js. Created by Srikar Gudipati.

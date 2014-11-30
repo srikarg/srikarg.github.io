@@ -179,6 +179,3 @@ That's it! We now have a simple image gallery! Check it out below and don't hesi
     <p data-height="700" data-theme-id="132" data-slug-hash="qGzbn" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/srig99/pen/qGzbn'>Popup Image Loader</a> by Srikar G. (<a href='http://codepen.io/srig99'>@srig99</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
     <script async="true" src="//codepen.io/assets/embed/ei.js"> </script>
 </div>
-
-<a href="/labs/popup-image-gallery" class="button">Demo</a>
-<a href="/labs/popup-image-gallery/popup-image-gallery.zip" class="button">Download</a>

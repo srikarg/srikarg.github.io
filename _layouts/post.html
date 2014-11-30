@@ -1,11 +1,18 @@
----
-layout: default
----
-
+{% include head.html %}
 {% include post-header.html %}
-
-<article class="post">
-	{{ content }}
-    {% include post-footer.html %}
-    {% include post-pagination.html %}
-</article>
+<div class="wrapper">
+    <article class="post">
+        {% if page.toc %}
+        <div class="module">
+            <h1>Table of Contents</h1>
+            <div class="toc"></div>
+        </div>
+        {% endif %}
+        {{ content }}
+        {% include post-footer.html %}
+        {% include post-pagination.html %}
+    </article>
+</div>
+{% include footer.html %}
+{% include scripts.html %}
+{% include foot.html %}

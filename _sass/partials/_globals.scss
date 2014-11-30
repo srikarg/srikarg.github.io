@@ -1,0 +1,95 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font: 400 1.8rem/1.6875 'Lato', sans-serif;
+    font: 400 18px/1.6875 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, blockquote, p {
+    margin: 0 0 20px 0;
+    margin: 0 0 2rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $header-color;
+}
+
+ul, ol {
+    padding-left: 40px;
+    padding-left: 4rem;
+}
+
+h1 {
+    font-size: 50px;
+    font-size: 5rem;
+}
+
+.wrapper h1 {
+    font-size: 40px;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 33px;
+    font-size: 3.3rem;
+}
+
+h3, p.lead {
+    font-size: 24px;
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 15px;
+    font-size: 1.5rem;
+}
+
+a {
+    color: $text-color;
+    text-decoration: underline;
+
+    &:hover, &:focus, &:visited {
+        color: $text-color;
+        text-decoration: underline;    
+    }
+
+    &.btn, &.btn:hover, &.btn:focus, &.btn:visited {
+        color: $header-text-color;
+        text-decoration: none;    
+    }
+
+    header &, header &:hover, header &:focus, header &:visited {
+        color: $header-text-color;
+        text-decoration: none;
+    }
+}
+
+.btn {
+    background: $header-color;
+    color: $header-text-color;
+    padding: 10px 20px;
+    padding: 1rem 2rem;
+}
+
+.btn:hover {
+    background: desaturate($header-color, 20%);
+    color: $header-text-color;
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}

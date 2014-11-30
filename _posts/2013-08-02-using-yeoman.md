@@ -76,4 +76,4 @@ This will concatenate all of your JavaScript scripts and CSS files, link them up
 
 That's all there is to mastering the Yeoman tool! Be sure to check out more community and built-in generators [here](http://yeoman.io/community-generators.html). Also, check out the official [getting started page](http://yeoman.io/gettingstarted.html) on the Yeoman website. Thanks for reading!
 
-<a href="https://news.ycombinator.com/item?id=6151904" class="button">Discuss on Hacker News</a>
+<a href="https://news.ycombinator.com/item?id=6151904" class="btn">Discuss on Hacker News</a>
