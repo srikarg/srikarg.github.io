@@ -16,21 +16,21 @@ Jekyll is a static site generator built using Ruby. It allows you to write basic
 
 First, open up Command Prompt or Terminal depending on your operating system. Next, install Jekyll onto your system:
 
-```console
+```shell
 gem install jekyll
 ```
 
 Then, create a new site using:
 
-```console
+```shell
 jekyll new my-amazing-site
 ```
 
 Next, go into the newly created site directory and set up a server to watch for changes.
 
-```console
+```shell
 cd my-amazing-site
-jekyll serve --watch
+jekyll serve
 ```
 
 Now that the server is set up, we can point our browser to `localhost:4000` in order to view our newly generated site! It should look something like the following:
@@ -59,14 +59,13 @@ Jekyll blogs often have a directory structure similar to the one below:
 Jekyll populates the `_site` folder with the compiled blog. The configuration for your blog is stored in `_config.yml`. A sample configuration is shown below:
 
 ```yaml
-name: My Awesome Website!
-description: This is an amazing site I made a while ago!
+title: "My Awesome Website!"
+email: example@example.com
+description: "This is a description!"
 
-paginate: 6
+markdown_ext: md
 
-markdown: rdiscount
 permalink: pretty
-pygments: true
 ```
 
 The posts for the blog are put into the `_posts` directory. These files can be written using HTML or Markdown. Jekyll blog posts must be named with a specific date prefix, as shown above. They must be named in the following format: `year-month-day-title-with-dashes-for-separation.md`.

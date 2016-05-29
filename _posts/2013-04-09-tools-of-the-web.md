@@ -67,3 +67,4 @@ The Internet provides several tools to enhance the daily workflows of web and so
 1. [ColorHexa](http://www.colorhexa.com/)
 2. [colllor](http://colllor.com/)
 3. [0 to 255](http://0to255.com/)
+4. [Coolors Color Palette Generator](https://coolors.co/app)
