@@ -8,10 +8,7 @@ linkedin: srikargudipati
 email: srikarvgudipati@gmail.com
 
 gems: [jekyll-paginate, jekyll-coffeescript]
-markdown: redcarpet
 markdown_ext: md
-redcarpet:
-    extensions: ["fenced_code_blocks", "disable_indented_code_blocks", "space_after_headers", "with_toc_data"]
 
 permalink: "/blog/:title"
 
