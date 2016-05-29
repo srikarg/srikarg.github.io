@@ -10,7 +10,7 @@ email: srikarvgudipati@gmail.com
 gems: [jekyll-paginate, jekyll-coffeescript]
 markdown_ext: md
 
-permalink: "/blog/:title"
+permalink: "/blog/:title/"
 
 paginate: 5
 paginate_path: "/blog/page:num"
