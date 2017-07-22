@@ -87,7 +87,7 @@ table {
 
 Voila! We have a menu! Thanks for reading this tutorial! Feel free to tinker with the code below!
 
-<div class="codepen">
-    <p data-height="268" data-theme-id="132" data-slug-hash="JfAqo" data-default-tab="result" data-user="srikarg" class='codepen'>See the Pen <a href='http://codepen.io/srikarg/pen/JfAqo/'>Table Menu</a> by Srikar G. (<a href='http://codepen.io/srikarg'>@srikarg</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-container">
+	<p data-height="300" data-theme-id="132" data-slug-hash="JfAqo" data-default-tab="css,result" data-user="srikarg" data-embed-version="2" data-pen-title="Table Menu" class="codepen">See the Pen <a href="https://codepen.io/srikarg/pen/JfAqo/">Table Menu</a> by Srikar G. (<a href="https://codepen.io/srikarg">@srikarg</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+	<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </div>

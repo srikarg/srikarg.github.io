@@ -95,7 +95,7 @@ $(function(){
 
 That's it! Thanks for reading! Feel free to tinker with the code below!
 
-<div class="codepen">
-    <p data-height="279" data-theme-id="132" data-slug-hash="EKFoi" data-default-tab="result" data-user="srikarg" class='codepen'>See the Pen <a href='http://codepen.io/srikarg/pen/EKFoi/'>A jQuery "More Information" effect!</a> by Srikar G. (<a href='http://codepen.io/srikarg'>@srikarg</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-container">
+    <p data-height="300" data-theme-id="132" data-slug-hash="EKFoi" data-default-tab="html,result" data-user="srikarg" data-embed-version="2" data-pen-title="A jQuery "More Information" effect!" class="codepen">See the Pen <a href="https://codepen.io/srikarg/pen/EKFoi/">A jQuery "More Information" effect!</a> by Srikar G. (<a href="https://codepen.io/srikarg">@srikarg</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </div>

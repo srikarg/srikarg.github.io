@@ -175,7 +175,7 @@ First, we set up various variables to hold the elements of our gallery. Most imp
 
 That's it! We now have a simple image gallery! Check it out below and don't hesitate to tinker with it. I have also included a CodePen link. Next time you decide to include an image gallery inside your website, be sure to ask yourself whether or not you need a massive jQuery plugin!
 
-<div class="codepen">
-    <p data-height="700" data-theme-id="132" data-slug-hash="qGzbn" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/srig99/pen/qGzbn'>Popup Image Loader</a> by Srikar G. (<a href='http://codepen.io/srig99'>@srig99</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-    <script async="true" src="//codepen.io/assets/embed/ei.js"> </script>
+<div class="codepen-container">
+    <p data-height="700" data-theme-id="132" data-slug-hash="qGzbn" data-default-tab="js,result" data-user="srikarg" data-embed-version="2" data-pen-title="Popup Image Loader" class="codepen">See the Pen <a href="https://codepen.io/srikarg/pen/qGzbn/">Popup Image Loader</a> by Srikar G. (<a href="https://codepen.io/srikarg">@srikarg</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </div>

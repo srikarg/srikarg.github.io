@@ -6,7 +6,7 @@ facebook: srikar.gudipati
 linkedin: srikargudipati
 email: srikarvgudipati@gmail.com
 
-gems: [jekyll-paginate, jekyll-coffeescript]
+plugins: [jekyll-paginate, jekyll-coffeescript]
 markdown_ext: md
 
 permalink: "/blog/:title/"

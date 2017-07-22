@@ -2,8 +2,6 @@
 ---
 
 $ ->
-    $('.site-header .content, .post-header .content').addClass('animated fadeInDown')
-
     $(window).scroll () ->
         if $(this).scrollTop() > 400
             $('.top').fadeIn 200

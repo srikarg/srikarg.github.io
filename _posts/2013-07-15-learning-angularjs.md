@@ -61,9 +61,9 @@ Now that the installation is complete, we can start with the basics of AngularJS
 
 Here, the `ng-model` tells AngularJS to make the data from the `input` a variable that can be accessed and manipulated through the web application's script. In addition, a programmer can output any variables that he/she defines through AngularJS by using double braces (\{\{ \}\}) as shown above. In the code, the user's name is retrieved using `ng-model="user_name"` and then it is displayed in `<p>` tags using <code>&#123;&#123; user_name &#125;&#125;</code>. Here's what it produces:
 
-<div class="codepen">
-    <p data-height="268" data-theme-id="132" data-slug-hash="cuwyI" data-default-tab="result" data-user="srikarg" class='codepen'>See the Pen <a href='http://codepen.io/srikarg/pen/cuwyI/'>Basic Data Binding in AngularJS</a> by Srikar G. (<a href='http://codepen.io/srikarg'>@srikarg</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-container">
+	<p data-height="300" data-theme-id="132" data-slug-hash="cuwyI" data-default-tab="html,result" data-user="srikarg" data-embed-version="2" data-pen-title="Basic Data Binding in AngularJS" class="codepen">See the Pen <a href="https://codepen.io/srikarg/pen/cuwyI/">Basic Data Binding in AngularJS</a> by Srikar G. (<a href="https://codepen.io/srikarg">@srikarg</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+	<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </div>
 
 One can also output answers to simple math using AngularJS. For example, two numbers can be taken from `<input type="number">` tags and then their sum can be displayed like so:
@@ -86,9 +86,9 @@ One can also output answers to simple math using AngularJS. For example, two num
 
 Here's what the previous code creates:
 
-<div class="codepen">
-    <p data-height="268" data-theme-id="132" data-slug-hash="Fsila" data-default-tab="result" data-user="srikarg" class='codepen'>See the Pen <a href='http://codepen.io/srikarg/pen/Fsila/'>Basic Data Binding in AngularJS 2</a> by Srikar G. (<a href='http://codepen.io/srikarg'>@srikarg</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-container">
+	<p data-height="300" data-theme-id="132" data-slug-hash="Fsila" data-default-tab="html,result" data-user="srikarg" data-embed-version="2" data-pen-title="Basic Data Binding in AngularJS 2" class="codepen">See the Pen <a href="https://codepen.io/srikarg/pen/Fsila/">Basic Data Binding in AngularJS 2</a> by Srikar G. (<a href="https://codepen.io/srikarg">@srikarg</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+	<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </div>
 
 # Controllers
@@ -150,9 +150,9 @@ First off, in the HTML, we tell AngularJS that the app uses the controller named
 
 Inside each `<li>` the values for the name, city, and state keys are used from the JSON object using the `person` variable defined in `ng-repeat`. Let's take a look at the result of the code above:
 
-<div class="codepen">
-    <p data-height="282" data-theme-id="132" data-slug-hash="tEAnJ" data-default-tab="result" data-user="srikarg" class='codepen'>See the Pen <a href='http://codepen.io/srikarg/pen/tEAnJ/'>Controllers in AngularJS</a> by Srikar G. (<a href='http://codepen.io/srikarg'>@srikarg</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-container">
+	<p data-height="300" data-theme-id="132" data-slug-hash="tEAnJ" data-default-tab="html,result" data-user="srikarg" data-embed-version="2" data-pen-title="Controllers in AngularJS" class="codepen">See the Pen <a href="https://codepen.io/srikarg/pen/tEAnJ/">Controllers in AngularJS</a> by Srikar G. (<a href="https://codepen.io/srikarg">@srikarg</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+	<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </div>
 
 Next, we can add a feature to allow the user to input names into the `people` object! First, we will need to modify the HTML as so:
@@ -226,9 +226,9 @@ function MainCtrl ($scope) {
 
 In the HTML, `ng-click` allows the `MainCtrl` function `addPerson()` to get executed when the button is clicked. The function `addPerson()` simply pushes the new person, with the data from the three `<input>` tags, into the `people` JSON object. Then, the list we created earlier (to display the people) gets automatically updated with the new person that was just added. Here's the updated app:
 
-<div class="codepen">
-    <p data-height="540" data-theme-id="132" data-slug-hash="qEiDH" data-default-tab="result" data-user="srikarg" class='codepen'>See the Pen <a href='http://codepen.io/srikarg/pen/qEiDH/'>Controllers in AngularJS 2</a> by Srikar G. (<a href='http://codepen.io/srikarg'>@srikarg</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-container">
+	<p data-height="540" data-theme-id="132" data-slug-hash="qEiDH" data-default-tab="html,result" data-user="srikarg" data-embed-version="2" data-pen-title="Controllers in AngularJS 2" class="codepen">See the Pen <a href="https://codepen.io/srikarg/pen/qEiDH/">Controllers in AngularJS 2</a> by Srikar G. (<a href="https://codepen.io/srikarg">@srikarg</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+	<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </div>
 
 # Filters
@@ -271,9 +271,9 @@ AngularJS filters filter data inside your web application. This can lead to feat
 
 The only new code we needed to add was of course the search `<input>` and the `filter:search` inside the `ng-repeat` attribute! The pipe character (|) inside the `ng-repeat` simply allows the filter to use the data from the `people` JSON object. Let's view the search in action!
 
-<div class="codepen">
-    <p data-height="565" data-theme-id="132" data-slug-hash="DrFfs" data-default-tab="result" data-user="srikarg" class='codepen'>See the Pen <a href='http://codepen.io/srikarg/pen/DrFfs/'>Filters in AngularJS</a> by Srikar G. (<a href='http://codepen.io/srikarg'>@srikarg</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-container">
+	<p data-height="565" data-theme-id="132" data-slug-hash="DrFfs" data-default-tab="html,result" data-user="srikarg" data-embed-version="2" data-pen-title="Filters in AngularJS" class="codepen">See the Pen <a href="https://codepen.io/srikarg/pen/DrFfs/">Filters in AngularJS</a> by Srikar G. (<a href="https://codepen.io/srikarg">@srikarg</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+	<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </div>
 
 # Directives
@@ -297,9 +297,9 @@ angular.module('sampleDirective', []).directive('emphasize', function () {
 
 Inside the directive function, we are restricting the directive to only elements and attributes using `restrict: 'E,A'`. Whenever the emphasize directive is used, the element that contains the attribute or the emphasize tag itself will be replaced with the content present in `template` above. You can view the code below!
 
-<div class="codepen">
-    <p data-height="370" data-theme-id="132" data-slug-hash="qIdBE" data-default-tab="result" data-user="srikarg" class='codepen'>See the Pen <a href='http://codepen.io/srikarg/pen/qIdBE/'>Directives in AngularJS</a> by Srikar G. (<a href='http://codepen.io/srikarg'>@srikarg</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="codepen-container">
+	<p data-height="370" data-theme-id="132" data-slug-hash="qIdBE" data-default-tab="html,result" data-user="srikarg" data-embed-version="2" data-pen-title="Directives in AngularJS" class="codepen">See the Pen <a href="https://codepen.io/srikarg/pen/qIdBE/">Directives in AngularJS</a> by Srikar G. (<a href="https://codepen.io/srikarg">@srikarg</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+	<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 </div>
 
 # Further Reading
