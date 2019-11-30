@@ -1,116 +1,116 @@
 .highlight {
-    background: #1d1f21;
+  background: #1d1f21;
+  color: #c5c8c6;
+
+  .hll {
+    background-color: #373b41;
+  }
+
+  .ge {
+    font-style: italic;
+  }
+
+  .gh {
     color: #c5c8c6;
-    
-    .hll {
-        background-color: #373b41;
-    }
+    font-weight: 700;
+  }
 
-    .ge {
-        font-style: italic;
-    }
+  .gp {
+    color: #969896;
+    font-weight: 700;
+  }
 
-    .gh {
-        color: #c5c8c6;
-        font-weight: 700;
-    }
+  .gs {
+    font-weight: 700;
+  }
 
-    .gp {
-        color: #969896;
-        font-weight: 700;
-    }
+  .gu {
+    color: #8abeb7;
+    font-weight: 700;
+  }
 
-    .gs {
-        font-weight: 700;
-    }
+  .c,
+  .cm,
+  .cp,
+  .c1,
+  .cs,
+  .sd {
+    color: #969896;
+  }
 
-    .gu {
-        color: #8abeb7;
-        font-weight: 700;
-    }
+  .err,
+  .gd,
+  .no,
+  .ne,
+  .nv,
+  .vc,
+  .vg,
+  .vi {
+    color: #c66;
+  }
 
-    .c,
-    .cm,
-    .cp,
-    .c1,
-    .cs,
-    .sd {
-        color: #969896;
-    }
+  .k,
+  .kc,
+  .kd,
+  .kp,
+  .kr {
+    color: #b294bb;
+  }
 
-    .err,
-    .gd,
-    .no,
-    .ne,
-    .nv,
-    .vc,
-    .vg,
-    .vi {
-        color: #c66;
-    }
+  .l,
+  .m,
+  .mf,
+  .mh,
+  .mi,
+  .mo,
+  .se,
+  .si,
+  .il {
+    color: #de935f;
+  }
 
-    .k,
-    .kc,
-    .kd,
-    .kp,
-    .kr {
-        color: #b294bb;
-    }
+  .n,
+  .p,
+  .nb,
+  .ni,
+  .nl,
+  .py,
+  .w,
+  .sc,
+  .bp {
+    color: #c5c8c6;
+  }
 
-    .l,
-    .m,
-    .mf,
-    .mh,
-    .mi,
-    .mo,
-    .se,
-    .si,
-    .il {
-        color: #de935f;
-    }
+  .o,
+  .kn,
+  .nd,
+  .nt,
+  .ow {
+    color: #8abeb7;
+  }
 
-    .n,
-    .p,
-    .nb,
-    .ni,
-    .nl,
-    .py,
-    .w,
-    .sc,
-    .bp {
-        color: #c5c8c6;
-    }
+  .gi,
+  .ld,
+  .s,
+  .sb,
+  .s2,
+  .sh,
+  .sx,
+  .sr,
+  .s1,
+  .ss {
+    color: #b5bd68;
+  }
 
-    .o,
-    .kn,
-    .nd,
-    .nt,
-    .ow {
-        color: #8abeb7;
-    }
+  .kt,
+  .nc,
+  .nn {
+    color: #f0c674;
+  }
 
-    .gi,
-    .ld,
-    .s,
-    .sb,
-    .s2,
-    .sh,
-    .sx,
-    .sr,
-    .s1,
-    .ss {
-        color: #b5bd68;
-    }
-
-    .kt,
-    .nc,
-    .nn {
-        color: #f0c674;
-    }
-
-    .na,
-    .nf,
-    .nx {
-        color: #81a2be;
-    }
+  .na,
+  .nf,
+  .nx {
+    color: #81a2be;
+  }
 }

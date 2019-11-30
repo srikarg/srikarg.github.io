@@ -1,42 +1,149 @@
-.projects > ul {
+.slides.hero {
+  max-width: none;
+  padding: 50px 5%;
+  background: $header-color;
+  color: $header-text-color;
+  min-height: calc(100vh - 100px);
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas: 'nametag nametag' 'avatar avatar' 'social social';
+  align-items: center;
+  gap: 6rem;
+
+  .nametag {
+    grid-area: nametag;
+    text-align: center;
+
+    .name {
+      text-transform: uppercase;
+      font-size: 7.4rem;
+    }
+
+    .tagline {
+      font-size: 5.2rem;
+      text-transform: none;
+    }
+
+    .name,
+    .tagline {
+      margin: 0;
+      color: $header-text-color;
+    }
+  }
+
+  .avatar {
+    grid-area: avatar;
+    width: 300px;
+    border-radius: 50%;
+  }
+
+  .social {
+    grid-area: social;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    padding: 0;
+    margin: 0;
+
+    align-self: end;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    a {
+      font-size: 6rem;
+      color: $header-text-color;
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    .nametag {
+      .name {
+        font-size: 6.4rem;
+      }
+
+      .tagline {
+        font-size: 4.2rem;
+      }
+    }
+  }
+
+  @media all and (min-width: 1280px) {
+    & {
+      grid-template-areas: '. .' 'nametag avatar' 'social social';
+      gap: 4rem;
+
+      .nametag {
+        .name {
+          font-size: 9.6rem;
+        }
+
+        .tagline {
+          font-size: 7.6rem;
+        }
+      }
+
+      .avatar {
+        width: 100%;
+        min-width: 300px;
+        max-width: 800px;
+      }
+    }
+  }
+}
+
+.slides.about {
+  .about-me {
+    display: grid;
+
+    .jnj {
+      color: #c9202f;
+    }
+  }
+
+  .skills {
+    h3 {
+      margin: 0;
+    }
+  }
+}
+
+.slides.projects {
+  ul {
     list-style: none;
     padding: 0;
-}
+  }
 
-.projects > ul > li {
+  ul > li {
     overflow: auto;
-    margin-bottom: 60px;
     margin-bottom: 6rem;
-}
+  }
 
-.projects > ul > li > img {
+  ul > li > img {
     width: 40%;
     float: left;
     margin: 0;
-}
+  }
 
-.projects > ul > li > .info {
+  ul > li > .info {
     width: 60%;
     float: left;
-    padding-left: 20px;
     padding-left: 2rem;
-}
+  }
 
-.skills h3 {
-    margin: 0;
-}
-
-@media (max-width: 600px) {
-    .projects > ul > li > img {
+  @media (max-width: 600px) {
+    & {
+      ul > li > img {
         float: none;
         width: 100%;
-    }
+      }
 
-    .projects > ul > li > .info {
+      ul > li > .info {
         width: 100%;
         float: none;
         padding-left: 0;
-        padding-top: 20px;
         padding-top: 2rem;
+      }
     }
+  }
 }

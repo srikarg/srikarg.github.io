@@ -1,17 +1,27 @@
 <ul class="pagination">
-    {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-            <li><a href="/blog/" class="previous">&larr;</a></li>
-        {% else %}
-            <li><a href="/blog/page{{paginator.previous_page}}" class="previous">&larr;</a></li>
-        {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <li>
+        <a class="previous" href="/blog/">&larr;</a>
+      </li>
     {% else %}
-        <li><span class="previous disabled">&larr;</span></li>
+      <li>
+        <a class="previous" href="/blog/page{{paginator.previous_page}}">&larr;</a>
+      </li>
     {% endif %}
+  {% else %}
+    <li>
+      <span class="previous disabled">&larr;</span>
+    </li>
+  {% endif %}
 
-    {% if paginator.next_page %}
-        <li><a href="/blog/page{{paginator.next_page}}" class="next">&rarr;</a></li>
-    {% else %}
-        <li><span class="next disabled">&rarr;</span></li>
-    {% endif %}
+  {% if paginator.next_page %}
+    <li>
+      <a class="next" href="/blog/page{{paginator.next_page}}">&rarr;</a>
+    </li>
+  {% else %}
+    <li>
+      <span class="next disabled">&rarr;</span>
+    </li>
+  {% endif %}
 </ul>

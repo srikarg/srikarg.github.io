@@ -1,20 +1,13 @@
 footer {
-    width: 100%;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5%;
 }
 
 footer p {
-    margin: 0;
-    font-size: 18px;
-    font-size: 1.8rem;
-}
-
-footer table {
-    margin: 0;
-}
-
-footer td {
-    padding: 20px;
-    padding: 2rem;
-    border: none;
-    text-align: center;
+  margin: 0;
+  font-size: 1.8rem;
+  text-align: center;
 }

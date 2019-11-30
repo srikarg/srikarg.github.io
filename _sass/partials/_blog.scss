@@ -1,10 +1,13 @@
-.posts {
+.slides.blog {
+  padding-top: 50px;
+
+  .posts {
     margin: 0;
     padding: 0;
     list-style: none;
-}
+  }
 
-.posts li {
+  .posts li {
     cursor: pointer;
     padding-left: 30px;
     padding-left: 3rem;
@@ -16,19 +19,20 @@
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-}
+  }
 
-.posts li:hover {
+  .posts li:hover {
     padding-left: 45px;
     padding-left: 4.5rem;
-}
+  }
 
-.posts li h3 {
+  .posts li h3 {
     margin-bottom: 10px;
     margin-bottom: 1rem;
-}
+  }
 
-.posts li a {
+  .posts li a {
     text-decoration: none;
     display: block;
+  }
 }

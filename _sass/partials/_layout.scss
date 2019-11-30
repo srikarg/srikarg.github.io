@@ -1,7 +1,13 @@
+.site-container {
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
+  grid-template-rows: minmax(100px, auto) auto 75px;
+  grid-template-areas:
+    'header header header'
+    'content content content'
+    'footer footer footer';
+}
+
 .wrapper {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    padding: 2rem;
+  grid-area: content;
 }
