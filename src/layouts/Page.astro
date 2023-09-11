@@ -18,11 +18,9 @@ const { lang, title, description } = Astro.props
     <MainHead title={title} description={description} />
   </head>
   <body>
-    <div class="flex h-full min-h-screen flex-col">
+    <div class="flex h-full min-h-screen flex-col dark:bg-slate-700">
       <Header />
-      <main class="prose mx-auto min-w-[65ch] grow p-6">
-        <slot />
-      </main>
+      <slot />
       <Footer />
     </div>
   </body>

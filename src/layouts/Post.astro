@@ -8,12 +8,12 @@ type Props = MarkdownLayoutProps<{
   tags: string[]
   img: string
 }>
-import PageLayout from './Page.astro'
+import ContentLayout from './Content.astro'
 
 const { frontmatter } = Astro.props
 ---
 
-<PageLayout>
+<ContentLayout>
   <header style={`background-image:url(${frontmatter.img})`}>
     <h1>{frontmatter.title}</h1>
   </header>
@@ -29,4 +29,4 @@ const { frontmatter } = Astro.props
   <footer>
     <a href="/blog" class="button">View More Posts</a>
   </footer>
-</PageLayout>
+</ContentLayout>

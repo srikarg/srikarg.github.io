@@ -1,6 +1,6 @@
 ---
 title: 'About'
-layout: ../layouts/Page.astro
+layout: ../layouts/Content.astro
 ---
 
 # About Page

@@ -7,9 +7,10 @@
   },
   "description": "The internet home of Srikar Gudipati.",
   "siteUrl": "https://srikarg.github.io",
-  "social": {
+  "links": {
     "email": "srikarvgudipati@gmail.com",
     "linkedin": "srikargudipati",
-    "github": "srikarg"
+    "github": "srikarg",
+    "codepen": "srikarg"
   }
 }

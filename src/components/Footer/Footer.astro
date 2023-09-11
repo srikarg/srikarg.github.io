@@ -55,18 +55,20 @@ const currentYear = new Date().getFullYear()
 </script>
 
 <footer
-  class="sticky bottom-0 z-50 flex items-center bg-red-700 p-6 text-center text-white dark:bg-slate-800"
+  class="sticky bottom-0 z-50 bg-red-800 p-6 text-center text-white dark:bg-slate-800"
 >
-  <div class="mx-auto">
-    <p class="mb-2">&copy; {currentYear} Srikar Gudipati</p>
+  <div class="mx-auto flex max-w-screen-2xl items-center">
+    <div class="mx-auto">
+      <p class="mb-2">&copy; {currentYear} Srikar Gudipati</p>
 
-    <small class="block uppercase">🚀 Built by Astro</small>
+      <small class="block uppercase">🚀 Built by Astro</small>
+    </div>
+
+    <button id="dark-mode" class="block dark:hidden">
+      <Icon pack="ph" name="moon" class="h-7 w-7 fill-current" />
+    </button>
+    <button id="light-mode" class="hidden dark:block">
+      <Icon pack="ph" name="sun" class="h-7 w-7 fill-current" />
+    </button>
   </div>
-
-  <button id="dark-mode" class="block dark:hidden">
-    <Icon pack="ph" name="moon" class="h-7 w-7 fill-current" />
-  </button>
-  <button id="light-mode" class="hidden dark:block">
-    <Icon pack="ph" name="sun" class="h-7 w-7 fill-current" />
-  </button>
 </footer>

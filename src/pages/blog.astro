@@ -1,5 +1,5 @@
 ---
-import PageLayout from '../layouts/Page.astro'
+import ContentLayout from '../layouts/Content.astro'
 import PostDetails from '../components/PostDetails.astro'
 
 const posts = (await Astro.glob('./posts/**/*.md'))
@@ -11,9 +11,9 @@ const posts = (await Astro.glob('./posts/**/*.md'))
   )
 ---
 
-<PageLayout>
+<ContentLayout>
   <h1>All Posts</h1>
   <div>
     {posts.map(post => <PostDetails post={post} />)}
   </div>
-</PageLayout>
+</ContentLayout>
