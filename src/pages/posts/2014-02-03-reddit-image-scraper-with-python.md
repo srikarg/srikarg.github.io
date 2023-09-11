@@ -1,5 +1,5 @@
 ---
-title: "A Reddit Image Scraper with Python"
+title: 'A Reddit Image Scraper with Python'
 layout: post
 toc: true
 share: true
@@ -8,7 +8,11 @@ comments: true
 
 # The Problem
 
-I am an avid reader of the [MinimalWallpaper subreddit](http://www.reddit.com/r/minimalwallpaper). After tediously downloading wallpapers for several days, I realized that I could automate this task using Python and the [Reddit API](http://www.reddit.com/dev/api).
+I am an avid reader of the
+[MinimalWallpaper subreddit](http://www.reddit.com/r/minimalwallpaper). After
+tediously downloading wallpapers for several days, I realized that I could
+automate this task using Python and the
+[Reddit API](http://www.reddit.com/dev/api).
 
 # The Solution
 
@@ -83,8 +87,13 @@ The script's workflow is as follows:
 
 1. Accepts a list of subreddits from the user.
 
-2. Retrieve the posts from the specified subreddit using the [Requests](http://docs.python-requests.org/en/latest/) HTTP Library.
+2. Retrieve the posts from the specified subreddit using the
+   [Requests](http://docs.python-requests.org/en/latest/) HTTP Library.
 
-3. Parse the posts to find entries that link to direct [imgur](http://imgur.com/) images and have a score greater than the user defined score requirement.
+3. Parse the posts to find entries that link to direct
+   [imgur](http://imgur.com/) images and have a score greater than the user
+   defined score requirement.
 
-4. Download the images that meet the criteria in the step above using the [urllib](http://docs.python.org/2/library/urllib.html) module. The directory in which the images will be downloaded to can be specified by the user.
+4. Download the images that meet the criteria in the step above using the
+   [urllib](http://docs.python.org/2/library/urllib.html) module. The directory
+   in which the images will be downloaded to can be specified by the user.

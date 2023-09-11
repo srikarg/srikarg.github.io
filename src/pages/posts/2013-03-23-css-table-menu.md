@@ -1,12 +1,16 @@
 ---
-title: "A Simple Table Menu Using CSS and HTML"
+title: 'A Simple Table Menu Using CSS and HTML'
 layout: post
 toc: true
 share: true
 comments: true
 ---
 
-Hey guys! Navigation is extremely important for any website. It is the foundation of the site, as it provides the user with a sense of the various crooks and nannies of it. Today, we'll create a basic table menu. If you want to view the video version of this tutorial that I made a few months ago, then click play below!
+Hey guys! Navigation is extremely important for any website. It is the
+foundation of the site, as it provides the user with a sense of the various
+crooks and nannies of it. Today, we'll create a basic table menu. If you want to
+view the video version of this tutorial that I made a few months ago, then click
+play below!
 
 <div class="video-container">
     <iframe width="640" height="360" src="//www.youtube.com/embed/xjZMlQUFsJY?rel=0" frameborder="0" allowfullscreen="true"> </iframe>
@@ -85,7 +89,8 @@ table {
 
 # Closing
 
-Voila! We have a menu! Thanks for reading this tutorial! Feel free to tinker with the code below!
+Voila! We have a menu! Thanks for reading this tutorial! Feel free to tinker
+with the code below!
 
 <div class="codepen-container">
 	<p data-height="300" data-theme-id="132" data-slug-hash="JfAqo" data-default-tab="css,result" data-user="srikarg" data-embed-version="2" data-pen-title="Table Menu" class="codepen">See the Pen <a href="https://codepen.io/srikarg/pen/JfAqo/">Table Menu</a> by Srikar G. (<a href="https://codepen.io/srikarg">@srikarg</a>) on <a href="https://codepen.io">CodePen</a>.</p>

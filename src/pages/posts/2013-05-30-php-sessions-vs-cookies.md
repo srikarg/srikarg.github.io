@@ -1,18 +1,28 @@
 ---
-title: "PHP Sessions vs. Cookies"
+title: 'PHP Sessions vs. Cookies'
 layout: post
 toc: true
 share: true
 comments: true
 ---
 
-As a beginning PHP developer, you may have heard of sessions or cookies before. But do you truly understand what they are and when to use them? If not, let's explore them in this article!
+As a beginning PHP developer, you may have heard of sessions or cookies before.
+But do you truly understand what they are and when to use them? If not, let's
+explore them in this article!
 
 # Sessions
 
 > Session variables are stored on the server side.
 
-Session variables are stored _on the server side_ in a _temporary_ directory. The only accessible data to the client is the session ID. If this ID is changed or lost, it will _break_ the connection with the session. By default, a session variable will be kept alive for 1440 seconds, or 24 minutes. This [default value](http://www.php.net/manual/en/session.configuration.php) is set by the variable `session.gc_maxlifetime` in the PHP configuration file, or `php.ini`. In the following snippet, let's create a session and fill the `$_SESSION` variable with the first and last name of the user, which will be retrieved from a HTML form.
+Session variables are stored _on the server side_ in a _temporary_ directory.
+The only accessible data to the client is the session ID. If this ID is changed
+or lost, it will _break_ the connection with the session. By default, a session
+variable will be kept alive for 1440 seconds, or 24 minutes. This
+[default value](http://www.php.net/manual/en/session.configuration.php) is set
+by the variable `session.gc_maxlifetime` in the PHP configuration file, or
+`php.ini`. In the following snippet, let's create a session and fill the
+`$_SESSION` variable with the first and last name of the user, which will be
+retrieved from a HTML form.
 
 ```php
 <?php
@@ -32,7 +42,9 @@ Session variables are stored _on the server side_ in a _temporary_ directory. Th
 ?>
 ```
 
-It's as simple as that! These variables can be accessed later on through the same `$_SESSION` variable, even if the user is viewing another page. Following up the previous code, we have the following.
+It's as simple as that! These variables can be accessed later on through the
+same `$_SESSION` variable, even if the user is viewing another page. Following
+up the previous code, we have the following.
 
 ```php
 <?php
@@ -46,7 +58,15 @@ It's as simple as that! These variables can be accessed later on through the sam
 
 > Cookies are stored on the client side.
 
-Unlike session variables, cookies are stored _on the client side_. This means that users will be able to access these cookies and possibly modify them using [JavaScript](http://blog.creativeitp.com/posts-and-articles/javascript/javascript-injection-cookie-editing/) or a regular [browser extension](https://chrome.google.com/webstore/detail/edit-this-cookie/fngmhnnpilhplaeedifhccceomclgfbg?hl=en)! Therefore, it is wise to store significant/personal data with sessions instead of cookies. To create a cookie, use the `setcookie()` function as follows. The function accepts the cookie's name, data, and expiration date as parameters (in respective order).
+Unlike session variables, cookies are stored _on the client side_. This means
+that users will be able to access these cookies and possibly modify them using
+[JavaScript](http://blog.creativeitp.com/posts-and-articles/javascript/javascript-injection-cookie-editing/)
+or a regular
+[browser extension](https://chrome.google.com/webstore/detail/edit-this-cookie/fngmhnnpilhplaeedifhccceomclgfbg?hl=en)!
+Therefore, it is wise to store significant/personal data with sessions instead
+of cookies. To create a cookie, use the `setcookie()` function as follows. The
+function accepts the cookie's name, data, and expiration date as parameters (in
+respective order).
 
 ```php
 <?php
@@ -69,7 +89,8 @@ Later we can retrieve the cookie using the `$_COOKIE` variable in PHP.
 ?>
 ```
 
-To delete a cookie, one can simply fill its value with an empty string and then set its expiration date in the past, like the following.
+To delete a cookie, one can simply fill its value with an empty string and then
+set its expiration date in the past, like the following.
 
 ```php
 <?php
@@ -79,4 +100,6 @@ To delete a cookie, one can simply fill its value with an empty string and then 
 
 # Further reading
 
-You can find more information about cookies [here](http://davidwalsh.name/php-cookies) and [here](http://php.net/manual/en/function.setcookie.php). Thanks for reading!
+You can find more information about cookies
+[here](http://davidwalsh.name/php-cookies) and
+[here](http://php.net/manual/en/function.setcookie.php). Thanks for reading!

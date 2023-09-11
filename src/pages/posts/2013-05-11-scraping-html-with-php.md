@@ -1,16 +1,26 @@
 ---
-title: "Scraping HTML with PHP"
+title: 'Scraping HTML with PHP'
 layout: post
 toc: true
 share: true
 comments: true
 ---
 
-Let's just say you run into a situation where you need to access data from a website that does not provide JSON or XML formats for the information you want. Well, this recently happened to me, as I wanted to access some text from an HTML table on a web page. I tried looking for a solution and eventually stumbled across [PHP Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net/). This is a really fast and useful PHP library which can parse HTML from a URL or string and extract information for you. Let's check it out!
+Let's just say you run into a situation where you need to access data from a
+website that does not provide JSON or XML formats for the information you want.
+Well, this recently happened to me, as I wanted to access some text from an HTML
+table on a web page. I tried looking for a solution and eventually stumbled
+across [PHP Simple HTML DOM Parser](http://simplehtmldom.sourceforge.net/). This
+is a really fast and useful PHP library which can parse HTML from a URL or
+string and extract information for you. Let's check it out!
 
 # Loading the library
 
-The obvious first step in trying this library out is to download it. You can find it [here](http://sourceforge.net/projects/simplehtmldom/files/). Once you have it downloaded and extracted, you can load it into your PHP file and then specify an HTML string or URL to parse. There are two ways to parse the URL. In the following snippet, I'll show you both methods of parsing.
+The obvious first step in trying this library out is to download it. You can
+find it [here](http://sourceforge.net/projects/simplehtmldom/files/). Once you
+have it downloaded and extracted, you can load it into your PHP file and then
+specify an HTML string or URL to parse. There are two ways to parse the URL. In
+the following snippet, I'll show you both methods of parsing.
 
 ```php
 <?php
@@ -28,7 +38,10 @@ The obvious first step in trying this library out is to download it. You can fin
 
 # Extracting data
 
-Once we have the library ready to go, we can invoke it to retrieve what we need. The element selection features of this library are extremely similar to those of [jQuery](http://jquery.com/), a popular JavaScript library. You can select elements in this PHP parser using the following:
+Once we have the library ready to go, we can invoke it to retrieve what we need.
+The element selection features of this library are extremely similar to those of
+[jQuery](http://jquery.com/), a popular JavaScript library. You can select
+elements in this PHP parser using the following:
 
 - Attribute values
 - Class names
@@ -37,7 +50,8 @@ Once we have the library ready to go, we can invoke it to retrieve what we need.
 - Child nodes
 - Sibling nodes
 
-For the sake of example, let's get all of the links from the Yahoo! [website](http://www.yahoo.com/) and print them out.
+For the sake of example, let's get all of the links from the Yahoo!
+[website](http://www.yahoo.com/) and print them out.
 
 ```php
 <?php
@@ -57,7 +71,10 @@ For the sake of example, let's get all of the links from the Yahoo! [website](ht
 ?>
 ```
 
-What if we wanted to extract the current articles on the front page of the New York Times [website](http://www.nytimes.com/)? Luckily, the website wraps each story within a `div` with a class of story. Knowing this, we can get all of the articles on the front page using the selector `div.story` as shown below.
+What if we wanted to extract the current articles on the front page of the New
+York Times [website](http://www.nytimes.com/)? Luckily, the website wraps each
+story within a `div` with a class of story. Knowing this, we can get all of the
+articles on the front page using the selector `div.story` as shown below.
 
 ```php
 <?php
@@ -75,8 +92,14 @@ What if we wanted to extract the current articles on the front page of the New Y
 ?>
 ```
 
-Clearly, the PHP Simple HTML DOM Parser can be exceedingly useful in situations such as the one I recently encountered. You can find more information about it [here](http://simplehtmldom.sourceforge.net/manual.htm) and you can find documentation [here](http://simplehtmldom.sourceforge.net/manual_api.htm).
+Clearly, the PHP Simple HTML DOM Parser can be exceedingly useful in situations
+such as the one I recently encountered. You can find more information about it
+[here](http://simplehtmldom.sourceforge.net/manual.htm) and you can find
+documentation [here](http://simplehtmldom.sourceforge.net/manual_api.htm).
 
 # More information
 
-You can learn more about this library by reading David Walsh's [tutorial](http://davidwalsh.name/php-notifications). Also, be sure to check out [this](http://stackoverflow.com/questions/3577641/how-to-parse-and-process-html-xml) helpful answer on StackOverflow! Thanks for reading!
+You can learn more about this library by reading David Walsh's
+[tutorial](http://davidwalsh.name/php-notifications). Also, be sure to check out
+[this](http://stackoverflow.com/questions/3577641/how-to-parse-and-process-html-xml)
+helpful answer on StackOverflow! Thanks for reading!

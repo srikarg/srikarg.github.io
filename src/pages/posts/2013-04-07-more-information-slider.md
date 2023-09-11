@@ -1,16 +1,18 @@
 ---
-title: "A More Information Slider with jQuery"
+title: 'A More Information Slider with jQuery'
 layout: post
 toc: true
 share: true
 comments: true
 ---
 
-Welcome again readers! Today, I have a quick little tutorial for displaying information about a certain image only when the user clicks on the said image.
+Welcome again readers! Today, I have a quick little tutorial for displaying
+information about a certain image only when the user clicks on the said image.
 
 # The HTML
 
-First, we need some simple HTML to hold our images. I'll use a simple grid of quarters with an image inside each of them.
+First, we need some simple HTML to hold our images. I'll use a simple grid of
+quarters with an image inside each of them.
 
 ```html
 <div class="quarter">
@@ -36,7 +38,8 @@ First, we need some simple HTML to hold our images. I'll use a simple grid of qu
 
 # The CSS
 
-Next, we use basic CSS to set each quarter to take up 25% of the screen width. We also hide the info by default with `display: none;`.
+Next, we use basic CSS to set each quarter to take up 25% of the screen width.
+We also hide the info by default with `display: none;`.
 
 ```css
 * {
@@ -70,17 +73,18 @@ body {
 
 # The jQuery
 
-Finally, we use jQuery to take each image from each quarter and display the info on a click event.
+Finally, we use jQuery to take each image from each quarter and display the info
+on a click event.
 
 ```javascript
 $(function () {
-  var image = $(".quarter>img");
+  var image = $('.quarter>img')
 
-  image.on("click", function () {
-    $(".info").stop().slideUp();
-    $(this).siblings(".info").slideToggle();
-  });
-});
+  image.on('click', function () {
+    $('.info').stop().slideUp()
+    $(this).siblings('.info').slideToggle()
+  })
+})
 ```
 
 # Closing

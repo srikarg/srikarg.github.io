@@ -1,16 +1,21 @@
 ---
-title: "Implementing an Offcanvas Menu with jQuery"
+title: 'Implementing an Offcanvas Menu with jQuery'
 layout: post
 toc: true
 share: true
 comments: true
 ---
 
-Lately, the offcanvas menu pattern has been extremely popular in various websites and apps. For example, Facebook and Gmail make use of it in their mobile apps. Creating an offcanvas menu for your own site is relatively simple, so let's see how!
+Lately, the offcanvas menu pattern has been extremely popular in various
+websites and apps. For example, Facebook and Gmail make use of it in their
+mobile apps. Creating an offcanvas menu for your own site is relatively simple,
+so let's see how!
 
 # The HTML
 
-First, we'll set up the navigation and main content components using some simple HTML. Please note that I am using the Actor font from Google Fonts and Font Awesome (these two are present in the link tags).
+First, we'll set up the navigation and main content components using some simple
+HTML. Please note that I am using the Actor font from Google Fonts and Font
+Awesome (these two are present in the link tags).
 
 ```html
 <link
@@ -53,11 +58,15 @@ First, we'll set up the navigation and main content components using some simple
 </article>
 ```
 
-The HTML is pretty self-explanatory, although there is one thing to note: `&raar;` is a right arrow HTML entity, which we are going to use for expanding and closing the offcanvas menu.
+The HTML is pretty self-explanatory, although there is one thing to note:
+`&raar;` is a right arrow HTML entity, which we are going to use for expanding
+and closing the offcanvas menu.
 
 # The CSS
 
-The next section is the CSS. Note the `.js` class. This is used to show the menu by default if the user does not have JavaScript enabled. The navigation is fixed and takes up 20% of the browser width with the content taking up the other 80%.
+The next section is the CSS. Note the `.js` class. This is used to show the menu
+by default if the user does not have JavaScript enabled. The navigation is fixed
+and takes up 20% of the browser width with the content taking up the other 80%.
 
 ```css
 * {
@@ -67,7 +76,7 @@ The next section is the CSS. Note the `.js` class. This is used to show the menu
 }
 
 body {
-  font-family: "Actor", sans-serif;
+  font-family: 'Actor', sans-serif;
   color: #222;
 }
 
@@ -156,27 +165,30 @@ article.menu-open {
 
 # The jQuery
 
-Finally, the jQuery is needed to make the menu toggle button functional. Additionally, it adds a `.js` class to the `body` tag indicating that the user has JavaScript enabled. The button click handler simply adds/removes classes and changes the arrow inside the button as required.
+Finally, the jQuery is needed to make the menu toggle button functional.
+Additionally, it adds a `.js` class to the `body` tag indicating that the user
+has JavaScript enabled. The button click handler simply adds/removes classes and
+changes the arrow inside the button as required.
 
 ```javascript
 $(function () {
-  $("body").addClass("js");
-  var navButton = $(".nav-control");
-  var nav = $(".main-nav");
-  var article = $("article");
+  $('body').addClass('js')
+  var navButton = $('.nav-control')
+  var nav = $('.main-nav')
+  var article = $('article')
 
-  navButton.on("click", function () {
-    if (nav.hasClass("menu-open")) {
-      nav.removeClass("menu-open");
-      article.removeClass("menu-open");
-      navButton.html("&rarr;");
+  navButton.on('click', function () {
+    if (nav.hasClass('menu-open')) {
+      nav.removeClass('menu-open')
+      article.removeClass('menu-open')
+      navButton.html('&rarr;')
     } else {
-      nav.addClass("menu-open");
-      article.addClass("menu-open");
-      navButton.html("&larr;");
+      nav.addClass('menu-open')
+      article.addClass('menu-open')
+      navButton.html('&larr;')
     }
-  });
-});
+  })
+})
 ```
 
 # Demonstration
