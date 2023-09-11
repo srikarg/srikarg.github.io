@@ -1,0 +1,15 @@
+{
+  "title": "Srikar Gudipati",
+  "shortTitle": "SG",
+  "author": {
+    "name": "Srikar Gudipati",
+    "tagline": "Fullstack Developer"
+  },
+  "description": "The internet home of Srikar Gudipati.",
+  "siteUrl": "https://srikarg.github.io",
+  "social": {
+    "email": "srikarvgudipati@gmail.com",
+    "linkedin": "srikargudipati",
+    "github": "srikarg"
+  }
+}

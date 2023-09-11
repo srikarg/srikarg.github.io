@@ -1,8 +1,13 @@
-srikarg.github.io
-=================
+# Astro with Tailwind
 
-My personal website. Visit [https://srikarg.github.io/](https://srikarg.github.io/) to view it!
+```
+npm create astro@latest -- --template with-tailwindcss
+```
 
-# How do I clone it locally?
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/with-tailwindcss)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/with-tailwindcss)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/with-tailwindcss/devcontainer.json)
 
-Run `git clone https://github.com/srikarg/srikarg.github.io.git` in the folder where you want to clone it. Then type `jekyll serve` to host the site on a localhost server and refresh it as new changes are made.
+Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. This example showcases how to style your Astro project with Tailwind.
+
+For complete setup instructions, please see our [Tailwind Integration Guide](https://docs.astro.build/en/guides/integrations-guide/tailwind).
