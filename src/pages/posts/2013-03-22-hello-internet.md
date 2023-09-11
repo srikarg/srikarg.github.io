@@ -1,6 +1,7 @@
 ---
 title: 'Hello Internet'
-layout: post
+layout: ../../layouts/Post.astro
+publishDate: 2013-03-22
 ---
 
 # Welcome

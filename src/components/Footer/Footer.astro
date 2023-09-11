@@ -1,0 +1,72 @@
+---
+import { Icon } from 'astro-icon'
+
+const currentYear = new Date().getFullYear()
+---
+
+<script>
+  const STORAGE_KEY = 'theme'
+  const DARK_PREFERENCE = '(prefers-color-scheme: dark)'
+
+  const THEMES = {
+    DARK: 'dark',
+    LIGHT: 'light',
+  }
+
+  let currentTheme
+
+  const prefersDarkThemes = () => window.matchMedia(DARK_PREFERENCE).matches
+
+  const applyTheme = () => {
+    document.getElementById('dark-mode')?.addEventListener('click', toggleTheme)
+    document
+      .getElementById('light-mode')
+      ?.addEventListener('click', toggleTheme)
+
+    const preferredTheme = prefersDarkThemes() ? THEMES.DARK : THEMES.LIGHT
+
+    currentTheme = localStorage.getItem(STORAGE_KEY) ?? preferredTheme
+
+    if (currentTheme === THEMES.DARK) {
+      document.documentElement.classList.remove(THEMES.LIGHT)
+      document.documentElement.classList.add(THEMES.DARK)
+    } else {
+      document.documentElement.classList.remove(THEMES.DARK)
+      document.documentElement.classList.add(THEMES.LIGHT)
+    }
+  }
+
+  const toggleTheme = () => {
+    const preferredTheme = prefersDarkThemes() ? THEMES.DARK : THEMES.LIGHT
+
+    currentTheme = localStorage.getItem(STORAGE_KEY) ?? preferredTheme
+
+    localStorage.setItem(
+      STORAGE_KEY,
+      currentTheme === THEMES.DARK ? THEMES.LIGHT : THEMES.DARK
+    )
+
+    applyTheme()
+  }
+
+  document.addEventListener('astro:after-swap', applyTheme)
+
+  applyTheme()
+</script>
+
+<footer
+  class="sticky bottom-0 z-50 flex items-center bg-red-700 p-6 text-center text-white dark:bg-slate-800"
+>
+  <div class="mx-auto">
+    <p class="mb-2">&copy; {currentYear} Srikar Gudipati</p>
+
+    <small class="block uppercase">🚀 Built by Astro</small>
+  </div>
+
+  <button id="dark-mode" class="block dark:hidden">
+    <Icon pack="ph" name="moon" class="h-7 w-7 fill-current" />
+  </button>
+  <button id="light-mode" class="hidden dark:block">
+    <Icon pack="ph" name="sun" class="h-7 w-7 fill-current" />
+  </button>
+</footer>

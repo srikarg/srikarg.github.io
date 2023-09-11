@@ -1,6 +1,7 @@
 ---
 title: 'Popup Image Gallery with jQuery'
-layout: post
+layout: ../../layouts/Post.astro
+publishDate: 2013-04-21
 toc: true
 share: true
 comments: true
@@ -167,7 +168,7 @@ $(function () {
       {
         scrollTop: focus.offset().top - 50,
       },
-      500,
+      500
     )
   })
   close.on('click', function () {

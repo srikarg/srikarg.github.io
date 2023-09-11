@@ -1,6 +1,7 @@
 ---
 title: 'A Simple Table Menu Using CSS and HTML'
-layout: post
+layout: ../../layouts/Post.astro
+publishDate: 2013-03-23
 toc: true
 share: true
 comments: true

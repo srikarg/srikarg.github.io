@@ -1,6 +1,7 @@
 ---
 title: 'PHP Sessions vs. Cookies'
-layout: post
+layout: ../../layouts/Post.astro
+publishDate: 2013-05-30
 toc: true
 share: true
 comments: true

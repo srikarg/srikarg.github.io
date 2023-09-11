@@ -1,6 +1,7 @@
 ---
 title: 'Implementing an Offcanvas Menu with jQuery'
-layout: post
+layout: ../../layouts/Post.astro
+publishDate: 2013-08-30
 toc: true
 share: true
 comments: true

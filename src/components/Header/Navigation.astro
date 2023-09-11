@@ -1,0 +1,86 @@
+---
+import { Icon } from 'astro-icon'
+
+const { currentTopLevelPath } = Astro.props
+const activeLinkClass: string = 'font-bold'
+---
+
+<script>
+  const STORAGE_KEY = 'isNavigationOpen'
+
+  let isNavigationOpen = false
+
+  const applyNavigationState = () => {
+    const navigation = document.getElementById('navigation')
+    const navigationToggle = document.getElementById('navigation-toggle')
+
+    navigationToggle?.addEventListener('click', toggleNavigation)
+
+    isNavigationOpen =
+      localStorage.getItem(STORAGE_KEY) === 'true' ? true : false
+
+    if (isNavigationOpen) {
+      navigation?.classList.remove('hidden')
+      navigation?.classList.add('block')
+    } else {
+      navigation?.classList.remove('block')
+      navigation?.classList.add('hidden')
+    }
+  }
+
+  const toggleNavigation = () => {
+    isNavigationOpen = isNavigationOpen ? false : true
+
+    localStorage.setItem(STORAGE_KEY, isNavigationOpen.toString())
+
+    applyNavigationState()
+  }
+
+  document.addEventListener('astro:after-swap', applyNavigationState)
+
+  applyNavigationState()
+</script>
+
+<div class="block md:hidden">
+  <button id="navigation-toggle" class="flex items-center text-white">
+    <Icon pack="ion" name="menu" class="h-8 w-8 fill-current" />
+  </button>
+</div>
+
+<nav id="navigation" class="w-full text-2xl md:flex md:w-auto md:items-center">
+  <a
+    class={`${
+      currentTopLevelPath === '' && activeLinkClass
+    } mt-6 block text-center font-display uppercase text-white hover:text-white md:mr-4 md:mt-0 md:inline-block`}
+    href="/">Home</a
+  >
+
+  <a
+    class={`${
+      currentTopLevelPath === 'about' && activeLinkClass
+    } mt-6 block text-center font-display uppercase text-white hover:text-white md:mr-4 md:mt-0 md:inline-block`}
+    href="/about">About</a
+  >
+
+  <a
+    class={`${
+      currentTopLevelPath === 'projects' && activeLinkClass
+    } mt-6 block text-center font-display uppercase text-white hover:text-white md:mr-4 md:mt-0 md:inline-block`}
+    href="/projects">Projects</a
+  >
+
+  <a
+    class={`${
+      currentTopLevelPath === 'blog' && activeLinkClass
+    } mt-6 block text-center font-display uppercase text-white hover:text-white md:mr-4 md:mt-0 md:inline-block`}
+    href="/blog">Blog</a
+  >
+
+  <a
+    href="https://www.dropbox.com/s/tupa9aputm0n09w/Resume.pdf?dl=0"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="mt-6 block text-center font-display uppercase text-white hover:text-white md:mr-4 md:mt-0 md:inline-block"
+    >Resume</a
+  >
+</nav>

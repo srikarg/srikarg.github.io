@@ -1,6 +1,7 @@
 ---
 title: 'A More Information Slider with jQuery'
-layout: post
+layout: ../../layouts/Post.astro
+publishDate: 2013-04-07
 toc: true
 share: true
 comments: true

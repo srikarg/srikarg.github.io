@@ -1,0 +1,50 @@
+---
+interface Props {
+  description?: string
+  title?: string
+  canonicalUrl?: string
+  isBlogPost?: boolean
+}
+
+import { ViewTransitions } from 'astro:transitions'
+
+import {
+  title as siteTitle,
+  shortTitle,
+  description as defaultDescription,
+} from '../../siteConfig.json'
+
+const {
+  description = defaultDescription,
+  canonicalUrl = new URL(Astro.url.pathname, Astro.site),
+  isBlogPost = false,
+} = Astro.props
+
+let title = siteTitle
+
+if (Astro.props.title) {
+  title = `${Astro.props.title} | ${isBlogPost ? ' Blog | ' : ''} ${shortTitle}`
+}
+---
+
+<meta charset="utf-8" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:type" content={isBlogPost ? 'article' : 'website'} />
+<meta property="og:title" content={title} />
+<meta name="description" property="og:description" content={description} />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="generator" content={Astro.generator} />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>{title}</title>
+
+<link rel="canonical" href={canonicalUrl} />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Sulphur+Point:wght@300;700&display=swap"
+  rel="stylesheet"
+/>
+
+<ViewTransitions />

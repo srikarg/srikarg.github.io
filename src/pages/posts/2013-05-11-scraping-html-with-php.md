@@ -1,6 +1,7 @@
 ---
 title: 'Scraping HTML with PHP'
-layout: post
+layout: ../../layouts/Post.astro
+publishDate: 2013-05-11
 toc: true
 share: true
 comments: true

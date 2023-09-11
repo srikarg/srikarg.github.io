@@ -1,0 +1,19 @@
+---
+import PageLayout from '../layouts/Page.astro'
+import PostDetails from '../components/PostDetails.astro'
+
+const posts = (await Astro.glob('./posts/**/*.md'))
+  .filter(({ frontmatter }) => !!frontmatter.publishDate)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.publishDate).valueOf() -
+      new Date(a.frontmatter.publishDate).valueOf()
+  )
+---
+
+<PageLayout>
+  <h1>All Posts</h1>
+  <div>
+    {posts.map(post => <PostDetails post={post} />)}
+  </div>
+</PageLayout>

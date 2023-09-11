@@ -1,0 +1,32 @@
+---
+import type { MarkdownLayoutProps } from 'astro'
+
+type Props = MarkdownLayoutProps<{
+  title: string
+  description: string
+  date: string
+  tags: string[]
+  img: string
+}>
+import PageLayout from './Page.astro'
+
+const { frontmatter } = Astro.props
+---
+
+<PageLayout>
+  <header style={`background-image:url(${frontmatter.img})`}>
+    <h1>{frontmatter.title}</h1>
+  </header>
+  <section>
+    <div>
+      {frontmatter.tags?.map((t: string) => <span class="tag">{t}</span>)}
+      <h3>{frontmatter.description}</h3>
+    </div>
+  </section>
+  <article>
+    <slot />
+  </article>
+  <footer>
+    <a href="/blog" class="button">View More Posts</a>
+  </footer>
+</PageLayout>

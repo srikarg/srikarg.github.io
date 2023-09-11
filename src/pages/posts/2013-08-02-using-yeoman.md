@@ -1,6 +1,7 @@
 ---
 title: 'Using Yeoman'
-layout: post
+layout: ../../layouts/Post.astro
+publishDate: 2013-08-02
 toc: true
 share: true
 comments: true

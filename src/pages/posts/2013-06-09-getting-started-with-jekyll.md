@@ -1,6 +1,7 @@
 ---
 title: 'Getting Started with Jekyll'
-layout: post
+layout: ../../layouts/Post.astro
+publishDate: 2013-06-09
 toc: true
 share: true
 comments: true
@@ -126,17 +127,14 @@ This tells Jekyll that I want to use the `post.html` template inside of the
 `_layouts` folder that we previously talked about. Then, I can start writing in
 Markdown (or HTML if I made a .html file):
 
-```text
+```yaml
 ---
 title: All About Rainbows
 layout: post
 ---
-
 # Introduction
 
 Yes, rainbows are amazing, but do you know everything about them?
-
-...
 ```
 
 # More Information

@@ -1,6 +1,7 @@
 ---
 title: 'A Reddit Image Scraper with Python'
-layout: post
+layout: ../../layouts/Post.astro
+publishDate: 2014-02-03
 toc: true
 share: true
 comments: true

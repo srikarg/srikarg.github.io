@@ -1,6 +1,7 @@
 ---
 title: 'Unix Terminal Commands'
-layout: post
+layout: ../../layouts/Post.astro
+publishDate: 2013-04-15
 toc: true
 share: true
 comments: true

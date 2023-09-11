@@ -1,6 +1,7 @@
 ---
 title: 'Tools of the Web'
-layout: post
+layout: ../../layouts/Post.astro
+publishDate: 2013-04-09
 toc: true
 share: true
 comments: true

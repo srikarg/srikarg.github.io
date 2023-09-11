@@ -1,0 +1,29 @@
+---
+interface Props {
+  lang?: string
+  title?: string
+  description?: string
+}
+
+import MainHead from '../components/MainHead.astro'
+import Header from '../components/Header/Header.astro'
+import Footer from '../components/Footer/Footer.astro'
+
+const { lang, title, description } = Astro.props
+---
+
+<!doctype html>
+<html lang={lang || 'en'}>
+  <head>
+    <MainHead title={title} description={description} />
+  </head>
+  <body>
+    <div class="flex h-full min-h-screen flex-col">
+      <Header />
+      <main class="prose mx-auto min-w-[65ch] grow p-6">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>

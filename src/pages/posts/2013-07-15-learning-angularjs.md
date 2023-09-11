@@ -1,6 +1,7 @@
 ---
 title: 'AngularJS for Beginners'
-layout: post
+layout: ../../layouts/Post.astro
+publishDate: 2013-07-15
 toc: true
 share: true
 comments: true

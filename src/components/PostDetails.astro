@@ -1,0 +1,9 @@
+---
+const { post } = Astro.props
+
+const publishDate = new Date(post.frontmatter.publishDate).toLocaleString()
+---
+
+<h2>
+  <a href={post.url}>{post.frontmatter.title}</a> - {publishDate}
+</h2>
