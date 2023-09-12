@@ -1,0 +1,40 @@
+---
+import ContentLayout from '../layouts/Content.astro'
+import { skillCategories } from '../data/skills.json'
+---
+
+<ContentLayout>
+  <section>
+    <h1 class="font-display text-3xl font-bold uppercase sm:text-5xl">
+      About Me
+    </h1>
+    <p class="font-display text-2xl">
+      I am a professional software engineer currently working in the healthcare
+      industry at <span class="text-[#D71500]">Johnson and Johnson</span>.
+    </p>
+  </section>
+  <section>
+    <h1 class="font-display text-3xl font-bold uppercase sm:text-5xl">
+      Skills
+    </h1>
+    <div class="not-prose flex flex-wrap gap-8 text-center">
+      {
+        skillCategories.map(category => (
+          <div class="grow">
+            <h3 class="mb-4 font-display text-2xl uppercase sm:text-4xl">
+              {category.name}
+            </h3>
+
+            <ul class="grid grid-cols-2 gap-4">
+              {category.skills.map(skill => (
+                <li class="rounded bg-red-800 p-3 font-display text-xl uppercase text-white hover:font-bold dark:bg-slate-800">
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</ContentLayout>

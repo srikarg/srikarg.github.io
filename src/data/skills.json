@@ -1,0 +1,23 @@
+{
+  "skillCategories": [
+    {
+      "name": "Web",
+      "skills": [
+        "HTML",
+        "CSS",
+        "Node.js",
+        "JavaScript",
+        "Typescript",
+        "React.js",
+        "PHP",
+        "PostgreSQL",
+        "Rest APIs"
+      ]
+    },
+    { "name": "Applications", "skills": ["C", "Python", "Java"] },
+    {
+      "name": "Tools",
+      "skills": ["NeoVim", "Docker", "iTerm2", "VSCode", "Git"]
+    }
+  ]
+}
