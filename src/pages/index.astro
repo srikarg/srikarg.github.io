@@ -5,55 +5,50 @@ import { links } from '../../siteConfig.json'
 ---
 
 <PageLayout>
-  <main class="flex grow p-6">
-    <div class="flex w-full flex-col">
-      <section class="flex grow">
-        <div
-          class="m-auto w-max place-self-center border-l-4 border-black py-5 pl-4 dark:border-white"
-        >
-          <h1
-            class="font-display text-4xl font-bold uppercase dark:text-white sm:text-7xl"
-          >
-            Srikar Gudipati
-          </h1>
-          <h2 class="font-display text-3xl dark:text-white sm:text-5xl">
-            Professional Developer
-          </h2>
-        </div>
-      </section>
-      <section class="flex justify-evenly">
-        <a href={`mailto:${links.email}?subject=Hey%20There!`}>
-          <Icon
-            pack="mdi"
-            name="email"
-            class="h-14 w-14 rounded-full bg-red-800 p-3 text-white dark:bg-slate-800"
-          />
-        </a>
+  <main class="flex grow flex-col items-center justify-center p-6">
+    <section class="mb-10 border-l-4 border-black py-5 pl-4 dark:border-white">
+      <h1
+        class="font-display text-4xl font-bold uppercase dark:text-white sm:text-7xl"
+      >
+        Srikar Gudipati
+      </h1>
+      <h2 class="font-display text-3xl dark:text-white sm:text-5xl">
+        Professional Developer
+      </h2>
+    </section>
 
-        <a href={`https://github.com/${links.github}`}>
-          <Icon
-            pack="mdi"
-            name="github"
-            class="h-14 w-14 rounded-full bg-red-800 p-3 text-white dark:bg-slate-800"
-          />
-        </a>
+    <section class="flex w-full max-w-2xl justify-evenly self-center">
+      <a href={`mailto:${links.email}?subject=Hey%20There!`}>
+        <Icon
+          pack="mdi"
+          name="email"
+          class="h-14 w-14 rounded-full bg-red-800 p-3 text-white hover:scale-105 dark:bg-slate-800"
+        />
+      </a>
 
-        <a href={`https://www.linkedin.com/in/${links.linkedin}`}>
-          <Icon
-            pack="mdi"
-            name="linkedin"
-            class="h-14 w-14 rounded-full bg-red-800 p-3 text-white dark:bg-slate-800"
-          />
-        </a>
+      <a href={`https://github.com/${links.github}`}>
+        <Icon
+          pack="mdi"
+          name="github"
+          class="h-14 w-14 rounded-full bg-red-800 p-3 text-white hover:scale-105 dark:bg-slate-800"
+        />
+      </a>
 
-        <a href={`https://codepen.io/${links.codepen}`}>
-          <Icon
-            pack="fe"
-            name="codepen"
-            class="h-14 w-14 rounded-full bg-red-800 p-3 text-white dark:bg-slate-800"
-          />
-        </a>
-      </section>
-    </div>
+      <a href={`https://www.linkedin.com/in/${links.linkedin}`}>
+        <Icon
+          pack="mdi"
+          name="linkedin"
+          class="h-14 w-14 rounded-full bg-red-800 p-3 text-white hover:scale-105 dark:bg-slate-800"
+        />
+      </a>
+
+      <a href={`https://codepen.io/${links.codepen}`}>
+        <Icon
+          pack="fe"
+          name="codepen"
+          class="h-14 w-14 rounded-full bg-red-800 p-3 text-white hover:scale-105 dark:bg-slate-800"
+        />
+      </a>
+    </section>
   </main>
 </PageLayout>
