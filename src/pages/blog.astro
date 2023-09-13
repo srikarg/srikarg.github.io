@@ -12,8 +12,15 @@ const posts = (await Astro.glob('./posts/**/*.md'))
 ---
 
 <ContentLayout>
-  <h1>All Posts</h1>
-  <div>
-    {posts.map(post => <PostDetails post={post} />)}
-  </div>
+  <h1 class="font-display text-3xl font-bold uppercase sm:text-5xl">Blog</h1>
+
+  <ul role="list" class="not-prose space-y-6">
+    {
+      posts.map(post => (
+        <li>
+          <PostDetails post={post} />
+        </li>
+      ))
+    }
+  </ul>
 </ContentLayout>

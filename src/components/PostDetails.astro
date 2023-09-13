@@ -1,9 +1,21 @@
 ---
 const { post } = Astro.props
 
-const publishDate = new Date(post.frontmatter.publishDate).toLocaleString()
+const publishDate = new Date(post.frontmatter.publishDate).toLocaleDateString(
+  'en-us',
+  { year: 'numeric', month: 'long', day: '2-digit' }
+)
 ---
 
-<h2>
-  <a href={post.url}>{post.frontmatter.title}</a> - {publishDate}
-</h2>
+<a href={post.url}>
+  <div
+    class="group bg-red-800 p-6 font-display uppercase text-white transition hover:translate-x-5"
+  >
+    <h2 class="mb-2 text-xl group-hover:font-bold sm:text-2xl">
+      {post.frontmatter.title}
+    </h2>
+    <p>
+      <span>{publishDate} | {post.frontmatter.minutesRead}</span>
+    </p>
+  </div></a
+>
