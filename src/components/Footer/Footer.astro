@@ -4,6 +4,23 @@ import { Icon } from 'astro-icon'
 const currentYear = new Date().getFullYear()
 ---
 
+<script is:inline>
+  const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)')
+    .matches
+    ? 'dark'
+    : 'light'
+
+  currentTheme = localStorage.getItem('theme') ?? preferredTheme
+
+  if (currentTheme === 'dark') {
+    document.documentElement.classList.remove('light')
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+    document.documentElement.classList.add('light')
+  }
+</script>
+
 <script>
   const STORAGE_KEY = 'theme'
   const DARK_PREFERENCE = '(prefers-color-scheme: dark)'
@@ -58,10 +75,9 @@ const currentYear = new Date().getFullYear()
   class="sticky bottom-0 z-50 bg-red-800 p-6 text-center text-white dark:bg-slate-800"
 >
   <div class="mx-auto flex max-w-screen-2xl items-center">
-    <div class="mx-auto">
-      <p class="mb-2">&copy; {currentYear} Srikar Gudipati</p>
-
-      <small class="block uppercase">🚀 Built by Astro</small>
+    <div class="mx-auto font-display uppercase">
+      <p class="mb-2 text-lg">&copy; {currentYear} Srikar Gudipati</p>
+      <small class="block">🚀 Built by Astro</small>
     </div>
 
     <button id="dark-mode" class="block dark:hidden">

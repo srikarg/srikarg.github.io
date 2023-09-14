@@ -1,4 +1,5 @@
 ---
+import { Icon } from 'astro-icon'
 const { post } = Astro.props
 
 const publishDate = new Date(post.frontmatter.publishDate).toLocaleDateString(
@@ -9,13 +10,18 @@ const publishDate = new Date(post.frontmatter.publishDate).toLocaleDateString(
 
 <a href={post.url}>
   <div
-    class="group bg-red-800 p-6 font-display uppercase text-white transition hover:translate-x-5"
+    class="group bg-red-800 p-6 font-display uppercase text-white transition-transform hover:translate-x-5 dark:bg-slate-800"
   >
     <h2 class="mb-2 text-xl group-hover:font-bold sm:text-2xl">
       {post.frontmatter.title}
     </h2>
     <p>
-      <span>{publishDate} | {post.frontmatter.minutesRead}</span>
+      <Icon pack="ph" name="clock" class="mr-2 inline h-6 w-6" />
+      {publishDate}
+    </p>
+    <p>
+      <Icon pack="ph" name="book" class="mr-2 inline h-6 w-6" />
+      {post.frontmatter.minutesRead}
     </p>
   </div></a
 >
