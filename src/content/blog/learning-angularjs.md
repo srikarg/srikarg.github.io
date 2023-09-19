@@ -1,10 +1,6 @@
 ---
 title: 'AngularJS for Beginners'
-layout: ../../layouts/Post.astro
 publishDate: 2013-07-15
-toc: true
-share: true
-comments: true
 ---
 
 AngularJS is a JavaScript framework developed by Google that makes coding web

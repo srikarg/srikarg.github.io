@@ -1,10 +1,6 @@
 ---
 title: 'Getting Started with Jekyll'
-layout: ../../layouts/Post.astro
 publishDate: 2013-06-09
-toc: true
-share: true
-comments: true
 ---
 
 Let's say you need an easy way to create a blog within minutes. Well,

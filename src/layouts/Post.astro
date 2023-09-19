@@ -1,32 +1,47 @@
 ---
-import type { MarkdownLayoutProps } from 'astro'
-
-type Props = MarkdownLayoutProps<{
-  title: string
-  description: string
-  date: string
-  tags: string[]
-  img: string
-}>
+import type { CollectionEntry } from 'astro:content'
+import Button from '../components/Button.astro'
+import TableOfContents from '../components/TableOfContents.astro'
+import BackToTopButton from '../components/BackToTopButton.astro'
 import ContentLayout from './Content.astro'
 
-const { frontmatter } = Astro.props
+interface Props {
+  post: CollectionEntry<'blog'>
+}
+
+const { post } = Astro.props
+
+const { headings } = await post.render()
 ---
 
 <ContentLayout>
-  <header style={`background-image:url(${frontmatter.img})`}>
-    <h1>{frontmatter.title}</h1>
+  <header
+    class="mb-10"
+    style={post.data.image && `background-image:url(${post.data.image})`}
+  >
+    <h1 class="mb-10 font-display text-5xl font-bold uppercase md:text-6xl">
+      {post.data.title}
+    </h1>
+    {
+      post.data.tags && (
+        <section>
+          {post.data.tags?.map((t: string) => (
+            <span class="mr-4 rounded bg-red-800 p-3 font-display text-xl text-white hover:scale-50 hover:font-bold dark:bg-slate-800">
+              #{t}
+            </span>
+          ))}
+        </section>
+      )
+    }
   </header>
-  <section>
-    <div>
-      {frontmatter.tags?.map((t: string) => <span class="tag">{t}</span>)}
-      <h3>{frontmatter.description}</h3>
-    </div>
-  </section>
-  <article>
+  <TableOfContents headings={headings} />
+  <BackToTopButton />
+  <article
+    class="prose prose-slate mx-auto dark:prose-invert md:prose-lg prose-headings:font-display prose-headings:uppercase"
+  >
     <slot />
   </article>
   <footer>
-    <a href="/blog" class="button">View More Posts</a>
+    <Button link="/blog">View More Posts</Button>
   </footer>
 </ContentLayout>

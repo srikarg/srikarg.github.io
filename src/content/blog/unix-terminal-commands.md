@@ -1,10 +1,6 @@
 ---
 title: 'Unix Terminal Commands'
-layout: ../../layouts/Post.astro
 publishDate: 2013-04-15
-toc: true
-share: true
-comments: true
 ---
 
 The terminal is an extremely useful tool for any advanced computer user. It can

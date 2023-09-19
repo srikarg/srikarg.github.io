@@ -1,10 +1,6 @@
 ---
 title: 'Implementing an Offcanvas Menu with jQuery'
-layout: ../../layouts/Post.astro
 publishDate: 2013-08-30
-toc: true
-share: true
-comments: true
 ---
 
 Lately, the offcanvas menu pattern has been extremely popular in various

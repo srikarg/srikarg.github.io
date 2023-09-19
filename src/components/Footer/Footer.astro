@@ -5,14 +5,22 @@ const currentYear = new Date().getFullYear()
 ---
 
 <script is:inline>
-  const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)')
-    .matches
-    ? 'dark'
-    : 'light'
+  if (!window.getCurrentTheme) {
+    window.getCurrentTheme = () => {
+      if (
+        typeof localStorage !== 'undefined' &&
+        localStorage.getItem('theme')
+      ) {
+        return localStorage.getItem('theme')
+      }
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark'
+      }
+      return 'light'
+    }
+  }
 
-  currentTheme = localStorage.getItem('theme') ?? preferredTheme
-
-  if (currentTheme === 'dark') {
+  if (window.getCurrentTheme() === 'dark') {
     document.documentElement.classList.remove('light')
     document.documentElement.classList.add('dark')
   } else {

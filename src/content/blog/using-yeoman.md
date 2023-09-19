@@ -1,10 +1,7 @@
 ---
 title: 'Using Yeoman'
-layout: ../../layouts/Post.astro
 publishDate: 2013-08-02
-toc: true
-share: true
-comments: true
+tags: ['test', 'wow']
 ---
 
 Chances are, you've heard of [Yeoman](http://yeoman.io/) before, but don't

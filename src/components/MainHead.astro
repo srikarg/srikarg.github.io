@@ -1,18 +1,18 @@
 ---
+import { ViewTransitions } from 'astro:transitions'
+import {
+  title as siteTitle,
+  shortTitle,
+  description as defaultDescription,
+} from '../../siteConfig.json'
+import '../styles/tailwind.css'
+
 interface Props {
   description?: string
   title?: string
   canonicalUrl?: string
   isBlogPost?: boolean
 }
-
-import { ViewTransitions } from 'astro:transitions'
-
-import {
-  title as siteTitle,
-  shortTitle,
-  description as defaultDescription,
-} from '../../siteConfig.json'
 
 const {
   description = defaultDescription,

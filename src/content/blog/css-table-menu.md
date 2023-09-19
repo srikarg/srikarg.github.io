@@ -1,10 +1,6 @@
 ---
 title: 'A Simple Table Menu Using CSS and HTML'
-layout: ../../layouts/Post.astro
 publishDate: 2013-03-23
-toc: true
-share: true
-comments: true
 ---
 
 Hey guys! Navigation is extremely important for any website. It is the
@@ -13,9 +9,7 @@ crooks and nannies of it. Today, we'll create a basic table menu. If you want to
 view the video version of this tutorial that I made a few months ago, then click
 play below!
 
-<div class="video-container">
-    <iframe width="640" height="360" src="//www.youtube.com/embed/xjZMlQUFsJY?rel=0" frameborder="0" allowfullscreen="true"> </iframe>
-</div>
+<iframe src="//www.youtube.com/embed/xjZMlQUFsJY?rel=0" />
 
 # The HTML
 

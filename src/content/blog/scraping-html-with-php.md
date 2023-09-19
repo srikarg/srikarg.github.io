@@ -1,10 +1,6 @@
 ---
 title: 'Scraping HTML with PHP'
-layout: ../../layouts/Post.astro
 publishDate: 2013-05-11
-toc: true
-share: true
-comments: true
 ---
 
 Let's just say you run into a situation where you need to access data from a

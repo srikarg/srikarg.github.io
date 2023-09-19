@@ -1,10 +1,6 @@
 ---
 title: 'Tools of the Web'
-layout: ../../layouts/Post.astro
 publishDate: 2013-04-09
-toc: true
-share: true
-comments: true
 ---
 
 The Internet provides several tools to enhance the daily workflows of web and

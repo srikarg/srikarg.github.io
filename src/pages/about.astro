@@ -5,23 +5,23 @@ import { skillCategories } from '../data/skills.json'
 
 <ContentLayout>
   <section>
-    <h1 class="font-display text-3xl font-bold uppercase sm:text-5xl">
+    <h1 class="mb-10 font-display text-4xl font-bold uppercase md:text-5xl">
       About Me
     </h1>
-    <p class="font-display text-2xl">
+    <p class="mb-10 font-display text-2xl">
       I am a professional software engineer currently working in the healthcare
       industry at Johnson and Johnson.
     </p>
   </section>
   <section>
-    <h1 class="font-display text-3xl font-bold uppercase sm:text-5xl">
+    <h1 class="mb-10 font-display text-4xl font-bold uppercase md:text-5xl">
       Skills
     </h1>
-    <div class="not-prose flex flex-wrap gap-8 text-center">
+    <div class="flex flex-wrap gap-8 text-center">
       {
         skillCategories.map(category => (
           <div class="grow">
-            <h3 class="mb-4 font-display text-2xl uppercase sm:text-4xl">
+            <h3 class="mb-4 font-display text-2xl uppercase md:text-4xl">
               {category.name}
             </h3>
 

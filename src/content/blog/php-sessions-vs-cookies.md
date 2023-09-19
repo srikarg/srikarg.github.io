@@ -1,10 +1,6 @@
 ---
 title: 'PHP Sessions vs. Cookies'
-layout: ../../layouts/Post.astro
 publishDate: 2013-05-30
-toc: true
-share: true
-comments: true
 ---
 
 As a beginning PHP developer, you may have heard of sessions or cookies before.

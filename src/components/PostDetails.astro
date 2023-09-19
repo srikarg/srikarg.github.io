@@ -1,19 +1,26 @@
 ---
 import { Icon } from 'astro-icon'
-const { post } = Astro.props
+import type { CollectionEntry } from 'astro:content'
 
-const publishDate = new Date(post.frontmatter.publishDate).toLocaleDateString(
-  'en-us',
-  { year: 'numeric', month: 'long', day: '2-digit' }
-)
+interface Props {
+  post: CollectionEntry<'blog'>
+}
+
+const { post } = Astro.props
+const { remarkPluginFrontmatter } = await post.render()
+const publishDate = post.data.publishDate.toLocaleDateString('en-us', {
+  year: 'numeric',
+  month: 'long',
+  day: '2-digit',
+})
 ---
 
-<a href={post.url}>
+<a href={`/blog/${post.slug}`}>
   <div
     class="group bg-red-800 p-6 font-display uppercase text-white transition-transform hover:translate-x-5 dark:bg-slate-800"
   >
-    <h2 class="mb-2 text-xl group-hover:font-bold sm:text-2xl">
-      {post.frontmatter.title}
+    <h2 class="mb-2 text-xl group-hover:font-bold md:text-2xl">
+      {post.data.title}
     </h2>
     <p>
       <Icon pack="ph" name="clock" class="mr-2 inline h-6 w-6" />
@@ -21,7 +28,7 @@ const publishDate = new Date(post.frontmatter.publishDate).toLocaleDateString(
     </p>
     <p>
       <Icon pack="ph" name="book" class="mr-2 inline h-6 w-6" />
-      {post.frontmatter.minutesRead}
+      {remarkPluginFrontmatter.minutesRead}
     </p>
   </div></a
 >

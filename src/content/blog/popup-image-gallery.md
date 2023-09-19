@@ -1,10 +1,6 @@
 ---
 title: 'Popup Image Gallery with jQuery'
-layout: ../../layouts/Post.astro
 publishDate: 2013-04-21
-toc: true
-share: true
-comments: true
 ---
 
 A simple search for `jquery image galleries` on Google will show you several

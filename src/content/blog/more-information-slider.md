@@ -1,10 +1,6 @@
 ---
 title: 'A More Information Slider with jQuery'
-layout: ../../layouts/Post.astro
 publishDate: 2013-04-07
-toc: true
-share: true
-comments: true
 ---
 
 Welcome again readers! Today, I have a quick little tutorial for displaying
