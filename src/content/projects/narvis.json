@@ -1,0 +1,7 @@
+{
+  "name": "Narvis",
+  "description": "This is a Jarvis clone written in Node.js. It features several commands including weather, xkcd, calculations, etc.",
+  "source_url": "https://github.com/srikarg/jarvis",
+  "image": "../../images/projects/node-jarvis.png",
+  "image_alt": "Narvis App"
+}

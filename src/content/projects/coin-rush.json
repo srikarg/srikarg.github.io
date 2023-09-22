@@ -1,0 +1,8 @@
+{
+  "name": "Coin Rush",
+  "description": "Play a simple arcade game I made using Crafty.js below! Collect as many coins as you can while avoiding the bombs!",
+  "source_url": "https://github.com/srikarg/Coin-Rush",
+  "demo_url": "http://srikarg.github.io/Coin-Rush/",
+  "image": "../../images/projects/coin-rush.png",
+  "image_alt": "Coin Rush Game"
+}
