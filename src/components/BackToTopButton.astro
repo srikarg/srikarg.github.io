@@ -4,24 +4,30 @@ import { Icon } from 'astro-icon'
 ---
 
 <script>
-  const backToTopButton = document.getElementById('backToTopButton')!
+  const applyScrollHandler = () => {
+    const backToTopButton = document.getElementById('backToTopButton')!
 
-  const scrollHandler = () => {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      backToTopButton.classList.remove('hidden')
-    } else {
-      backToTopButton.classList.add('hidden')
+    const scrollHandler = () => {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        backToTopButton.classList.remove('hidden')
+      } else {
+        backToTopButton.classList.add('hidden')
+      }
     }
+
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    })
+
+    window.addEventListener('scroll', scrollHandler)
   }
 
-  backToTopButton.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  })
+  document.addEventListener('astro:after-swap', applyScrollHandler)
 
-  window.addEventListener('scroll', scrollHandler)
+  applyScrollHandler()
 </script>
 
 <button
