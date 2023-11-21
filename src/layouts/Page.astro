@@ -3,17 +3,21 @@ interface Props {
   lang?: string
   title?: string
   description?: string
+  smoothScrollEnabled?: boolean
 }
 
 import MainHead from '../components/MainHead.astro'
 import Header from '../components/Header/Header.astro'
 import Footer from '../components/Footer/Footer.astro'
 
-const { lang, title, description } = Astro.props
+const { lang, title, description, smoothScrollEnabled } = Astro.props
 ---
 
 <!doctype html>
-<html class="scroll-pt-28 scroll-smooth" lang={lang || 'en'}>
+<html
+  class={`scroll-pt-28 ${smoothScrollEnabled && 'scroll-smooth'}`}
+  lang={lang || 'en'}
+>
   <head>
     <MainHead title={title} description={description} />
   </head>

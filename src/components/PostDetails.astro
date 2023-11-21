@@ -19,7 +19,11 @@ const publishDate = post.data.publishDate.toLocaleDateString('en-us', {
   <div
     class="group bg-red-800 p-6 font-display uppercase text-white transition-transform hover:translate-x-5 dark:bg-slate-800"
   >
-    <h2 class="mb-2 text-xl group-hover:font-bold md:text-2xl">
+    <h2
+      class="mb-2 text-xl group-hover:font-bold md:text-2xl"
+      transition:name={`post-title-${post.data.title}`}
+      transition:animate="initial"
+    >
       {post.data.title}
     </h2>
     <p>

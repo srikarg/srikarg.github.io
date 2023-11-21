@@ -14,12 +14,16 @@ const { post } = Astro.props
 const { headings } = await post.render()
 ---
 
-<ContentLayout>
+<ContentLayout smoothScrollEnabled={true}>
   <header
     class="mb-10"
     style={post.data.image && `background-image:url(${post.data.image})`}
   >
-    <h1 class="mb-10 font-display text-5xl font-bold uppercase md:text-6xl">
+    <h1
+      class="mb-10 font-display text-5xl font-bold uppercase md:text-6xl"
+      transition:name={`post-title-${post.data.title}`}
+      transition:animate="initial"
+    >
       {post.data.title}
     </h1>
     {
