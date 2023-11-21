@@ -42,6 +42,11 @@ const { headings } = await post.render()
     <slot />
   </article>
   <footer>
+    {
+      post.data['hacker-news'] && (
+        <Button link={post.data['hacker-news']}>Discuss on Hacker News</Button>
+      )
+    }
     <Button link="/blog">View More Posts</Button>
   </footer>
 </ContentLayout>

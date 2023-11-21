@@ -1,24 +1,32 @@
 {
   "skillCategories": [
     {
-      "name": "Web",
+      "name": "Frontend",
       "skills": [
         "HTML",
         "CSS",
         "Tailwind",
-        "Node.js",
         "JavaScript",
         "Typescript",
         "React.js",
-        "PHP",
-        "PostgreSQL",
+        "Astro",
         "Rest APIs"
       ]
     },
-    { "name": "Applications", "skills": ["C", "Python", "Java"] },
+    {
+      "name": "Backend",
+      "skills": [
+        "Python",
+        "Node.js",
+        "PHP",
+        "PostgreSQL",
+        "Kubernetes",
+        "Amazon Web Services"
+      ]
+    },
     {
       "name": "Tools",
-      "skills": ["NeoVim", "Docker", "iTerm2", "VSCode", "Git"]
+      "skills": ["Docker", "Git", "iTerm2", "Neovim", "VSCode"]
     }
   ]
 }

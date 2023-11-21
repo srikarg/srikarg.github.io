@@ -1,7 +1,7 @@
 ---
 title: 'Using Yeoman'
 publishDate: 2013-08-02
-tags: ['test', 'wow']
+hacker-news: https://news.ycombinator.com/item?id=6151904
 ---
 
 Chances are, you've heard of [Yeoman](http://yeoman.io/) before, but don't
@@ -104,6 +104,3 @@ community and built-in generators
 [here](http://yeoman.io/community-generators.html). Also, check out the official
 [getting started page](http://yeoman.io/gettingstarted.html) on the Yeoman
 website. Thanks for reading!
-
-<a href="https://news.ycombinator.com/item?id=6151904" class="btn">Discuss on
-Hacker News</a>

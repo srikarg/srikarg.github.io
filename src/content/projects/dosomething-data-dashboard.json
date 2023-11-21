@@ -1,0 +1,7 @@
+{
+  "name": "DoSomething.org Data Dashboard",
+  "description": "As a web developer intern at DoSomething.org, I worked with the product and technology teams to create a dashboard that visualizes statistics about the company's clientele including: campaign signups, current member count, upcoming events, and live client updates.",
+  "source_url": "https://github.com/DoSomething/DS-Realtime-Feed",
+  "image": "../../images/projects/dosomething-data-dashboard.png",
+  "image_alt": "DoSomething.org Data Dashboard"
+}

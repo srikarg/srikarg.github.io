@@ -1,6 +1,7 @@
 ---
 title: 'AngularJS for Beginners'
 publishDate: 2013-07-15
+hacker-news: https://news.ycombinator.com/item?id=6049181
 ---
 
 AngularJS is a JavaScript framework developed by Google that makes coding web
@@ -374,6 +375,3 @@ created with AngularJS in action! If you still need resources, check out
 [this](https://github.com/angular/angular.js/wiki/JsFiddle-Examples) exhaustive
 list of JSFiddles dealing with AngularJS. Thanks for reading and be sure to
 check out future tutorials that I will be making about AngularJS!
-
-<a href="https://news.ycombinator.com/item?id=6049181" class="btn">Discuss on
-Hacker News</a>
