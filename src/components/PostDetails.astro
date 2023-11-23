@@ -17,22 +17,28 @@ const publishDate = post.data.publishDate.toLocaleDateString('en-us', {
 
 <a href={`/blog/${post.slug}`}>
   <div
-    class="group bg-red-800 p-6 font-display uppercase text-white transition-transform hover:translate-x-5 dark:bg-slate-800"
+    class="bg-red-800 p-6 font-display uppercase text-white transition-transform hover:translate-x-5 dark:bg-slate-800"
   >
     <h2
-      class="mb-2 text-xl group-hover:font-bold md:text-2xl"
+      class="mb-4 text-xl font-bold md:text-2xl"
       transition:name={`post-title-${post.data.title}`}
       transition:animate="initial"
     >
       {post.data.title}
     </h2>
-    <p>
-      <Icon pack="ph" name="clock" class="mr-2 inline h-6 w-6" />
-      {publishDate}
-    </p>
-    <p>
-      <Icon pack="ph" name="book" class="mr-2 inline h-6 w-6" />
-      {remarkPluginFrontmatter.minutesRead}
-    </p>
+    <div
+      class="flex flex-col justify-between space-y-2 sm:flex-row sm:space-y-0"
+    >
+      <span
+        ><Icon pack="ph" name="clock" class="mr-2 inline h-6 w-6" />{
+          publishDate
+        }</span
+      >
+      <span
+        ><Icon pack="ph" name="book" class="mr-2 inline h-6 w-6" />{
+          remarkPluginFrontmatter.minutesRead
+        }</span
+      >
+    </div>
   </div></a
 >
