@@ -1,0 +1,42 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import { Icon } from 'astro-icon'
+import Button from './Button.astro'
+
+interface Props {
+  post: CollectionEntry<'blog'>
+  previousPost: CollectionEntry<'blog'>
+  nextPost: CollectionEntry<'blog'>
+}
+
+const { previousPost, nextPost } = Astro.props
+---
+
+<div class="mt-12 flex items-center justify-between">
+  {
+    previousPost && (
+      <a href={`/blog/${previousPost.slug}`}>
+        <Icon
+          pack="carbon"
+          name="previous-outline"
+          class="aspect-square w-10 text-red-800 active:scale-95 dark:text-white"
+        />
+      </a>
+    )
+  }
+  <span class="mx-auto text-xl font-bold">
+    <Button link="/blog/1">View More Posts</Button>
+  </span>
+
+  {
+    nextPost && (
+      <a href={`/blog/${nextPost.slug}`}>
+        <Icon
+          pack="carbon"
+          name="next-outline"
+          class="aspect-square w-10 text-red-800 dark:text-white"
+        />
+      </a>
+    )
+  }
+</div>

@@ -3,13 +3,16 @@ import type { CollectionEntry } from 'astro:content'
 import Button from '../components/Button.astro'
 import TableOfContents from '../components/TableOfContents.astro'
 import BackToTopButton from '../components/BackToTopButton.astro'
+import PostPagination from '../components/PostPagination.astro'
 import ContentLayout from './Content.astro'
 
 interface Props {
   post: CollectionEntry<'blog'>
+  previousPost: CollectionEntry<'blog'>
+  nextPost: CollectionEntry<'blog'>
 }
 
-const { post } = Astro.props
+const { post, previousPost, nextPost } = Astro.props
 
 const { headings } = await post.render()
 ---
@@ -38,21 +41,27 @@ const { headings } = await post.render()
       )
     }
   </header>
+
   {post.data.tableOfContents && <TableOfContents headings={headings} />}
+
   <BackToTopButton />
+
   <article
     class="prose prose-slate mx-auto dark:prose-invert md:prose-lg prose-headings:font-display prose-headings:uppercase"
   >
     <slot />
   </article>
+
   <footer>
-    {
-      post.data['hackerNewsLink'] && (
-        <Button link={post.data['hackerNewsLink']}>
-          Discuss on Hacker News
-        </Button>
-      )
-    }
-    <Button link="/blog/1">View More Posts</Button>
+    <div class="mt-4">
+      {
+        post.data['hackerNewsLink'] && (
+          <Button link={post.data['hackerNewsLink']}>
+            Discuss on Hacker News
+          </Button>
+        )
+      }
+    </div>
+    <PostPagination previousPost={previousPost} nextPost={nextPost} />
   </footer>
 </ContentLayout>
