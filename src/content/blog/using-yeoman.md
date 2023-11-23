@@ -1,7 +1,7 @@
 ---
 title: 'Using Yeoman'
 publishDate: 2013-08-02
-hacker-news: https://news.ycombinator.com/item?id=6151904
+hackerNewsLink: https://news.ycombinator.com/item?id=6151904
 ---
 
 Chances are, you've heard of [Yeoman](http://yeoman.io/) before, but don't

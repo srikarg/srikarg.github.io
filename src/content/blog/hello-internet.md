@@ -1,6 +1,7 @@
 ---
 title: 'Hello Internet'
 publishDate: 2013-03-22
+tableOfContents: false
 ---
 
 # Welcome

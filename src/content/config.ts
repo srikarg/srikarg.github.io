@@ -9,7 +9,8 @@ const blogCollection = defineCollection({
       tags: z.array(z.string()).optional(),
       publishDate: z.date(),
       image: z.string().optional(),
-      'hacker-news': z.string().url().optional(),
+      hackerNewsLink: z.string().url().optional(),
+      tableOfContents: z.boolean().optional().default(true),
     })
     .strict(),
 })

@@ -38,7 +38,7 @@ const { headings } = await post.render()
       )
     }
   </header>
-  <TableOfContents headings={headings} />
+  {post.data.tableOfContents && <TableOfContents headings={headings} />}
   <BackToTopButton />
   <article
     class="prose prose-slate mx-auto dark:prose-invert md:prose-lg prose-headings:font-display prose-headings:uppercase"
@@ -47,8 +47,10 @@ const { headings } = await post.render()
   </article>
   <footer>
     {
-      post.data['hacker-news'] && (
-        <Button link={post.data['hacker-news']}>Discuss on Hacker News</Button>
+      post.data['hackerNewsLink'] && (
+        <Button link={post.data['hackerNewsLink']}>
+          Discuss on Hacker News
+        </Button>
       )
     }
     <Button link="/blog">View More Posts</Button>
