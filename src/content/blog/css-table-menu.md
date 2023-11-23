@@ -9,7 +9,7 @@ crooks and nannies of it. Today, we'll create a basic table menu. If you want to
 view the video version of this tutorial that I made a few months ago, then click
 play below!
 
-<iframe src="//www.youtube.com/embed/xjZMlQUFsJY?rel=0" />
+<iframe src="https://www.youtube.com/embed/xjZMlQUFsJY"></iframe>
 
 # The HTML
 
