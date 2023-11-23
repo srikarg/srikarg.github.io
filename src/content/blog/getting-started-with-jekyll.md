@@ -42,26 +42,23 @@ Now that the server is set up, we can point our browser to `localhost:4000` in
 order to view our newly generated site! It should look something like the
 following:
 
-<figure>
-    <img src="/img/posts/jekyll-new-site.png" alt="A new Jekyll blog">
-    <figcaption>A new blog created with Jekyll</figcaption>
-</figure>
+![A new blog created with Jekyll](../../images/posts/jekyll-new-site.png)
 
 # Directory Structure
 
 Jekyll blogs often have a directory structure similar to the one below:
 
-- \_config.yml
-- \_layouts
-  - default.html
-  - post.html
-- \_posts
-  - 2013-06-03-a-great-post.md
-- \_site
-- css
-  - styles.css
-  - syntax.css
-- index.html
+- `_config.yml`
+- `_layouts`
+  - `default.html`
+  - `post.html`
+- `_posts`
+  - `2013-06-03-a-great-post.md`
+- `_site`
+- `css`
+  - `styles.css`
+  - `syntax.css`
+- `index.html`
 
 Jekyll populates the `_site` folder with the compiled blog. The configuration
 for your blog is stored in `_config.yml`. A sample configuration is shown below:
