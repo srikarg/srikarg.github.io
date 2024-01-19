@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content'
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-icon/components'
 import Button from './Button.astro'
 
 interface Props {
@@ -17,9 +17,8 @@ const { previousPost, nextPost } = Astro.props
     previousPost && (
       <a href={`/blog/${previousPost.slug}`}>
         <Icon
-          pack="carbon"
-          name="previous-outline"
-          class="aspect-square w-10 text-red-800 active:scale-95 dark:text-white"
+          name="carbon:previous-outline"
+          class="h-10 w-10 text-red-800 active:scale-95 dark:text-white"
         />
       </a>
     )
@@ -32,9 +31,8 @@ const { previousPost, nextPost } = Astro.props
     nextPost && (
       <a href={`/blog/${nextPost.slug}`}>
         <Icon
-          pack="carbon"
-          name="next-outline"
-          class="aspect-square w-10 text-red-800 dark:text-white"
+          name="carbon:next-outline"
+          class="h-10 w-10 text-red-800 dark:text-white"
         />
       </a>
     )

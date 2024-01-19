@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-icon/components'
 import type { Page } from 'astro'
 
 interface Props {
@@ -14,9 +14,8 @@ const { page } = Astro.props
     page.url.prev && (
       <a href={page.url.prev}>
         <Icon
-          pack="carbon"
-          name="previous-outline"
-          class="aspect-square w-10 text-red-800 dark:text-white"
+          name="carbon:previous-outline"
+          class="h-10 w-10 text-red-800 dark:text-white"
         />
       </a>
     )
@@ -28,9 +27,8 @@ const { page } = Astro.props
     page.url.next && (
       <a href={page.url.next}>
         <Icon
-          pack="carbon"
-          name="next-outline"
-          class="aspect-square w-10 text-red-800 dark:text-white"
+          name="carbon:next-outline"
+          class="h-10 w-10 text-red-800 dark:text-white"
         />
       </a>
     )

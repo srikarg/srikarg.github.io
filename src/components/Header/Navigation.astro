@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-icon/components'
 
 const { currentTopLevelPath } = Astro.props
 const activeLinkClass: string = 'font-bold'
@@ -43,7 +43,7 @@ const activeLinkClass: string = 'font-bold'
 
 <div class="block md:hidden">
   <button id="navigation-toggle" class="flex items-center text-white">
-    <Icon pack="ion" name="menu" class="h-8 w-8 fill-current" />
+    <Icon name="ion:menu" class="h-8 w-8 fill-current" />
   </button>
 </div>
 

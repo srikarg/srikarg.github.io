@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-icon/components'
 import type { CollectionEntry } from 'astro:content'
 
 interface Props {
@@ -30,12 +30,10 @@ const publishDate = post.data.publishDate.toLocaleDateString('en-us', {
       class="flex flex-col justify-between space-y-2 sm:flex-row sm:space-y-0"
     >
       <span
-        ><Icon pack="ph" name="clock" class="mr-2 inline h-6 w-6" />{
-          publishDate
-        }</span
+        ><Icon name="ph:clock" class="mr-2 inline h-6 w-6" />{publishDate}</span
       >
       <span
-        ><Icon pack="ph" name="book" class="mr-2 inline h-6 w-6" />{
+        ><Icon name="ph:book" class="mr-2 inline h-6 w-6" />{
           remarkPluginFrontmatter.minutesRead
         }</span
       >

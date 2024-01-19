@@ -1,6 +1,6 @@
 ---
 import PageLayout from '../layouts/Page.astro'
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-icon/components'
 import { links } from '../../siteConfig.json'
 ---
 
@@ -10,12 +10,12 @@ import { links } from '../../siteConfig.json'
       class="flex aspect-video flex-col items-center justify-evenly bg-yellow-500 p-8 text-center shadow-2xl transition-transform duration-300 hover:scale-110 dark:bg-amber-500"
     >
       <h1
-        class="mb-2 border-8 border-red-800 p-2 font-display text-xl font-bold uppercase dark:border-slate-800 sm:p-4 sm:text-5xl sm:tracking-wide md:text-7xl"
+        class="border-8 border-red-800 p-2 font-display text-4xl font-bold uppercase dark:border-slate-800 sm:p-4 sm:text-5xl sm:tracking-wide md:text-7xl"
       >
         Srikar Gudipati
       </h1>
       <h2
-        class="mb-2 font-display text-sm uppercase sm:text-xl sm:tracking-wider md:text-3xl"
+        class="font-display text-xl font-bold uppercase sm:tracking-wider md:text-3xl"
       >
         Fullstack Software Engineer
       </h2>
@@ -23,33 +23,29 @@ import { links } from '../../siteConfig.json'
       <section class="flex w-full justify-evenly space-x-1 self-center">
         <a href={`mailto:${links.email}?subject=Hey%20There!`}>
           <Icon
-            pack="mdi"
-            name="email"
-            class="aspect-square w-full min-w-[2.8rem] max-w-[3.5rem] rounded-full bg-red-800 p-3 text-white hover:scale-110 dark:bg-slate-800"
+            name="mdi:email"
+            class="h-9 w-full rounded-full bg-red-800 p-2 text-white hover:scale-110 dark:bg-slate-800 md:h-12"
           />
         </a>
 
         <a href={`https://github.com/${links.github}`}>
           <Icon
-            pack="mdi"
-            name="github"
-            class="aspect-square w-full min-w-[2.8rem] max-w-[3.5rem] rounded-full bg-red-800 p-3 text-white hover:scale-110 dark:bg-slate-800"
+            name="mdi:github"
+            class="h-9 w-full rounded-full bg-red-800 p-2 text-white hover:scale-110 dark:bg-slate-800 md:h-12"
           />
         </a>
 
         <a href={`https://www.linkedin.com/in/${links.linkedin}`}>
           <Icon
-            pack="mdi"
-            name="linkedin"
-            class="aspect-square w-full min-w-[2.8rem] max-w-[3.5rem] rounded-full bg-red-800 p-3 text-white hover:scale-110 dark:bg-slate-800"
+            name="mdi:linkedin"
+            class="h-9 w-full rounded-full bg-red-800 p-2 text-white hover:scale-110 dark:bg-slate-800 md:h-12"
           />
         </a>
 
         <a href={`https://codepen.io/${links.codepen}`}>
           <Icon
-            pack="fe"
-            name="codepen"
-            class="aspect-square w-full min-w-[2.8rem] max-w-[3.5rem] rounded-full bg-red-800 p-3 text-white hover:scale-110 dark:bg-slate-800"
+            name="fe:codepen"
+            class="h-9 w-full rounded-full bg-red-800 p-2 text-white hover:scale-110 dark:bg-slate-800 md:h-12"
           />
         </a>
       </section>
