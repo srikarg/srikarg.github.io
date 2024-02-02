@@ -1,0 +1,36 @@
+---
+import { Icon } from 'astro-icon/components'
+import type { Page } from 'astro'
+
+interface Props {
+  page: Page
+}
+
+const { page } = Astro.props
+---
+
+<div class="mt-6 flex items-center justify-between">
+  {
+    page.url.prev && (
+      <a href={page.url.prev}>
+        <Icon
+          name="carbon:previous-outline"
+          class="h-10 w-10 text-red-800 dark:text-white"
+        />
+      </a>
+    )
+  }
+  <span class="mx-auto font-display text-xl font-bold uppercase"
+    >{`Page ${page.currentPage} of ${page.lastPage}`}</span
+  >
+  {
+    page.url.next && (
+      <a href={page.url.next}>
+        <Icon
+          name="carbon:next-outline"
+          class="h-10 w-10 text-red-800 dark:text-white"
+        />
+      </a>
+    )
+  }
+</div>

@@ -1,0 +1,7 @@
+{
+  "name": "Trackr",
+  "description": "My friend and I built this Chrome extension that tracks the time you spend on websites and displays it on the new tab page with a pie chart. As of April 2016, it has 3,237 weekly users.",
+  "source_url": "https://github.com/srikarg/Trackr",
+  "image": "../../images/projects/trackr-chrome-extension.png",
+  "image_alt": "Trackr Chrome Extension"
+}

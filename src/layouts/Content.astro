@@ -1,0 +1,15 @@
+---
+interface Props {
+  smoothScrollEnabled?: boolean
+}
+
+import PageLayout from './Page.astro'
+
+const { smoothScrollEnabled } = Astro.props
+---
+
+<PageLayout smoothScrollEnabled={smoothScrollEnabled}>
+  <main class="mx-auto w-full max-w-prose grow p-6 dark:text-white">
+    <slot />
+  </main>
+</PageLayout>

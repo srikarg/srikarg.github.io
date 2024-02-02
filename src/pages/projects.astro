@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content'
+import { Image } from 'astro:assets'
+import PageLayout from '../layouts/Page.astro'
+import Button from '../components/Button.astro'
+
+const projects = await getCollection('projects')
+---
+
+<PageLayout>
+  <main class="w-full grow p-6 dark:text-white">
+    <div class="mx-auto max-w-prose">
+      <h1 class="mb-10 font-display text-4xl font-bold uppercase md:text-5xl">
+        Projects
+      </h1>
+    </div>
+    <div class="mx-auto max-w-screen-2xl">
+      <ul class="columns-sm gap-12 space-y-12">
+        {
+          projects.map(project => (
+            <li class="flex w-full break-inside-avoid-column flex-col justify-between border-2 border-yellow-500 p-4 shadow-lg transition-transform duration-300 hover:-translate-y-5 hover:scale-110 hover:shadow-xl dark:border-amber-500">
+              <div class="mb-4">
+                <Image
+                  src={project.data.image}
+                  alt={project.data.image_alt}
+                  class="mb-4 rounded-lg"
+                />
+                <h1 class="mb-4 font-display text-xl font-bold uppercase">
+                  {project.data.name}
+                </h1>
+                <p>{project.data.description}</p>
+              </div>
+              <div class="flex flex-col items-start gap-2 sm:flex-row">
+                {project.data.source_url && (
+                  <Button link={project.data.source_url}>Source</Button>
+                )}
+                {project.data.demo_url && (
+                  <Button link={project.data.demo_url}>Demo</Button>
+                )}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </main>
+</PageLayout>

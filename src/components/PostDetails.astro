@@ -1,0 +1,42 @@
+---
+import { Icon } from 'astro-icon/components'
+import type { CollectionEntry } from 'astro:content'
+
+interface Props {
+  post: CollectionEntry<'blog'>
+}
+
+const { post } = Astro.props
+const { remarkPluginFrontmatter } = await post.render()
+const publishDate = post.data.publishDate.toLocaleDateString('en-us', {
+  year: 'numeric',
+  month: 'long',
+  day: '2-digit',
+})
+---
+
+<a href={`/blog/${post.slug}`}>
+  <div
+    class="bg-red-800 p-6 font-display uppercase text-white transition-transform hover:translate-x-5 dark:bg-slate-800"
+  >
+    <h2
+      class="mb-4 text-xl font-bold"
+      transition:name={`post-title-${post.data.title}`}
+      transition:animate="initial"
+    >
+      {post.data.title}
+    </h2>
+    <div
+      class="flex flex-col justify-between space-y-2 sm:flex-row sm:space-y-0"
+    >
+      <span
+        ><Icon name="ph:clock" class="mr-2 inline h-6 w-6" />{publishDate}</span
+      >
+      <span
+        ><Icon name="ph:book" class="mr-2 inline h-6 w-6" />{
+          remarkPluginFrontmatter.minutesRead
+        }</span
+      >
+    </div>
+  </div></a
+>

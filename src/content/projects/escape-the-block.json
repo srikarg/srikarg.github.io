@@ -1,0 +1,8 @@
+{
+  "name": "Escape the Block",
+  "description": "Play a simple arcade game I made using Crafty.js below! Try to survive as long as possible by jumping over the block!",
+  "source_url": "https://github.com/srikarg/escape-the-block",
+  "demo_url": "http://srikarg.github.io/escape-the-block/app/",
+  "image": "../../images/projects/escape-the-block.png",
+  "image_alt": "Escape the Block Game"
+}

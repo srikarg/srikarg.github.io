@@ -1,0 +1,38 @@
+{
+  "name": "srikar-gudipati-personal-site",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "format": "npx prettier -w \"**/*\" --ignore-unknown --cache",
+    "start": "astro dev",
+    "build": "astro check && tsc --noEmit && astro build",
+    "preview": "astro preview",
+    "sync": "astro sync",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.4.1",
+    "@astrojs/mdx": "^2.1.1",
+    "@astrojs/tailwind": "^5.1.0",
+    "@iconify-json/carbon": "^1.1.28",
+    "@iconify-json/fe": "^1.1.10",
+    "@iconify-json/ion": "^1.1.15",
+    "@iconify-json/mdi": "^1.1.64",
+    "@iconify-json/ph": "^1.1.10",
+    "astro": "^4.3.1",
+    "astro-icon": "^1.0.4",
+    "autoprefixer": "^10.4.17",
+    "mdast-util-to-string": "^4.0.0",
+    "postcss": "^8.4.33",
+    "reading-time": "^1.5.0",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "prettier": "^3.2.4",
+    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "typescript": "^5.3.3"
+  }
+}

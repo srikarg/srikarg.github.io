@@ -1,0 +1,17 @@
+---
+import { shortTitle } from '../../../siteConfig.json'
+
+import Navigation from './Navigation.astro'
+---
+
+<header class="sticky top-0 z-50 bg-red-800 p-6 dark:bg-slate-800">
+  <div
+    class="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between"
+  >
+    <div class="flex items-center text-white">
+      <a class="text-4xl tracking-tight" href="/">{shortTitle}</a>
+    </div>
+
+    <Navigation currentTopLevelPath={Astro.url.pathname.split('/')[1]} />
+  </div>
+</header>

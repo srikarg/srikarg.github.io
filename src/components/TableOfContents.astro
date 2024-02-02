@@ -1,0 +1,25 @@
+---
+interface Props {
+  headings: { depth: number; slug: string; text: string }[]
+}
+
+const { headings } = Astro.props
+---
+
+<div class="mb-10 rounded border p-5 shadow-md">
+  <h1 class="mb-2 font-display text-2xl font-bold uppercase">
+    Table of Contents
+  </h1>
+
+  <ol
+    class="ml-4 list-inside list-decimal space-y-2 font-display text-xl uppercase"
+  >
+    {
+      headings.map(heading => (
+        <li>
+          <a href={`#${heading.slug}`}>{heading.text}</a>
+        </li>
+      ))
+    }
+  </ol>
+</div>

@@ -1,0 +1,37 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+
+<script>
+  const applyScrollHandler = () => {
+    const backToTopButton = document.getElementById('backToTopButton')!
+
+    const scrollHandler = () => {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        backToTopButton.classList.remove('hidden')
+      } else {
+        backToTopButton.classList.add('hidden')
+      }
+    }
+
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    })
+
+    window.addEventListener('scroll', scrollHandler)
+  }
+
+  document.addEventListener('astro:after-swap', applyScrollHandler)
+
+  applyScrollHandler()
+</script>
+
+<button
+  id="backToTopButton"
+  class="fixed bottom-32 right-5 mt-4 hidden rounded bg-red-800 px-4 py-2 font-display uppercase text-white shadow-lg transition hover:bg-red-600 hover:shadow-xl active:scale-95 dark:bg-slate-800 dark:hover:bg-slate-600"
+>
+  <Icon name="mdi:arrow-drop-up" class="h-6 w-6" />
+</button>
