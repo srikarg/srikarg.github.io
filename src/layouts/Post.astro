@@ -8,8 +8,8 @@ import ContentLayout from './Content.astro'
 
 interface Props {
   post: CollectionEntry<'blog'>
-  previousPost: CollectionEntry<'blog'>
-  nextPost: CollectionEntry<'blog'>
+  previousPost: CollectionEntry<'blog'> | undefined
+  nextPost: CollectionEntry<'blog'> | undefined
 }
 
 const { post, previousPost, nextPost } = Astro.props

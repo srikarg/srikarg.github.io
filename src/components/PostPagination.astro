@@ -4,9 +4,8 @@ import { Icon } from 'astro-icon/components'
 import Button from './Button.astro'
 
 interface Props {
-  post: CollectionEntry<'blog'>
-  previousPost: CollectionEntry<'blog'>
-  nextPost: CollectionEntry<'blog'>
+  previousPost: CollectionEntry<'blog'> | undefined
+  nextPost: CollectionEntry<'blog'> | undefined
 }
 
 const { previousPost, nextPost } = Astro.props
