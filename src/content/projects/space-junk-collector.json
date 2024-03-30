@@ -1,0 +1,8 @@
+{
+  "name": "Space Junk Collector",
+  "description": "Play a simple arcade game I made using PhaserJS for the All Things JS Meetup's 2024 Game Jam!",
+  "source_url": "https://github.com/srikarg/space-junk-collector",
+  "demo_url": "https://srikarg.github.io/space-junk-collector",
+  "image": "../../images/projects/space-junk-collector.png",
+  "image_alt": "Space Junk Collector Game"
+}
