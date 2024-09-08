@@ -12,28 +12,29 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.10",
-    "@astrojs/mdx": "^2.2.2",
+    "@astrojs/check": "^0.9.3",
+    "@astrojs/mdx": "^3.1.5",
+    "@astrojs/rss": "^4.0.7",
     "@astrojs/tailwind": "^5.1.0",
-    "@iconify-json/carbon": "^1.1.31",
-    "@iconify-json/fe": "^1.1.10",
-    "@iconify-json/ion": "^1.1.17",
-    "@iconify-json/mdi": "^1.1.64",
-    "@iconify-json/ph": "^1.1.11",
-    "astro": "^4.5.12",
-    "astro-icon": "^1.1.0",
-    "autoprefixer": "^10.4.19",
+    "@iconify-json/carbon": "^1.2.1",
+    "@iconify-json/fe": "^1.2.0",
+    "@iconify-json/ion": "^1.2.0",
+    "@iconify-json/mdi": "^1.2.0",
+    "@iconify-json/ph": "^1.2.0",
+    "astro": "^4.15.4",
+    "astro-icon": "^1.1.1",
+    "autoprefixer": "^10.4.20",
     "mdast-util-to-string": "^4.0.0",
-    "postcss": "^8.4.38",
+    "postcss": "^8.4.45",
     "reading-time": "^1.5.0",
-    "sharp": "^0.33.3",
-    "tailwindcss": "^3.4.3"
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.10"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.12",
-    "prettier": "^3.2.5",
-    "prettier-plugin-astro": "^0.13.0",
-    "prettier-plugin-tailwindcss": "^0.5.13",
-    "typescript": "^5.4.3"
+    "@tailwindcss/typography": "^0.5.15",
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "typescript": "^5.5.4"
   }
 }
