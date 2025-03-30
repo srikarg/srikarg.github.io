@@ -6,5 +6,5 @@ My personal website. Visit
 # Local Development
 
 1. `git clone https://github.com/srikarg/srikarg.github.io.git`
-2. `npm install`
-3. `npm run dev`
+2. `pnpm install`
+3. `pnpm dev`
