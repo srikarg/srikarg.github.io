@@ -23,7 +23,7 @@ const { headings } = await post.render()
     style={post.data.image && `background-image:url(${post.data.image})`}
   >
     <h1
-      class="mb-10 font-display text-5xl font-bold uppercase md:text-6xl"
+      class="font-display mb-10 text-5xl font-bold uppercase md:text-6xl"
       transition:name={`post-title-${post.data.title}`}
       transition:animate="initial"
     >
@@ -33,7 +33,7 @@ const { headings } = await post.render()
       post.data.tags && (
         <section>
           {post.data.tags?.map((t: string) => (
-            <span class="mr-4 rounded bg-red-800 p-3 font-display text-xl text-white hover:scale-50 hover:font-bold dark:bg-slate-800">
+            <span class="font-display mr-4 rounded-sm bg-red-800 p-3 text-xl text-white hover:scale-50 hover:font-bold dark:bg-slate-800">
               #{t}
             </span>
           ))}
@@ -47,7 +47,7 @@ const { headings } = await post.render()
   <BackToTopButton />
 
   <article
-    class="prose prose-slate mx-auto dark:prose-invert md:prose-lg prose-headings:font-display prose-headings:uppercase"
+    class="prose prose-slate dark:prose-invert md:prose-lg prose-headings:font-display prose-headings:uppercase mx-auto"
   >
     <slot />
   </article>

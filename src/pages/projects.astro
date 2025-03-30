@@ -10,11 +10,11 @@ const projects = await getCollection('projects')
 <PageLayout>
   <main class="w-full grow p-6 dark:text-white">
     <div class="mx-auto max-w-prose">
-      <h1 class="mb-10 font-display text-4xl font-bold uppercase md:text-5xl">
+      <h1 class="font-display mb-10 text-4xl font-bold uppercase md:text-5xl">
         Projects
       </h1>
     </div>
-    <div class="mx-auto max-w-screen-2xl">
+    <div class="mx-auto max-w-(--breakpoint-2xl)">
       <ul class="columns-sm gap-12 space-y-12">
         {
           projects.map(project => (
@@ -25,7 +25,7 @@ const projects = await getCollection('projects')
                   alt={project.data.image_alt}
                   class="mb-4 rounded-lg"
                 />
-                <h1 class="mb-4 font-display text-xl font-bold uppercase">
+                <h1 class="font-display mb-4 text-xl font-bold uppercase">
                   {project.data.name}
                 </h1>
                 <p>{project.data.description}</p>

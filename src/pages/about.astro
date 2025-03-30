@@ -5,35 +5,35 @@ import { skillCategories } from '../data/skills.json'
 
 <ContentLayout>
   <section>
-    <h1 class="mb-10 font-display text-4xl font-bold uppercase md:text-5xl">
+    <h1 class="font-display mb-10 text-4xl font-bold uppercase md:text-5xl">
       About Me
     </h1>
-    <p class="mb-10 font-display text-2xl">
+    <p class="font-display mb-10 text-2xl">
       I am an experienced full stack software engineer currently working at
       Johnson and Johnson, with expertise in designing, developing, and
       maintaining large-scale applications.
     </p>
-    <p class="mb-10 font-display text-2xl">
+    <p class="font-display mb-10 text-2xl">
       My strengths are my strong communication and collaboration skills, with
       experience working in Agile environments, and my expertise in both
       front-end and back-end technologies.
     </p>
   </section>
   <section>
-    <h1 class="mb-10 font-display text-4xl font-bold uppercase md:text-5xl">
+    <h1 class="font-display mb-10 text-4xl font-bold uppercase md:text-5xl">
       Skills
     </h1>
     <div class="flex flex-wrap gap-8 text-center">
       {
         skillCategories.map(category => (
           <div class="grow">
-            <h3 class="mb-4 font-display text-2xl uppercase md:text-4xl">
+            <h3 class="font-display mb-4 text-2xl uppercase md:text-4xl">
               {category.name}
             </h3>
 
             <ul class="grid grid-cols-2 gap-4">
               {category.skills.map(skill => (
-                <li class="rounded bg-red-800 p-3 font-display text-xl uppercase text-white hover:font-bold dark:bg-slate-800">
+                <li class="font-display rounded-sm bg-red-800 p-3 text-xl text-white uppercase hover:font-bold dark:bg-slate-800">
                   {skill}
                 </li>
               ))}
