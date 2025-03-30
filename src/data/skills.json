@@ -8,7 +8,7 @@
         "Tailwind",
         "JavaScript",
         "Typescript",
-        "React.js",
+        "React",
         "Astro",
         "Rest APIs"
       ]
@@ -21,7 +21,8 @@
         "PHP",
         "PostgreSQL",
         "Kubernetes",
-        "Amazon Web Services"
+        "Amazon Web Services",
+        "Microsoft Azure"
       ]
     },
     {
