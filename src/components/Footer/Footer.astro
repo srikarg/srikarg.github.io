@@ -83,12 +83,14 @@ const currentYear = new Date().getFullYear()
   class="sticky bottom-0 z-50 bg-red-800 p-6 text-center text-white dark:bg-slate-800"
 >
   <div class="mx-auto flex max-w-(--breakpoint-2xl) items-center">
-    <div class="font-display mx-auto uppercase">
-      <p class="mb-2 text-lg">&copy; {currentYear} Srikar Gudipati</p>
-      <small class="block"
+    <div class="font-display mx-auto flex flex-col gap-0.5 uppercase">
+      <p class="text-lg">&copy; {currentYear} Srikar Gudipati</p>
+
+      <small
         >🚀 Built with <a class="underline" href="https://astro.build/">Astro</a
-        ></small
-      >
+        >. | <Icon name="ph:rss" class="inline-block fill-current" />
+        <a class="underline" href="/rss.xml">Follow on RSS.</a>
+      </small>
     </div>
 
     <button id="dark-mode" class="block dark:hidden">
