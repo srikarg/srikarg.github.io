@@ -6,10 +6,12 @@
 
 @theme {
   --font-*: initial;
-  --font-sans: Lato, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+  --font-sans:
+    Lato, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-display: Sulphur Point, ui-sans-serif, system-ui, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-display:
+    Sulphur Point, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 /*
