@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config'
+import { unified } from '@astrojs/markdown-remark'
 import icon from 'astro-icon'
 import tailwindcss from '@tailwindcss/vite'
 import { siteUrl } from './siteConfig.json'
@@ -12,6 +13,6 @@ export default defineConfig({
   },
   site: siteUrl,
   markdown: {
-    remarkPlugins: [remarkReadingTime],
+    processor: unified({ remarkPlugins: [remarkReadingTime] }),
   },
 })

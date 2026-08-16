@@ -14,7 +14,7 @@ const { previousPost, nextPost } = Astro.props
 <div class="mt-12 flex items-center justify-between">
   {
     previousPost && (
-      <a href={`/blog/${previousPost.slug}`}>
+      <a href={`/blog/${previousPost.id}`}>
         <Icon
           name="carbon:previous-outline"
           class="h-10 w-10 text-red-800 active:scale-95 dark:text-white"
@@ -28,7 +28,7 @@ const { previousPost, nextPost } = Astro.props
 
   {
     nextPost && (
-      <a href={`/blog/${nextPost.slug}`}>
+      <a href={`/blog/${nextPost.id}`}>
         <Icon
           name="carbon:next-outline"
           class="h-10 w-10 text-red-800 dark:text-white"

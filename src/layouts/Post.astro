@@ -1,5 +1,5 @@
 ---
-import type { CollectionEntry } from 'astro:content'
+import { render, type CollectionEntry } from 'astro:content'
 import Button from '../components/Button.astro'
 import TableOfContents from '../components/TableOfContents.astro'
 import BackToTopButton from '../components/BackToTopButton.astro'
@@ -14,7 +14,7 @@ interface Props {
 
 const { post, previousPost, nextPost } = Astro.props
 
-const { headings } = await post.render()
+const { headings } = await render(post)
 ---
 
 <ContentLayout smoothScrollEnabled={true}>
