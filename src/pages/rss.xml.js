@@ -3,7 +3,9 @@ import { getCollection } from 'astro:content'
 import { title, description } from '../../siteConfig.json'
 
 export async function GET(context) {
-  const blog = await getCollection('blog')
+  const blog = (await getCollection('blog')).sort(
+    (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+  )
 
   return rss({
     title,
